@@ -1,0 +1,1407 @@
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\ApplicationInsights.config
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\csc.exe
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\vbc.exe
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\BlueSignal.dll.config
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\BlueSignal.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\BlueSignal.pdb
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Antlr3.Runtime.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\EntityFramework.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Newtonsoft.Json.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Owin.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.Helpers.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.Mvc.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.Optimization.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.Razor.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.WebPages.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\WebGrease.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.Helpers.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.Mvc.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.Optimization.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.Razor.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.WebPages.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Antlr3.Runtime.pdb
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Newtonsoft.Json.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\EntityFramework.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\obj\Debug\BlueSignal.dll
+F:\RnD\Project-BlueSignal\BlueSignal\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\TFS Projects\BlueSignal\BlueSignal\bin\ApplicationInsights.config
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\csc.exe
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\vbc.exe
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\TFS Projects\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\TFS Projects\BlueSignal\BlueSignal\bin\BlueSignal.dll.config
+D:\TFS Projects\BlueSignal\BlueSignal\bin\BlueSignal.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\BlueSignal.pdb
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Antlr3.Runtime.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\EntityFramework.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Newtonsoft.Json.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Owin.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.Helpers.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.Mvc.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.Optimization.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.Razor.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.WebPages.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\WebGrease.dll
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.Helpers.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.Mvc.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.Optimization.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.Razor.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.WebPages.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Newtonsoft.Json.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\EntityFramework.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\TFS Projects\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\TFS Projects\BlueSignal\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\TFS Projects\BlueSignal\BlueSignal\obj\Debug\BlueSignal.dll
+D:\TFS Projects\BlueSignal\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\ApplicationInsights.config
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\csc.exe
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\vbc.exe
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\BlueSignal.dll.config
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\BlueSignal.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\BlueSignal.pdb
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Antlr3.Runtime.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\EntityFramework.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Newtonsoft.Json.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Owin.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.Helpers.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.Mvc.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.Optimization.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.Razor.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.WebPages.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\WebGrease.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.Helpers.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.Mvc.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.Optimization.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.Razor.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.WebPages.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Newtonsoft.Json.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\EntityFramework.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Spadez\BlueSignal\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\Projects\Spadez\BlueSignal\BlueSignal\obj\Debug\BlueSignal.dll
+D:\Projects\Spadez\BlueSignal\BlueSignal\obj\Debug\BlueSignal.pdb
+E:\BlueSignal\BlueSignal\bin\ApplicationInsights.config
+E:\BlueSignal\BlueSignal\bin\roslyn\csc.exe
+E:\BlueSignal\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BlueSignal\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BlueSignal\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+E:\BlueSignal\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+E:\BlueSignal\BlueSignal\bin\roslyn\vbc.exe
+E:\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe
+E:\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+E:\BlueSignal\BlueSignal\bin\BlueSignal.dll.config
+E:\BlueSignal\BlueSignal\bin\BlueSignal.dll
+E:\BlueSignal\BlueSignal\bin\BlueSignal.pdb
+E:\BlueSignal\BlueSignal\bin\Antlr3.Runtime.dll
+E:\BlueSignal\BlueSignal\bin\EntityFramework.dll
+E:\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+E:\BlueSignal\BlueSignal\bin\Newtonsoft.Json.dll
+E:\BlueSignal\BlueSignal\bin\Owin.dll
+E:\BlueSignal\BlueSignal\bin\System.Web.Helpers.dll
+E:\BlueSignal\BlueSignal\bin\System.Web.Mvc.dll
+E:\BlueSignal\BlueSignal\bin\System.Web.Optimization.dll
+E:\BlueSignal\BlueSignal\bin\System.Web.Razor.dll
+E:\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+E:\BlueSignal\BlueSignal\bin\System.Web.WebPages.dll
+E:\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.dll
+E:\BlueSignal\BlueSignal\bin\WebGrease.dll
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\BlueSignal\BlueSignal\bin\System.Web.Helpers.xml
+E:\BlueSignal\BlueSignal\bin\System.Web.Mvc.xml
+E:\BlueSignal\BlueSignal\bin\System.Web.Optimization.xml
+E:\BlueSignal\BlueSignal\bin\System.Web.Razor.xml
+E:\BlueSignal\BlueSignal\bin\System.Web.WebPages.xml
+E:\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+E:\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.xml
+E:\BlueSignal\BlueSignal\bin\Antlr3.Runtime.pdb
+E:\BlueSignal\BlueSignal\bin\Newtonsoft.Json.xml
+E:\BlueSignal\BlueSignal\bin\EntityFramework.xml
+E:\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+E:\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\BlueSignal\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+E:\BlueSignal\BlueSignal\obj\Debug\BlueSignal.dll
+E:\BlueSignal\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\ApplicationInsights.config
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\csc.exe
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\vbc.exe
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\BlueSignal.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\BlueSignal.pdb
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Antlr3.Runtime.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\EntityFramework.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Newtonsoft.Json.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Owin.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.Helpers.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.Mvc.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.Optimization.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.Razor.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.WebPages.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\WebGrease.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.Helpers.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.Mvc.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.Optimization.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.Razor.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.WebPages.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Newtonsoft.Json.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\EntityFramework.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\obj\Debug\BlueSignal.dll
+D:\Odesk Projects\Blu\BlueSignal\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\ApplicationInsights.config
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\csc.exe
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\vbc.exe
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\BlueSignal.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\BlueSignal.pdb
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Antlr3.Runtime.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\EntityFramework.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Newtonsoft.Json.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Owin.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.Helpers.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.Mvc.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.Optimization.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.Razor.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.WebPages.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\WebGrease.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.Helpers.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.Mvc.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.Optimization.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.Razor.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.WebPages.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Newtonsoft.Json.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\EntityFramework.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\obj\Debug\BlueSignal.dll
+D:\spadez-data\gur\microfinance-15-4-16\Blue-signal\BlueSignal\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\ApplicationInsights.config
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\csc.exe
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\vbc.exe
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\BlueSignal.dll.config
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\BlueSignal.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\BlueSignal.pdb
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Antlr3.Runtime.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Newtonsoft.Json.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Owin.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Helpers.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Mvc.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Optimization.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Razor.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\WebGrease.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Helpers.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Mvc.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Optimization.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Razor.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Newtonsoft.Json.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\obj\Debug\BlueSignal.dll
+D:\Project\BlueSignal_updated\BlueSignal\BlueSignal\obj\Debug\BlueSignal.pdb
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\ApplicationInsights.config
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\csc.exe
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\vbc.exe
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\BlueSignal.dll.config
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\BlueSignal.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\BlueSignal.pdb
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Antlr3.Runtime.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Newtonsoft.Json.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Owin.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Helpers.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Mvc.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Optimization.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Razor.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\WebGrease.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Helpers.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Mvc.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Optimization.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Razor.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Antlr3.Runtime.pdb
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Newtonsoft.Json.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\obj\Debug\BlueSignal.dll
+E:\BluSignalChart\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\ApplicationInsights.config
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\csc.exe
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\vbc.exe
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\BlueSignal.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\BlueSignal.pdb
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Antlr3.Runtime.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Newtonsoft.Json.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Owin.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Helpers.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Mvc.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Optimization.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Razor.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\WebGrease.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Helpers.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Mvc.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Optimization.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.Razor.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Newtonsoft.Json.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\obj\Debug\BlueSignal.dll
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\Odesk Projects\Blu\BlueSignal_updated_withOHLC\BlueSignal_updated\BlueSignal\BlueSignal\bin\BlueSignal.dll.config
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\ApplicationInsights.config
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\csc.exe
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\vbc.exe
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\BlueSignal.dll.config
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\BlueSignal.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\BlueSignal.pdb
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Antlr3.Runtime.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\EntityFramework.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Newtonsoft.Json.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Owin.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.Helpers.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.Mvc.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.Optimization.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.Razor.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.WebPages.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\WebGrease.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.Helpers.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.Mvc.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.Optimization.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.Razor.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.WebPages.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Newtonsoft.Json.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\EntityFramework.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\GIT Projects 1\TestCharts\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\GIT Projects 1\TestCharts\BlueSignal\obj\Debug\BlueSignal.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Comman.dll
+D:\GIT Projects 1\TestCharts\BlueSignal\bin\Comman.pdb
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\ApplicationInsights.config
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\csc.exe
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\vbc.exe
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\BlueSignal.dll.config
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\BlueSignal.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\BlueSignal.pdb
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Antlr3.Runtime.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Comman.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\EntityFramework.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Newtonsoft.Json.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Owin.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.Helpers.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.Mvc.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.Optimization.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.Razor.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.WebPages.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\WebGrease.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Comman.pdb
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.Helpers.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.Mvc.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.Optimization.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.Razor.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.WebPages.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Newtonsoft.Json.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\EntityFramework.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\obj\Debug\BlueSignal.dll
+D:\Odesk Projects\Blu\TestCharts\BlueSignal\obj\Debug\BlueSignal.pdb
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\ApplicationInsights.config
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\csc.exe
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\vbc.exe
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\VBCSCompiler.exe
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\BlueSignal.dll.config
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\BlueSignal.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\BlueSignal.pdb
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Antlr3.Runtime.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Comman.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\EntityFramework.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\EntityFramework.SqlServer.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.Web.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Newtonsoft.Json.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Owin.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.Helpers.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.Mvc.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.Optimization.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.Razor.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.WebPages.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.WebPages.Razor.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\WebGrease.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Comman.pdb
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.Web.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.Helpers.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.Mvc.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.Optimization.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.Razor.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.WebPages.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\System.Web.WebPages.Razor.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Antlr3.Runtime.pdb
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Newtonsoft.Json.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\EntityFramework.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\EntityFramework.SqlServer.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\obj\Debug\BlueSignal.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\ApplicationInsights.config
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\csc.exe
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\vbc.exe
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\BlueSignal.dll.config
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\BlueSignal.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\BlueSignal.pdb
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Antlr3.Runtime.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Comman.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\EntityFramework.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Newtonsoft.Json.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Owin.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.Helpers.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.Mvc.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.Optimization.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.Razor.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.WebPages.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\WebGrease.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Comman.pdb
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.Helpers.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.Mvc.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.Optimization.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.Razor.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.WebPages.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Newtonsoft.Json.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\EntityFramework.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\obj\Debug\BlueSignal.dll
+D:\Odesk Projects\Blu\Latest Code\BlueSignal\obj\Debug\BlueSignal.pdb
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\ApplicationInsights.config
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\csc.exe
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\vbc.exe
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\VBCSCompiler.exe
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\BlueSignal.dll.config
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\BlueSignal.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\BlueSignal.pdb
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Antlr3.Runtime.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Comman.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\EntityFramework.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\EntityFramework.SqlServer.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.Web.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Newtonsoft.Json.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Owin.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.Helpers.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.Mvc.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.Optimization.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.Razor.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.WebPages.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.WebPages.Razor.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\WebGrease.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Comman.pdb
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.Web.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.Helpers.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.Mvc.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.Optimization.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.Razor.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.WebPages.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\System.Web.WebPages.Razor.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Antlr3.Runtime.pdb
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Newtonsoft.Json.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\EntityFramework.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\EntityFramework.SqlServer.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\obj\Debug\BlueSignal.dll
+F:\Microfinance\Project\LatestCode_after_designing\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\ApplicationInsights.config
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\csc.exe
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\vbc.exe
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\BlueSignal.dll.config
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\BlueSignal.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\BlueSignal.pdb
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Antlr3.Runtime.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Comman.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\EntityFramework.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Newtonsoft.Json.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Owin.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.Helpers.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.Mvc.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.Optimization.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.Razor.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.WebPages.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\WebGrease.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Comman.pdb
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.Helpers.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.Mvc.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.Optimization.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.Razor.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.WebPages.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Newtonsoft.Json.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\EntityFramework.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\obj\Debug\BlueSignal.dll
+D:\Odesk Projects\Blu\LatestCode_after_designing_201701060642\BlueSignal\obj\Debug\BlueSignal.pdb
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\ApplicationInsights.config
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\csc.exe
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\vbc.exe
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\VBCSCompiler.exe
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\BlueSignal.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\BlueSignal.pdb
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Antlr3.Runtime.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Comman.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\EntityFramework.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\EntityFramework.SqlServer.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.Web.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Newtonsoft.Json.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Owin.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.Helpers.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.Mvc.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.Optimization.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.Razor.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.WebPages.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.WebPages.Razor.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\WebGrease.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Comman.pdb
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.Web.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.Helpers.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.Mvc.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.Optimization.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.Razor.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.WebPages.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\System.Web.WebPages.Razor.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Antlr3.Runtime.pdb
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Newtonsoft.Json.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\EntityFramework.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\EntityFramework.SqlServer.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\obj\Debug\BlueSignal.dll
+M:\Menzis\Latest Code 25Jan\LatestCode_Blu_25Jan\BlueSignal\obj\Debug\BlueSignal.pdb
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\ApplicationInsights.config
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\csc.exe
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\System.Collections.Immutable.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\vbc.exe
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\VBCSCompiler.exe
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\roslyn\VBCSCompiler.exe.config
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\BlueSignal.dll.config
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\BlueSignal.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\BlueSignal.pdb
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Antlr3.Runtime.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Comman.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\EntityFramework.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\EntityFramework.SqlServer.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.DependencyCollector.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.Web.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.WindowsServer.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.ApplicationInsights.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.Google.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Web.Infrastructure.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Newtonsoft.Json.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Owin.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.Helpers.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.Mvc.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.Optimization.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.Razor.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.WebPages.Deployment.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.WebPages.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.WebPages.Razor.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\WebGrease.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Comman.pdb
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.DependencyCollector.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.Web.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AI.WindowsServer.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.ApplicationInsights.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.Helpers.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.Mvc.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.Optimization.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.Razor.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.WebPages.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.WebPages.Deployment.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\System.Web.WebPages.Razor.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Antlr3.Runtime.pdb
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Newtonsoft.Json.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\EntityFramework.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\EntityFramework.SqlServer.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.Google.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\obj\Debug\BlueSignal.csprojResolveAssemblyReference.cache
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\obj\Debug\BlueSignal.dll
+D:\Odesk Projects\Blu\LatestCode_27Jan\BlueSignal\obj\Debug\BlueSignal.pdb
