@@ -1,0 +1,15 @@
+D:\GIT Projects 1\TestCharts\Comman\bin\Debug\Comman.dll
+D:\GIT Projects 1\TestCharts\Comman\bin\Debug\Comman.pdb
+D:\GIT Projects 1\TestCharts\Comman\obj\Debug\BluSignalHelpMethod.csprojResolveAssemblyReference.cache
+D:\GIT Projects 1\TestCharts\Comman\obj\Debug\Comman.dll
+D:\GIT Projects 1\TestCharts\Comman\obj\Debug\Comman.pdb
+D:\Odesk Projects\Blu\TestCharts\Comman\bin\Debug\Comman.dll
+D:\Odesk Projects\Blu\TestCharts\Comman\bin\Debug\Comman.pdb
+D:\Odesk Projects\Blu\TestCharts\Comman\obj\Debug\BluSignalHelpMethod.csprojResolveAssemblyReference.cache
+D:\Odesk Projects\Blu\TestCharts\Comman\obj\Debug\Comman.dll
+D:\Odesk Projects\Blu\TestCharts\Comman\obj\Debug\Comman.pdb
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\bin\Debug\Comman.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\bin\Debug\Comman.pdb
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\obj\Debug\BluSignalHelpMethod.csprojResolveAssemblyReference.cache
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\obj\Debug\Comman.dll
+F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\obj\Debug\Comman.pdb
