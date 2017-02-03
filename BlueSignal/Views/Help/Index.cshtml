@@ -6,7 +6,9 @@
 
     <div class="need_more_help">
         <h4>Need more help? <span>Can't find what you're looking for? We'd love to talk.</span></h4>
-        <button class="btn btn-primary pull-right">Submit a ticket</button>
+        @*<button class="btn btn-primary pull-right"></button>*@
+
+        @Html.ActionLink("Submit a ticket", "Contact", "Home",null, new { @class = "btn btn-primary pull-right" })
     </div>
     <div class="help_videos">
         <h4><span>Walk</span>through Videos</h4>
