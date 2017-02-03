@@ -245,6 +245,7 @@
     <Content Include="images\detail.png" />
     <Content Include="images\detail_active.png" />
     <Content Include="images\dollar_icon.png" />
+    <Content Include="images\fb_fans.png" />
     <Content Include="images\green_triangle.png" />
     <Content Include="images\live_portfolio.png" />
     <Content Include="images\logo.png" />

@@ -13,3 +13,8 @@ F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\bin\Debug\Com
 F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\obj\Debug\BluSignalHelpMethod.csprojResolveAssemblyReference.cache
 F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\obj\Debug\Comman.dll
 F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\obj\Debug\Comman.pdb
+D:\GitHubProjects\BS\Comman\bin\Debug\Comman.dll
+D:\GitHubProjects\BS\Comman\bin\Debug\Comman.pdb
+D:\GitHubProjects\BS\Comman\obj\Debug\BluSignalHelpMethod.csprojResolveAssemblyReference.cache
+D:\GitHubProjects\BS\Comman\obj\Debug\Comman.dll
+D:\GitHubProjects\BS\Comman\obj\Debug\Comman.pdb
