@@ -102,6 +102,8 @@ namespace BlueSignal.Models
         public string SymbolNameData { get; set; }
 
         public List<ChartDataModel> ChartData { get; set; }
+
+        public string LastTradingDay { get; set; }
     }
 
     public class Data

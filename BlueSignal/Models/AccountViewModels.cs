@@ -109,4 +109,37 @@ namespace BlueSignal.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+
+
+
+
+    public class ContactViewModel
+    {
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Email")]
+
+        public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "Name")]
+
+        public string Name { get; set; }
+
+
+        [Required]
+        [Display(Name = "Message")]
+
+        public string Message { get; set; }
+
+
+        [Required]
+        [Display(Name = "Subject")]
+
+        public string Subject { get; set; }
+
+        public string ActionResultMessage { get; set; }
+
+        public int IsSuccess { get; set; }
+    }
 }

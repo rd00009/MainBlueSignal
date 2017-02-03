@@ -51,4 +51,44 @@ function EnableElement(item) {
 }
 
 
+/*****************/
+function AddContact() {
+
+    debugger
+
+    var data = {
+        'Name': $('#Name').val(),
+        'Message': $('#Message').val(),
+        'Subject': $('#Subject').val(),
+        'Email': $('#Email').val()
+    };
+
+
+
+    $.ajax({
+        type: "Post",
+        url: "/Home/Contact",
+        dataType: "html",
+        async: true,
+        data: data,
+        success: function (data) {
+            if (data != null) {
+
+
+                $('#ContactLog_Container').html('');
+                $('#ContactLog_Container').html(data);
+
+
+
+
+            }
+        },
+        error: function (error) {
+            console.log(error);
+            alert('Error');
+        }
+    });
+}
+
+
 

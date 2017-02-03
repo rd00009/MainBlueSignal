@@ -11,14 +11,14 @@
      onclick="return activaTab('BluQuant');"
     onclick="return activaTab('Details');"
      onclick="return activaTab('Data');"*@
-<ul class="nav nav-tabs">
-    <li class="active"><a class="blufractal" id="blude" data-toggle="tab" href="#BluFractal"><span>Blu</span>Fractal</a></li>
-    <li><a class="bluneural" data-toggle="tab" href="#BluNeural"><span>Blu</span>Neural</a></li>
-    <li><a class="BluFractal_BluNeural" data-toggle="tab" href="#BluFractal_BluNeural"><span class="combo"><span class="bf_icon"></span>&nbsp;<span class="bn_icon"></span></span> Combo</a></li>
-    <li><a class="bluquant" data-toggle="tab" href="#BluQuant"><span>Blu</span>Quant</a></li>
+<ul id="AllTables" class="nav nav-tabs">
+    <li class="active"><a class="blufractal" id="blude_code" data-toggle="tab" href="#BluFractal"><span>Blu</span>Fractal</a></li>
+    <li><a class="bluneural" id="blueNureal_codeD" data-toggle="tab" href="#BluNeural"><span>Blu</span>Neural</a></li>
+    <li><a class="BluFractal_BluNeural" id="blueCombo_codeBD" data-toggle="tab" href="#BluFractal_BluNeural"><span class="combo"><span class="bf_icon"></span>&nbsp;<span class="bn_icon"></span></span> Combo</a></li>
+    <li><a class="bluquant" id="blueQuote_codeDquent" data-toggle="tab" href="#BluQuant"><span>Blu</span>Quant</a></li>
 
     <li class="pull-right help"><a href="@Url.Action("","Help")" target="_blank"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></li>
-    <li class="pull-right"><a class="detail" data-toggle="tab" href="#Details"></a></li>
+    <li class="pull-right"><a class="detail" onclick="return OpenPopupWithTheQuote();"></a></li>
     <li class="pull-right"><a class="data" data-toggle="tab" href="#Data"></a></li>
 
 
@@ -205,6 +205,8 @@
     var symbolTitle = '';
     $(document).ready(function () {
         InitilizeMarketList();
+
+        //AddContact();
         // GetMarketChartData();
         // alert('KI');
         $(".btnGetData").click(function () {
@@ -309,7 +311,7 @@
 
 
 
-    function InitilizeMarketListWithCode(item) {      
+    function InitilizeMarketListWithCode(item) {
         if (!ValidateTheCodeInTextBoxWithBox(item)) {
             return false;
         }
@@ -450,7 +452,8 @@
             success: function (data) {
                 if (data != null) {
 
-                   
+
+
                     ///  var dailyData = $.parseJSON(data.MarketDataDaily);
                     //    bindDatatable('Id_MarketDataList', dailyData.results);
 
@@ -467,13 +470,11 @@
                     //   bindDatatable('Id_MarketDataListYearly', yearlyData.results);
 
                     $("#code").val(data.Code);
-                    
+
                     $(".codeValue").val(data.Code);
                     $("#Name").val(data.Name);
                     $("#ClosingPrice").val(data.ClosingPrice);
                     $("#AvgVolume").val(data.AverageVolumn);
-
-
 
 
                     $(".codeClass").text(data.Code);
@@ -510,6 +511,14 @@
 
 
                             $(".NameClassbluequont").val(sysmbolName);
+
+                            //var startDate = new Date(symbolData.results[0].tradeTimestamp);
+                            //var formattedStartDate = startDate.getMonth() + "/" + startDate.getDate() + "/" + startDate.getFullYear();
+
+
+                            $(".LastTradingDay").val(ConvertJsonDateString(symbolData.results[0].tradeTimestamp));
+                            $(".LastTradingDay").text(ConvertJsonDateString(symbolData.results[0].tradeTimestamp));
+
                         }
 
 
@@ -569,10 +578,10 @@
 
                     $(".codeClassbluequont").text(data.Code);
                     $(".codeClassbluequont").val(data.Code);
-                    
+
                     $(".NameClassbluequont").text(data.Name);
                     $(".NameClassbluequont").val(data.Name);
-                    
+
                     $(".ClosingPriceClassbluequont").text(data.ClosingPrice);
                     $(".AvgVolumeClassbluequont").text(data.AverageVolumn);
 
@@ -640,4 +649,62 @@
             ]
         });
     }
+
+
+
+    function ConvertJsonDateString(dateString) {
+        var shortDate = null;
+        if (dateString) {
+            // var regex = /-?\d+/;
+            // var matches = regex.exec(jsonDate);
+            var dt = new Date(dateString);
+            var month = dt.getMonth() + 1;
+            var monthString = month > 9 ? month : '0' + month;
+            var day = dt.getDate();
+            var dayString = day > 9 ? day : '0' + day;
+            var year = dt.getFullYear();
+            shortDate = monthString + '/' + dayString + '/' + year;
+        }
+        return shortDate;
+    }
+
+
+    function OpenPopupWithTheQuote() {
+        // window.open('http://finance.yahoo.com/quote/QQQ?p=QQQ');
+        var element = $("ul#AllTables li.active>a").attr('id');
+        if (element != undefined || element != '') {
+
+            var idOfTextBox = element.split("_");
+            if (idOfTextBox.length > 1) {
+                var code = $('#' + idOfTextBox[1]).val();
+
+
+                if (code.trim() != '') {
+
+                    var x = screen.width / 2 - 700 / 2;
+                    var y = screen.height / 2 - 450 / 2;
+                    window.open('http://finance.yahoo.com/quote/' + code.trim() + '?p=' + code.trim(), 'sharegplus', "resizable=1,width=900,height=500,scrollbars=1,menubar=0,location=0");
+                }
+
+                else {
+                    alert('Please select a symbol first.');
+                    $('#' + idOfTextBox[1]).focus();
+                }
+
+            }
+
+        }
+
+
+
+        return false;
+
+    }
+
+
+
+
+
+
+
 </script>

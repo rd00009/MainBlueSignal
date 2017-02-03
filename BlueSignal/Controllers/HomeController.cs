@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using BlueSignal.Common;
 using BlueSignal.Models;
 using BluSignalHelpMethod;
+using Comman.DBAccess;
 using Newtonsoft.Json;
 
 
@@ -164,8 +165,14 @@ namespace BlueSignal.Controllers
                 if (dddd != null)
                 {
                     vm.SymbolNameData = Convert.ToString(dddd.Data);
+
+
+
+
                 }
 
+
+                vm.LastTradingDay = "02 Feb 2017";
 
                 using (WebClient client = new WebClient())
                 {
@@ -281,5 +288,56 @@ namespace BlueSignal.Controllers
             return Json(vm, JsonRequestBehavior.AllowGet);
 
         }
+
+
+
+        [HttpPost]
+        public ActionResult Contact(ContactViewModel model)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var db = new BluSignalsEntities();
+
+                    var conact = new ContactLog()
+                    {
+
+                        Name = model.Name,
+                        Email = model.Email,
+                        Message = model.Message,
+                        Subject = model.Subject,
+                        CreatedDate = DateTime.UtcNow
+
+                    };
+
+
+                    db.ContactLogs.Add(conact);
+                    db.SaveChanges();
+
+
+                    var model2 = new ContactViewModel();
+                    ModelState.Clear();
+                    model2.IsSuccess = 2;
+                    //model2.Name = string.Empty;
+                    //model2.Email = string.Empty;
+                    //model2.Message = string.Empty;
+                    //model2.Subject = string.Empty;
+
+                    return PartialView("_ContactLog", model2);
+                }
+                else
+                {
+                    model.IsSuccess = 1;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return PartialView("_ContactLog", model);
+        }
+
     }
 }

@@ -13,3 +13,13 @@ F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\bin\Debug\Com
 F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\obj\Debug\BluSignalHelpMethod.csprojResolveAssemblyReference.cache
 F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\obj\Debug\Comman.dll
 F:\Microfinance\Project\Blu_After_done_designing\TestCharts\Comman\obj\Debug\Comman.pdb
+F:\Microfinance\Project\BS\Comman\bin\Debug\Comman.dll.config
+F:\Microfinance\Project\BS\Comman\bin\Debug\Comman.dll
+F:\Microfinance\Project\BS\Comman\bin\Debug\Comman.pdb
+F:\Microfinance\Project\BS\Comman\bin\Debug\EntityFramework.dll
+F:\Microfinance\Project\BS\Comman\bin\Debug\EntityFramework.SqlServer.dll
+F:\Microfinance\Project\BS\Comman\bin\Debug\EntityFramework.xml
+F:\Microfinance\Project\BS\Comman\bin\Debug\EntityFramework.SqlServer.xml
+F:\Microfinance\Project\BS\Comman\obj\Debug\BluSignalHelpMethod.csprojResolveAssemblyReference.cache
+F:\Microfinance\Project\BS\Comman\obj\Debug\Comman.dll
+F:\Microfinance\Project\BS\Comman\obj\Debug\Comman.pdb

@@ -135,3 +135,9 @@ function bindDatatable(selector, data) {
         ]
     });
 }
+
+
+
+/******************************/
+
+
