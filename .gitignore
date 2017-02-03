@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/BlueSignal/obj/Debug
+/BlueSignal/bin
+/Comman/bin/Debug
+/Comman/obj/Debug
