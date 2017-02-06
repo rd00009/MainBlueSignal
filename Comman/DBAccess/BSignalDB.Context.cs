@@ -26,5 +26,6 @@ namespace Comman.DBAccess
         }
     
         public virtual DbSet<ContactLog> ContactLogs { get; set; }
+        public virtual DbSet<EmailTemplate> EmailTemplates { get; set; }
     }
 }

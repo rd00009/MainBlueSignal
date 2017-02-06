@@ -1,7 +1,7 @@
-﻿@{
+﻿@using BlueSignal.Models;
+@{
     ViewBag.Title = "Contact";
 }
-
 @*<h3>@ViewBag.Message</h3>*@
 <div class="contact">
     <h2>@ViewBag.Title</h2>
@@ -13,7 +13,6 @@
                 <p>USA 8-5 EST / Philippines 8-5 PHT / Est. Turnaround Time: 90 mins</p>
             </div>
         </div>
-
     </div>
     <div class="col-sm-6">
         <p>Opening a ticket or contacting us on Skype are the fastest and most efficient methods of support.</p>
@@ -39,41 +38,12 @@
             </li>
         </ul>
     </div>
-    <div class="col-sm-6">
-        <div class="ticket_form">
-            <h3>Open a Ticket</h3>
-            <div class="form-group row">
-                <div class="col-sm-6">
-                    <label>Name</label>
-                    <input type="text" class="form-control" />
-                </div>
-                <div class="col-sm-6">
-                    <label>Email</label>
-                    <input type="text" class="form-control" />
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-12">
-                    <label>Subject</label>
-                    <input type="text" class="form-control" />
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-12">
-                    <label>Message</label>
-                    <textarea class="form-control"></textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-12">
-                    <input type="button" class="btn btn-primary pull-right" value="Send Message" />
-                </div>
-            </div>
-        </div>
+    <div id="ContactLog_Container" class="col-sm-6">
+        <span>
+            @{Html.RenderPartial("~/Views/Home/_ContactLog.cshtml", new ContactViewModel() { IsSuccess = 0 });}
+        </span>
     </div>
-
 </div>
-
 <div class="company_info">
     <div class="col-sm-4">
         <h4><span>About BluSignals</span></h4>
@@ -94,7 +64,7 @@
         <h4><span>Find Us on Facebook</span></h4>
         <img src="~/images/fb_fans.png" />
     </div>
-    </div>
+</div>
 @*<address>
         One Microsoft Way<br />
         Redmond, WA 98052-6399<br />

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using BlueSignal.Common;
@@ -312,8 +313,21 @@ namespace BlueSignal.Controllers
                     };
 
 
+                    var emailTemp = db.EmailTemplates.Where(e => e.EmailType == 1).FirstOrDefault();
+
+                    var EB = new StringBuilder(emailTemp.EmailBody);
+
+                    EB.Replace("@Name", conact.Name);
+                    EB.Replace("@Email", conact.Email);
+                    EB.Replace("@Subject", conact.Subject);
+                    EB.Replace("@Query", conact.Message);
+                    MailHelper.SendMailMessage(CommonConfig.AdminEmailID, "", "", emailTemp.EmailSubject + "-" + conact.Subject, EB.ToString(), true);
+
                     db.ContactLogs.Add(conact);
                     db.SaveChanges();
+
+
+
 
 
                     var model2 = new ContactViewModel();
@@ -323,6 +337,10 @@ namespace BlueSignal.Controllers
                     //model2.Email = string.Empty;
                     //model2.Message = string.Empty;
                     //model2.Subject = string.Empty;
+
+
+
+
 
                     return PartialView("_ContactLog", model2);
                 }

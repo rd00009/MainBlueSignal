@@ -17,9 +17,9 @@ function OpenGWAModelPopup(modelTitle, Body) {
 }
 
 function CloseGWAModelPopup(id) {
-   
+
     $('#' + id).modal('hide');
-    
+
 }
 
 
@@ -53,17 +53,12 @@ function EnableElement(item) {
 
 /*****************/
 function AddContact() {
-
-    debugger
-
     var data = {
         'Name': $('#Name').val(),
         'Message': $('#Message').val(),
         'Subject': $('#Subject').val(),
         'Email': $('#Email').val()
     };
-
-
 
     $.ajax({
         type: "Post",
@@ -73,19 +68,13 @@ function AddContact() {
         data: data,
         success: function (data) {
             if (data != null) {
-
-
                 $('#ContactLog_Container').html('');
                 $('#ContactLog_Container').html(data);
-
-
-
-
             }
         },
         error: function (error) {
-            console.log(error);
-            alert('Error');
+            //console.log(error);
+            //alert('Error');
         }
     });
 }
