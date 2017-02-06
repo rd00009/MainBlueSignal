@@ -21,5 +21,22 @@
   </EntityType>
   <EntityContainer Name="BluSignalsEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="ContactLogs" EntityType="Self.ContactLog" />
+    <EntitySet Name="EmailTemplates" EntityType="BluSignalsModel.EmailTemplate" />
   </EntityContainer>
+  <EntityType Name="EmailTemplate">
+    <Key>
+      <PropertyRef Name="EmailTempelateID" />
+    </Key>
+    <Property Name="EmailTempelateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmailType" Type="Int32" />
+    <Property Name="EmailSubject" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EmailBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="DeletedBy" Type="Int32" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+  </EntityType>
 </Schema>

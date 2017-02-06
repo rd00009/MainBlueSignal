@@ -19,7 +19,24 @@
     <Property Name="DeletedBy" Type="bigint" />
     <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
+  <EntityType Name="EmailTemplate">
+    <Key>
+      <PropertyRef Name="EmailTempelateID" />
+    </Key>
+    <Property Name="EmailTempelateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmailType" Type="int" />
+    <Property Name="EmailSubject" Type="varchar" MaxLength="100" />
+    <Property Name="EmailBody" Type="ntext" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DeletedBy" Type="int" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
   <EntityContainer Name="BluSignalsModelStoreContainer">
     <EntitySet Name="ContactLog" EntityType="Self.ContactLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmailTemplate" EntityType="Self.EmailTemplate" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

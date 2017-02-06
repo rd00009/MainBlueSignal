@@ -22,13 +22,13 @@
                         <div class="row">
                             <label class="col-sm-3 symbol_text" for="code">Symbol:</label>
                             <div class="col-sm-6 search_symbol">
-                                <input type="text" id="code" name="code" placeholder="Type valid Symbol" title="Type direct valid Symbol" value="SPY" class="form-control codeValue">
-                                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <input type="text" id="code" name="code" placeholder="Type valid Symbol" data-toggle="tooltip" title="Type a Valid Symbol" value="SPY" class="form-control codeValue">
+                                <span><i class="fa fa-search" data-toggle="tooltip" title="Lookup Symbol" aria-hidden="true"></i></span>
                             </div>
                             <div class="col-sm-3">
                                 @*<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Choose Major Market">*@
                                 @*<i class="fa fa-window-maximize" title="Major Market" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i>*@
-                                <button type="button" id="btnLoad" class="btn btn-primary btn_style btn_whitegray" onclick="InitilizeMarketList()">Load</button>
+                                <button type="button" id="btnLoad" data-toggle="tooltip" title="Load Symbol" class="btn btn-primary btn_style btn_whitegray" onclick="InitilizeMarketList()">Load</button>
                             </div>
                             
                         </div>
@@ -244,7 +244,7 @@
 
                             <a data-toggle="collapse" href="#collapse1">
                                 <img src="../../images/blufractal_active.png" alt="" />
-                                <span class="blue_text">Blu</span>Fractal &nbsp; | &nbsp;  Near - Term
+                                <span class="blue_text">Blu</span>Fractal &nbsp; | &nbsp;  Near-Term
                             </a>
                         </h4>
                     </div>
@@ -288,7 +288,7 @@
                         <h4 class="panel-title">
                             <a data-toggle="collapse" href="#collapse2">
                                 <img src="../../images/blufractal_active.png" alt="" />
-                                <span class="blue_text">Blu</span>Fractal  &nbsp; | &nbsp;  Long - Term
+                                <span class="blue_text">Blu</span>Fractal  &nbsp; | &nbsp;  Long-Term
                             </a>
                         </h4>
                     </div>

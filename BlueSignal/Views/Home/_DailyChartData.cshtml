@@ -13,12 +13,12 @@
                         <div class="row">
                             <label class="col-sm-3 symbol_text" for="code">Symbol:</label>
                             <div class="col-sm-6 search_symbol">
-                                <input type="text" id="codeD" name="code" placeholder="Type valid Symbol" title="Type direct valid Symbol" value="SPY" class="form-control codeValue">
-                                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <input type="text" id="codeD" name="code" placeholder="Type valid Symbol" data-toggle="tooltip" title="Type a Valid Symbol" value="SPY" class="form-control codeValue">
+                                <span><i class="fa fa-search" data-toggle="tooltip" title="Lookup Symbol" aria-hidden="true"></i></span>
                             </div>
                             <div class="col-sm-3">
                                
-                                <button type="button" id="btnLoad" class="btn btn-primary btn_style btn_whitegray" onclick="InitilizeMarketListWithCode($('#codeD'))">Load</button>
+                                <button type="button" id="btnLoad" data-toggle="tooltip" title="Load Symbol" class="btn btn-primary btn_style btn_whitegray" onclick="InitilizeMarketListWithCode($('#codeD'))">Load</button>
                             </div>
                             
                         </div>
@@ -98,7 +98,7 @@ Sell Zone</div>
 
                                             <span class="icon"><img src="~/images/date_icon.jpg" /></span>
                                             <label class="date_text">Starting Date</label>
-                                            <label class="days_text">06 Jan,2017</label>
+                                            <label class="days_text">06 Jan, 2017</label>
 
                                         </div>
                                         <div class="info_row">
@@ -128,14 +128,14 @@ UP
 
                                             <span class="icon"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span>
                                             <label class="date_text">Last Up Pivot</label>
-                                            <label class="days_text">Dec 15</label>
+                                            <label class="days_text">15 Dec, 2017</label>
 
                                         </div>
                                         <div class="info_row">
 
                                             <span class="icon"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
                                             <label class="date_text">Last Down Pivot</label>
-                                            <label class="days_text">Dec 15</label>
+                                            <label class="days_text">15 Dec, 2017</label>
 
                                         </div>
                             

@@ -22,7 +22,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/common")
-   
+
 
 </head>
 <body>
@@ -34,7 +34,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>*@
-                <a href="http://www.blusignalsystems.com" target="_blank" class="navbar-brand"><img src="~/images/blu_logo.png" /></a>
+                <a href="http://www.blusignalsystems.com" data-toggle="tooltip" data-placement="bottom" title="BluSignals Website" target="_blank" class="navbar-brand"><img src="~/images/blu_logo.png" /></a>
                 @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
 
@@ -65,7 +65,7 @@
         </footer>
     </div>
 
-  
+
 
 
     @RenderSection("scripts", required: false)
@@ -89,6 +89,10 @@
     <script src="https://code.highcharts.com/stock/highstock.js"></script>
     <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
 
-
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 </html>
