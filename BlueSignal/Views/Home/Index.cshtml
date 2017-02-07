@@ -418,6 +418,10 @@
 
 
                     });
+
+
+                    
+                    $('.highcharts-scrollbar').hide();
                 } else { alert('Code is wrong'); }
                 CloseGWAModelPopup2('myModal');
 
@@ -469,30 +473,34 @@
                     //var yearlyData = $.parseJSON(data.MarketDataYearly);
                     //   bindDatatable('Id_MarketDataListYearly', yearlyData.results);
 
+
+
+                    var avgVol = CommaFormatted(parseFloat(data.AverageVolumn).toFixed(0));
+
                     $("#code").val(data.Code);
 
                     $(".codeValue").val(data.Code);
                     $("#Name").val(data.Name);
                     $("#ClosingPrice").val(data.ClosingPrice);
-                    $("#AvgVolume").val(data.AverageVolumn);
+                    $("#AvgVolume").val(avgVol);
 
 
                     $(".codeClass").text(data.Code);
                     $(".NameClass").text(data.Name);
                     $(".ClosingPriceClass").text(data.ClosingPrice);
-                    $(".AvgVolumeClass").text(data.AverageVolumn);
+                    $(".AvgVolumeClass").text(avgVol);
 
 
                     $(".codeClass").val(data.Code);
                     $(".NameClass").val(data.Name);
 
                     $(".ClosingPriceClass").val(data.ClosingPrice);
-                    $(".AvgVolumeClass").val(data.AverageVolumn);
+                    $(".AvgVolumeClass").val(avgVol);
 
                     $(".codeClassbluequont").text(data.Code);
                     $(".NameClassbluequont").text(data.Name);
                     $(".ClosingPriceClassbluequont").text(data.ClosingPrice);
-                    $(".AvgVolumeClassbluequont").text(data.AverageVolumn);
+                    $(".AvgVolumeClassbluequont").text(avgVol);
 
 
 
@@ -583,7 +591,8 @@
                     $(".NameClassbluequont").val(data.Name);
 
                     $(".ClosingPriceClassbluequont").text(data.ClosingPrice);
-                    $(".AvgVolumeClassbluequont").text(data.AverageVolumn);
+                    var avgVol = CommaFormatted(parseFloat(data.AverageVolumn).toFixed(0));
+                    $(".AvgVolumeClassbluequont").text(avgVol);
 
 
                     if (data.SymbolNameData != undefined && data.SymbolNameData != null && data.SymbolNameData != '') {
@@ -704,7 +713,30 @@
 
 
 
-
+    function CommaFormatted(amount) {        
+        var delimiter = ","; // replace comma if desired
+        amount = new String(amount);
+        var a = amount.split('.', 2)
+        var d = a[1];
+        var i = parseInt(a[0]);
+        if (isNaN(i)) { return ''; }
+        var minus = '';
+        if (i < 0) { minus = '-'; }
+        i = Math.abs(i);
+        var n = new String(i);
+        var a = [];
+        while (n.length > 3) {
+            var nn = n.substr(n.length - 3);
+            a.unshift(nn);
+            n = n.substr(0, n.length - 3);
+        }
+        if (n.length > 0) { a.unshift(n); }
+        n = a.join(delimiter);
+        //if (d.length < 1) { amount = n; }
+        //else { amount = n + '.' + d; }
+        //amount = minus + amount;
+        return n;
+    }
 
 
 </script>

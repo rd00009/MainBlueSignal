@@ -52,7 +52,13 @@ function EnableElement(item) {
 
 
 /*****************/
-function AddContact() {
+function AddContact(btn) {
+
+    if (btn != undefined)
+    {
+        btn.disabled = true;
+    }
+
     var data = {
         'Name': $('#Name').val(),
         'Message': $('#Message').val(),
@@ -70,10 +76,13 @@ function AddContact() {
             if (data != null) {
                 $('#ContactLog_Container').html('');
                 $('#ContactLog_Container').html(data);
+
+                btn.disabled = false;
             }
         },
         error: function (error) {
             //console.log(error);
+            btn.disabled = false;
             //alert('Error');
         }
     });
