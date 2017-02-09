@@ -460,20 +460,40 @@
             success: function (data) {
                 if (data != null) {
                     var dailyData = $.parseJSON(data.MarketDataDaily);
+                    $.each(dailyData.results, function (i, d) {
+                        d.volume = CommaFormatted(parseFloat(d.volume).toFixed(0));
+                    });
+
                     bindDatatable('Id_MarketDataListDaily', dailyData.results);
 
-                    var weeklyData = $.parseJSON(data.MarketDataWeekly);
-                    bindDatatable('Id_MarketDataListWeekly', weeklyData.results);
+                    /* $$$$$$$$$$$$--Commented for now, by AJ ---------$$$$$$$$$$$$$$$$$ */
 
-                    var monthlyData = $.parseJSON(data.MarketDataMonthly);
-                    bindDatatable('Id_MarketDataListMonthly', monthlyData.results);
+                    //var weeklyData = $.parseJSON(data.MarketDataWeekly);
+                    //$.each(weeklyData.results, function (i, d) {
+                    //    d.volume = CommaFormatted(parseFloat(d.volume).toFixed(0));
+                    //});
 
-                    var quarterlyData = $.parseJSON(data.MarketDataQuartely);
-                    bindDatatable('Id_MarketDataListQuarterly', quarterlyData.results);
+                    //bindDatatable('Id_MarketDataListWeekly', weeklyData.results);
 
-                    var yearlyData = $.parseJSON(data.MarketDataYearly);
-                    bindDatatable('Id_MarketDataListYearly', yearlyData.results);
+                    //var monthlyData = $.parseJSON(data.MarketDataMonthly);
+                    //$.each(monthlyData.results, function (i, d) {
+                    //    d.volume = CommaFormatted(parseFloat(d.volume).toFixed(0));
+                    //});
+                    //bindDatatable('Id_MarketDataListMonthly', monthlyData.results);
 
+                    //var quarterlyData = $.parseJSON(data.MarketDataQuartely);
+                    //$.each(quarterlyData.results, function (i, d) {
+                    //    d.volume = CommaFormatted(parseFloat(d.volume).toFixed(0));
+                    //});
+                    //bindDatatable('Id_MarketDataListQuarterly', quarterlyData.results);
+
+                    //var yearlyData = $.parseJSON(data.MarketDataYearly);
+                    //$.each(yearlyData.results, function (i, d) {
+                    //    d.volume = CommaFormatted(parseFloat(d.volume).toFixed(0));
+                    //});
+                    //bindDatatable('Id_MarketDataListYearly', yearlyData.results);
+
+                    /* $$$$$$$$$$$$--Commented for now, by AJ ---------$$$$$$$$$$$$$$$$$ */
 
 
                     var avgVol = CommaFormatted(parseFloat(data.AverageVolumn).toFixed(0));
