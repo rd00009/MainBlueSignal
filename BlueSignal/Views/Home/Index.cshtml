@@ -19,8 +19,8 @@
 
     <li class="pull-right help"><a href="@Url.Action("","Help")" data-toggle="tooltip" title="Help" target="_blank"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></li>
     <li class="pull-right"><a class="detail" data-toggle="tooltip" title="Detail" onclick="return OpenPopupWithTheQuote();"></a></li>
-    <li class="pull-right"><a class="data" data-toggle="tooltip" title="Data" href="#Data"></a></li>
-
+    <li class="pull-right">@*<a class="data" data-toggle="tooltip" title="Data" href="#Data"></a>*@</li>
+    <li class="pull-right"><a class="data MarketDataLists" data-toggle="tab" title="Data" href="#MarketDataLists"></a></li>
 
 </ul>
 
@@ -45,6 +45,10 @@
     <div id="Details" style="height:700px;" class="tab-pane fade">
         @*<h3>BluQuant</h3>*@
         @Html.Partial("_YahooFinanceApp")
+    </div>
+
+    <div id="MarketDataLists" style="height:700px;" class="tab-pane fade">
+        @Html.Partial("_MarketDataLists")
     </div>
     <div id="Data" class="tab-pane fade">
         <div class="tab_block">
@@ -420,7 +424,7 @@
                     });
 
 
-                    
+
                     $('.highcharts-scrollbar').hide();
                 } else { alert('Code is wrong'); }
                 CloseGWAModelPopup2('myModal');
@@ -455,23 +459,20 @@
             data: { 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
             success: function (data) {
                 if (data != null) {
+                    var dailyData = $.parseJSON(data.MarketDataDaily);
+                    bindDatatable('Id_MarketDataListDaily', dailyData.results);
 
+                    var weeklyData = $.parseJSON(data.MarketDataWeekly);
+                    bindDatatable('Id_MarketDataListWeekly', weeklyData.results);
 
+                    var monthlyData = $.parseJSON(data.MarketDataMonthly);
+                    bindDatatable('Id_MarketDataListMonthly', monthlyData.results);
 
-                    ///  var dailyData = $.parseJSON(data.MarketDataDaily);
-                    //    bindDatatable('Id_MarketDataList', dailyData.results);
+                    var quarterlyData = $.parseJSON(data.MarketDataQuartely);
+                    bindDatatable('Id_MarketDataListQuarterly', quarterlyData.results);
 
-                    //var weeklyData = $.parseJSON(data.MarketDataWeekly);
-                    //    bindDatatable('Id_MarketDataListWeekly', weeklyData.results);
-
-                    //var monthlyData = $.parseJSON(data.MarketDataMonthly);
-                    //   bindDatatable('Id_MarketDataListMonthly', monthlyData.results);
-
-                    //var quarterlyData = $.parseJSON(data.MarketDataQuartely);
-                    //  bindDatatable('Id_MarketDataListQuarterly', quarterlyData.results);
-
-                    //var yearlyData = $.parseJSON(data.MarketDataYearly);
-                    //   bindDatatable('Id_MarketDataListYearly', yearlyData.results);
+                    var yearlyData = $.parseJSON(data.MarketDataYearly);
+                    bindDatatable('Id_MarketDataListYearly', yearlyData.results);
 
 
 
@@ -713,7 +714,7 @@
 
 
 
-    function CommaFormatted(amount) {        
+    function CommaFormatted(amount) {
         var delimiter = ","; // replace comma if desired
         amount = new String(amount);
         var a = amount.split('.', 2)
