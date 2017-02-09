@@ -39,7 +39,7 @@ hr{border-color:#d1d1d1; }
 .navbar-brand{padding:0px 0px 0px 15px; height:auto;}
 
 .current_date{width:156px; height:40px; margin:5px auto 0; text-align:center; background:url(../images/date_bg.png) 0 0 no-repeat; color:#1e6eff; font-weight:bold; padding-top:9px; text-transform:uppercase;}
-.current_date span{float:left; margin:0 13px;}
+.current_date span{float:left; margin:0 15px 0 14px;}
 .current_date .date{margin:0 10px 0 19px; width:15px; text-align:center;}
 .current_date .year{margin:0 12px 0 7px;}
 
@@ -61,6 +61,9 @@ hr{border-color:#d1d1d1; }
 
 .profile a{padding:2px;}
 .profile a:hover{text-decoration:none; background:#d5e4fe;}
+
+.panel{border-radius:5px;}
+.panel-heading{border-top-left-radius:5px; border-top-right-radius:5px;}
 
 .terms{margin-bottom:5px;}
 .terms .panel{margin-bottom:5px;}
@@ -102,8 +105,8 @@ hr{border-color:#d1d1d1; }
     text-align: left;
     width: 100%;}
 .trend_signal .panel-heading img{margin-top:2px;}
-.trend_signal th{border-radius:4px 0 0 0;}
-.trend_signal th+th{border-radius:0 4px 0 0;}
+.trend_signal th{border-radius:5px 0 0 0;}
+.trend_signal th+th{border-radius:0 5px 0 0;}
 .trend_signal td{padding:2px 10px !important;}
 
 .todays_signal .panel-heading{background:#1f6df7; color:#fff; padding:8px 10px;}
@@ -228,7 +231,8 @@ hr{border-color:#d1d1d1; }
 .nav-tabs > li.help i{font-size:22px;}
 .nav-tabs > li.help a{padding-left:15px; color:#1e6eff;}
 
-.table-bordered > thead > tr > th{background:#1f6df7; color:#fff;}
+.table > thead > tr > th{background:#1f6df7; color:#fff;}
+.table > tbody > tr > td{border:1px solid #ddd; border-collapse:collapse;}
 
 .panel-heading a:after {
     font-family:'Glyphicons Halflings';
@@ -254,7 +258,7 @@ hr{border-color:#d1d1d1; }
   background: -moz-linear-gradient(#fff, #ababab); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#fff, #ababab); /* Standard syntax */
 }
-.btn_whitegray:hover{background:#003ec8; color:#fff;}
+.btn_whitegray:hover, .btn_whitegray:focus{background:#003ec8; color:#fff;}
 
 .sub_info {background:#ecf0f1; float:left; width:100%; border-radius:5px; margin-top:13px; padding:15px 10px; padding-bottom:0;}
 .sub_info span{margin-right:6px;}
