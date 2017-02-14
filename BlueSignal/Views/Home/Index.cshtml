@@ -471,8 +471,6 @@
 
                     bindDatatable('Id_MarketDataListDaily', dailyData.results);
 
-                    bindDatatable2("MarketData1", data.MarketLists);
-
                     /* $$$$$$$$$$$$--Commented for now, by AJ ---------$$$$$$$$$$$$$$$$$ */
 
                     //var weeklyData = $.parseJSON(data.MarketDataWeekly);
@@ -687,54 +685,6 @@
         });
     }
 
-    function bindDatatable2(selector, data) {
-        if ($.fn.dataTable.isDataTable('#' + selector)) {
-            $('#' + selector).DataTable().destroy();
-        }
-
-        //editor = new $.fn.dataTable.Editor({
-        //    table: "#" + selector,
-        //    fields: [{
-        //        label: "Symbol Name:",
-        //        name: "symbol"
-        //    }, {
-        //        label: "Trading Day:",
-        //        name: "tradingDay"
-        //    }
-        //    ]
-        //});
-
-        var table = $('#' + selector).DataTable({
-            aaData: data,
-            "columns": [
-                     {
-                         "data": null, render: function (data, type, row) {
-                             return "";
-                         }
-                     },
-                     { "data": "SymbolName", "name": "Name" },
-                     { "data": "SymbolCode", "name": "symbol" },
-                     {
-                         "data": null, "name": "Options", render: function (data, type, row) {
-                             return "<div>" +
-                                 "<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-edit' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-remove-circle' href='#'></a> " +
-                             "</div>";
-                         }
-                     }
-            ]
-            , select: true
-            //    ,
-            //    buttons: [
-            //{ extend: "create", editor: editor },
-            //{ extend: "edit", editor: editor },
-            //{ extend: "remove", editor: editor }
-            //    ]
-        });
-    }
-
-
 
     function ConvertJsonDateString(dateString) {
         var shortDate = null;
@@ -812,6 +762,5 @@
         //amount = minus + amount;
         return n;
     }
-
 
 </script>

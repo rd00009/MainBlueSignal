@@ -300,6 +300,7 @@
     <Content Include="fonts\gruppo-regular-webfont.woff2" />
     <None Include="Properties\PublishProfiles\test.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\ClearForm.js" />
     <Content Include="Scripts\Common\CommonEnums.js" />
     <Content Include="Scripts\Common\Customer\CustomerDetailJs.js" />
     <Content Include="Scripts\Common\GWACommon.js" />

@@ -34,7 +34,7 @@ namespace BlueSignalCore.Bal
             }
         }
 
-        public int SaveMarketData(MarketDataDto vm)
+        public async Task<int> SaveMarketData(MarketDataDto vm)
         {
             var result = -1;
             using (var rep = uw.MarketDataRepository)
@@ -63,7 +63,45 @@ namespace BlueSignalCore.Bal
                 else
                     result = Convert.ToInt32(rep.Create(model));
             }
-            return result;
+            return await Task.FromResult(result);
+        }
+
+        public async Task<IEnumerable<MarketDataDto>> GetMarketData(string productTypeId)
+        {
+            try
+            {
+                var list = new List<MarketDataDto>();
+                using (var rep = uw.MarketDataRepository)
+                {
+                    var m = rep.Where(a => a.IsActive && a.ProductTypeID.Equals(productTypeId)).ToList();
+                    if (m.Any())
+                        list.AddRange(m.Select(a => Mapper.Map<MarketDataDto>(a)));
+                }
+                return await Task.FromResult(list);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public async Task<MarketDataDto> GetMarketDataById(long id)
+        {
+            try
+            {
+                var vm = new MarketDataDto();
+                using (var rep = uw.MarketDataRepository)
+                {
+                    var m = rep.Where(a => a.Id == id).FirstOrDefault();
+                    if (m != null)
+                        vm = Mapper.Map<MarketDataDto>(m);
+                }
+                return await Task.FromResult(vm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

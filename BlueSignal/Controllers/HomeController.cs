@@ -10,7 +10,7 @@ using BlueSignal.Models;
 using BluSignalHelpMethod;
 using Comman.DBAccess;
 using Newtonsoft.Json;
-
+using BlueSignalCore.Dto;
 
 namespace BlueSignal.Controllers
 {
@@ -143,12 +143,8 @@ namespace BlueSignal.Controllers
 
         public async Task<JsonResult> GetAllMarketData(string startDate, string Type, string selectedCode)
         {
-
             startDate = BluSignalComman.DateTime9MonthBack;
-
-
             MarketDataViewModel vm = new MarketDataViewModel();
-
 
             //var types = new[] { "daily", "weekly", "monthly", "quarterly", "yearly" };
             var result = string.Empty;
@@ -279,9 +275,6 @@ namespace BlueSignal.Controllers
                         TradingDayTimeStamp = Convert.ToDateTime(item.tradingDay).ToString("yyyyMMddHHmmssfff"),
                     }));
                     vm.ChartData = ChartData;
-
-
-                    vm.MarketLists = await MarketBal.GetMarketData();
                 }
             }
             catch (WebException ex) //if server is off it will throw exeception and here we need notify user
@@ -293,7 +286,75 @@ namespace BlueSignal.Controllers
 
         }
 
+        public async Task<JsonResult> GetMarketDataById(long id)
+        {
+            JsonResult json = null;
+            try
+            {
+                var vm = await MarketBal.GetMarketDataById(id);
+                json = new JsonResult
+                {
+                    Data = vm,
+                    JsonRequestBehavior = JsonRequestBehavior.AllowGet
+                };
+            }
+            catch (WebException ex) //if server is off it will throw exeception and here we need notify user
+            {
+                throw ex;
+            }
 
+            return json;
+
+        }
+
+        public async Task<JsonResult> GetMarketSetupData()
+        {
+            JsonResult json = null;
+            try
+            {
+                var list = await MarketBal.GetMarketData();
+                json = new JsonResult
+                {
+                    Data = new
+                    {
+                        blueFractal = list.Where(a => a.ProductTypeID.Equals("101")),
+                        blueQuant = list.Where(a => a.ProductTypeID.Equals("103")),
+                        livePortfolio = list,
+                        Last10CompletedTrades = list.Where(a => a.ExitDate.HasValue).OrderBy(n => n.ExitDate).Take(10)
+                    },
+                    JsonRequestBehavior = JsonRequestBehavior.AllowGet
+                };
+
+            }
+            catch (WebException ex) //if server is off it will throw exeception and here we need notify user
+            {
+                throw ex;
+            }
+
+            return json;
+
+        }
+
+        public async Task<JsonResult> GetMarketSetDataByType(string typeId)
+        {
+            JsonResult json = null;
+            try
+            {
+                var list = await MarketBal.GetMarketData(typeId);
+                json = new JsonResult
+                {
+                    Data = list,
+                    JsonRequestBehavior = JsonRequestBehavior.AllowGet
+                };
+            }
+            catch (WebException ex) //if server is off it will throw exeception and here we need notify user
+            {
+                throw ex;
+            }
+
+            return json;
+
+        }
 
         [HttpPost]
         public ActionResult Contact(ContactViewModel model)
@@ -360,5 +421,36 @@ namespace BlueSignal.Controllers
             return PartialView("_ContactLog", model);
         }
 
+
+        public async Task<JsonResult> SaveMarketData(MarketDataDto vm)
+        {
+            if (vm.Id > 0)
+            {
+                vm.ModifiedBy = 1;
+                vm.ModifiedDate = DateTime.Now;
+            }
+            else
+            {
+                vm.CreatedBy = 1;
+                vm.CreatedDate = DateTime.Now;
+            }
+
+            var result = await MarketBal.SaveMarketData(vm);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<JsonResult> DeleteMarketData(long id)
+        {
+            var current = await MarketBal.GetMarketDataById(id);
+            if (current != null)
+            {
+                current.IsActive = false;
+                current.ModifiedBy = 1;
+                current.ModifiedDate = DateTime.Now;
+                var result = await MarketBal.SaveMarketData(current);
+                return Json(result, JsonRequestBehavior.AllowGet);
+            }
+            return Json('0', JsonRequestBehavior.AllowGet);
+        }
     }
 }
