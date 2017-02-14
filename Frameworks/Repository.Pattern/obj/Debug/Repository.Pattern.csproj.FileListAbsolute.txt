@@ -1,0 +1,15 @@
+C:\AJ\Work\Projects\hoomanansari - Canada\Code\olddd\beyourmarket-master\src\Frameworks\Repository.Pattern\bin\Debug\Repository.Pattern.dll.config
+C:\AJ\Work\Projects\hoomanansari - Canada\Code\olddd\beyourmarket-master\src\Frameworks\Repository.Pattern\bin\Debug\Repository.Pattern.dll
+C:\AJ\Work\Projects\hoomanansari - Canada\Code\olddd\beyourmarket-master\src\Frameworks\Repository.Pattern\bin\Debug\Repository.Pattern.pdb
+C:\AJ\Work\Projects\hoomanansari - Canada\Code\olddd\beyourmarket-master\src\Frameworks\Repository.Pattern\obj\Debug\Repository.Pattern.dll
+C:\AJ\Work\Projects\hoomanansari - Canada\Code\olddd\beyourmarket-master\src\Frameworks\Repository.Pattern\obj\Debug\Repository.Pattern.pdb
+D:\Projects\P\hoomanansari - Canada\code\beyourmarket-master\src\Frameworks\Repository.Pattern\bin\Debug\Repository.Pattern.dll.config
+D:\Projects\P\hoomanansari - Canada\code\beyourmarket-master\src\Frameworks\Repository.Pattern\bin\Debug\Repository.Pattern.dll
+D:\Projects\P\hoomanansari - Canada\code\beyourmarket-master\src\Frameworks\Repository.Pattern\bin\Debug\Repository.Pattern.pdb
+D:\Projects\P\hoomanansari - Canada\code\beyourmarket-master\src\Frameworks\Repository.Pattern\obj\Debug\Repository.Pattern.dll
+D:\Projects\P\hoomanansari - Canada\code\beyourmarket-master\src\Frameworks\Repository.Pattern\obj\Debug\Repository.Pattern.pdb
+D:\Projects\P\hoomanansari - Canada\NewCode\src\Frameworks\Repository.Pattern\bin\Debug\Repository.Pattern.dll.config
+D:\Projects\P\hoomanansari - Canada\NewCode\src\Frameworks\Repository.Pattern\bin\Debug\Repository.Pattern.dll
+D:\Projects\P\hoomanansari - Canada\NewCode\src\Frameworks\Repository.Pattern\bin\Debug\Repository.Pattern.pdb
+D:\Projects\P\hoomanansari - Canada\NewCode\src\Frameworks\Repository.Pattern\obj\Debug\Repository.Pattern.dll
+D:\Projects\P\hoomanansari - Canada\NewCode\src\Frameworks\Repository.Pattern\obj\Debug\Repository.Pattern.pdb

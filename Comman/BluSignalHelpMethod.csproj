@@ -75,6 +75,9 @@
     <Compile Include="DBAccess\EmailTemplate.cs">
       <DependentUpon>BSignalDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="DBAccess\MarketData.cs">
+      <DependentUpon>BSignalDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="MailHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebClientHelp.cs" />

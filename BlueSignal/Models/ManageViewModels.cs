@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
+using BlueSignalCore.Dto;
 
 namespace BlueSignal.Models
 {
@@ -104,6 +105,8 @@ namespace BlueSignal.Models
         public List<ChartDataModel> ChartData { get; set; }
 
         public string LastTradingDay { get; set; }
+
+        public IEnumerable<MarketDataDto> MarketLists { get; set; }
     }
 
     public class Data

@@ -14,13 +14,13 @@ using Newtonsoft.Json;
 
 namespace BlueSignal.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public string apiKey = BluSignalComman.APIkey;
         WebClientHelp webClientHelp = new WebClientHelp();
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View();
+            return await Task.FromResult(View());
         }
 
         public ActionResult About()
@@ -279,6 +279,9 @@ namespace BlueSignal.Controllers
                         TradingDayTimeStamp = Convert.ToDateTime(item.tradingDay).ToString("yyyyMMddHHmmssfff"),
                     }));
                     vm.ChartData = ChartData;
+
+
+                    vm.MarketLists = await MarketBal.GetMarketData();
                 }
             }
             catch (WebException ex) //if server is off it will throw exeception and here we need notify user

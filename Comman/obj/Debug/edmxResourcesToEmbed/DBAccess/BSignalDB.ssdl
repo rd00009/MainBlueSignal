@@ -35,8 +35,29 @@
     <Property Name="DeletedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
+  <EntityType Name="MarketData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductTypeID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SymbolName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SymbolCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="QuantTradingType" Type="nvarchar" MaxLength="20" />
+    <Property Name="Price" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="EntryPrice" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="EntryDate" Type="datetime" />
+    <Property Name="ExitDate" Type="datetime" />
+    <Property Name="Result" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="int" />
+  </EntityType>
   <EntityContainer Name="BluSignalsModelStoreContainer">
     <EntitySet Name="ContactLog" EntityType="Self.ContactLog" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="EmailTemplate" EntityType="Self.EmailTemplate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MarketData" EntityType="Self.MarketData" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

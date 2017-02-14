@@ -1,0 +1,5 @@
+D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalEntity\bin\Debug\BlueSignalEntity.dll
+D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalEntity\bin\Debug\BlueSignalEntity.pdb
+D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalEntity\obj\Debug\BlueSignalEntity.dll
+D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalEntity\obj\Debug\BlueSignalEntity.pdb
+D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalEntity\obj\Debug\BlueSignalEntity.csprojResolveAssemblyReference.cache
