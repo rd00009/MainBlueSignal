@@ -143,12 +143,8 @@ namespace BlueSignal.Controllers
 
         public async Task<JsonResult> GetAllMarketData(string startDate, string Type, string selectedCode)
         {
-
             startDate = BluSignalComman.DateTime9MonthBack;
-
-
             MarketDataViewModel vm = new MarketDataViewModel();
-
 
             //var types = new[] { "daily", "weekly", "monthly", "quarterly", "yearly" };
             var result = string.Empty;
@@ -279,9 +275,6 @@ namespace BlueSignal.Controllers
                         TradingDayTimeStamp = Convert.ToDateTime(item.tradingDay).ToString("yyyyMMddHHmmssfff"),
                     }));
                     vm.ChartData = ChartData;
-
-
-                    vm.MarketLists = await MarketBal.GetMarketData();
                 }
             }
             catch (WebException ex) //if server is off it will throw exeception and here we need notify user
@@ -294,6 +287,55 @@ namespace BlueSignal.Controllers
         }
 
 
+
+        public async Task<JsonResult> GetMarketSetupData()
+        {
+            JsonResult json = null;
+            try
+            {
+                var list = await MarketBal.GetMarketData();
+                json = new JsonResult
+                {
+                    Data = new
+                    {
+                        blueFractal = list.Where(a => a.ProductTypeID.Equals("101")),
+                        blueQuant = list.Where(a => a.ProductTypeID.Equals("103")),
+                        livePortfolio = list,
+                        Last10CompletedTrades = list.OrderBy(n => n.ExitDate)
+                    },
+                    JsonRequestBehavior = JsonRequestBehavior.AllowGet
+                };
+
+            }
+            catch (WebException ex) //if server is off it will throw exeception and here we need notify user
+            {
+                throw ex;
+            }
+
+            return json;
+
+        }
+
+        public async Task<JsonResult> GetMarketSetDataByType(string typeId)
+        {
+            JsonResult json = null;
+            try
+            {
+                var list = await MarketBal.GetMarketData(typeId);
+                json = new JsonResult
+                {
+                    Data = list,
+                    JsonRequestBehavior = JsonRequestBehavior.AllowGet
+                };
+            }
+            catch (WebException ex) //if server is off it will throw exeception and here we need notify user
+            {
+                throw ex;
+            }
+
+            return json;
+
+        }
 
         [HttpPost]
         public ActionResult Contact(ContactViewModel model)

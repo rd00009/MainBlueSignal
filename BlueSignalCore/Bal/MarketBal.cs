@@ -65,5 +65,24 @@ namespace BlueSignalCore.Bal
             }
             return result;
         }
+
+        public async Task<IEnumerable<MarketDataDto>> GetMarketData(string productTypeId)
+        {
+            try
+            {
+                var list = new List<MarketDataDto>();
+                using (var rep = uw.MarketDataRepository)
+                {
+                    var m = rep.Where(a => a.IsActive && a.ProductTypeID.Equals(productTypeId)).ToList();
+                    if (m.Any())
+                        list.AddRange(m.Select(a => Mapper.Map<MarketDataDto>(a)));
+                }
+                return await Task.FromResult(list);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
