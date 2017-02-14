@@ -5,12 +5,14 @@
         <div class="panel-group accordion">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class="panel-title"> <a data-toggle="collapse" href="#collapseDaily">Market Data - Daily</a> </h4>
+                    <h4 class="panel-title"> <a data-toggle="collapse" href="#collapseDaily">Preload List</a> </h4>
                 </div>
                 <div>
                     <label><input type="radio" onchange="ToggleRadioButtons('#rdBlueFractal', '.radioMarketDataType')" class="radioMarketDataType" checked="checked" value="BlueFractal" id="rdBlueFractal" /> BlueFractal</label>
                     &nbsp;
                     <label><input type="radio" onchange="ToggleRadioButtons('#rdBlueNeural', '.radioMarketDataType')" class="radioMarketDataType" value="BlueNeural" id="rdBlueNeural" /> BlueNeural</label>
+
+                    <input type="button" id="BtnMD1" onclick="ShowHideFields(this);" class="btn btn-primary" custom='SymbolName1,SymbolCode1' data-toggle="modal" data-target="#myModal" value="Add New">
                 </div>
                 <div id="collapseMD1" class="panel-collapse collapse in">
                     <div class="panel-body">
@@ -37,10 +39,9 @@
             </div>
         </div>
     </div>
-    <input type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Open">
+
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -48,94 +49,133 @@
                     <h4 class="modal-title">Select Market</h4>
                 </div>
                 <div class="modal-body">
+                    <input type="hidden" id="hfId" value="0" />
                     @*<div class="alert alert-info">
                             <strong>Note:</strong> If your symbol is not preset, please type it directly into the textbox
                         </div>*@
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 userfield" id="SymbolName1">
                             <div class="form-group">
                                 <label>Name</label>
-                                <input type="text" class="form-control" />
+                                <input type="text" id="Name" class="form-control" />
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 userfield" id="SymbolCode1">
                             <div class="form-group">
                                 <label>Symbol</label>
-                                <input type="text" class="form-control" />
+                                <input type="text" id="Symbol" class="form-control" />
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 userfield" id="TradeAction1">
                             <div class="form-group">
                                 <label>Action</label>
-                                <select class="form-control">
+                                <select id="TradeAction" class="form-control">
                                     <option>Buy</option>
                                     <option>Sell</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 userfield" id="Price1">
                             <div class="form-group">
                                 <label>Price</label>
-                                <input type="text" class="form-control" />
+                                <input id="Price" type="text" class="form-control" />
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 userfield" id="EntryDate1">
                             <div class="form-group">
                                 <label>Entry Date</label>
-                                <input type="text" class="form-control" />
+                                <input id="EntryDate" type="text" class="form-control datepicker" />
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 userfield" id="ExitDate1">
                             <div class="form-group">
                                 <label>Exit Date</label>
-                                <input type="text" class="form-control" />
+                                <input id="ExitDate" type="text" class="form-control datepicker" />
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 userfield" id="EntryPrice1">
                             <div class="form-group">
                                 <label>Entry Price</label>
-                                <input type="text" class="form-control" />
+                                <input id="EntryPrice" type="text" class="form-control" />
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 userfield" id="Result1">
                             <div class="form-group">
                                 <label>Result</label>
-                                <input type="text" class="form-control" />
+                                <input id="Result" type="text" class="form-control" />
                             </div>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <input type="button" class="btn btn-primary" value="Save" />
-                    </div>
-                
+                    <input type="button" id="BtnSave" class="btn btn-primary" value="Save" />
+                    <input type="button" id="BtnCancel" class="btn btn-primary" value="Cancel" />
+                </div>
             </div>
-
         </div>
     </div>
+
+    <div class="col-sm-12">
+        <div class="panel-group accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"> <a data-toggle="collapse" href="#collapseDaily">BluQuant Manual Trade</a> </h4>
+                </div>
+                <div>
+                    <input type="button" id="BtnMD2" onclick="ShowHideFields(this);" class="btn btn-primary" custom='SymbolName1,SymbolCode1,TradeAction1,Price1' data-toggle="modal" data-target="#myModal" value="Add New">
+                </div>
+                <div id="collapseblueQuant" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div style="height:200px; overflow:auto;">
+                                    <div class="table-responsive table_style">
+                                        <table id="blueQuant" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr. No.</th>
+                                                    <th>Name</th>
+                                                    <th>Symbol</th>
+                                                    <th>Trading Type</th>
+                                                    <th>Price</th>
+
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     @*<div class="col-sm-12">
             <div class="panel-group accordion">
                 <div class="panel panel-default">
-                    <div id="collapse7" class="panel-collapse collapse in">
+        <div class="panel-heading">
+                    <h4 class="panel-title"> <a data-toggle="collapse" href="#collapseDaily">Live Portfolio</a> </h4>
+                </div>
+                <div>
+                    <input type="button" id="BtnMD3" onclick="ShowHideFields(this);" class="btn btn-primary" custom='SymbolName,SymbolCode' data-toggle="modal" data-target="#myModal" value="Add New">
+                </div>
+                    <div id="collapseLivePortfolio" class="panel-collapse collapse in">
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div style="height:200px; overflow:auto;">
                                         <div class="table-responsive table_style">
-                                            <table id="Id_MarketDataListWeekly" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                                            <table id="livePortfolio" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                                 <thead>
                                                     <tr>
                                                         <th>Symbol</th>
-                                                        <th>TimeStamp</th>
-                                                        <th>Trading Day</th>
-                                                        <th>Open</th>
-
-                                                        <th>High</th>
-                                                        <th>Low</th>
-                                                        <th>Close</th>
-                                                        <th>Volume</th>
-                                                        <th>Open Interest</th>
+                                                        <th>Name</th>
+                                                        <th>Entry Date</th>
+                                                        <th>Entry Price</th>
+                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                             </table>
@@ -152,25 +192,27 @@
         <div class="col-sm-12">
             <div class="panel-group accordion">
                 <div class="panel panel-default">
-                    <div id="collapse6" class="panel-collapse collapse in">
+            <div class="panel-heading">
+                    <h4 class="panel-title"> <a data-toggle="collapse" href="#collapseDaily">Last 10 Completed Trades</a> </h4>
+                </div>
+                <div>
+                    <input type="button" id="BtnMD3" onclick="ShowHideFields(this);" class="btn btn-primary" custom='SymbolName,SymbolCode' data-toggle="modal" data-target="#myModal" value="Add New">
+                </div>
+                    <div id="collapseLast10CompletedTrades" class="panel-collapse collapse in">
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div style="height:200px; overflow:auto;">
                                         <div class="table-responsive table_style">
-                                            <table id="Id_MarketDataListMonthly" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                                            <table id="last10CompletedTrades" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                                 <thead>
                                                     <tr>
                                                         <th>Symbol</th>
-                                                        <th>TimeStamp</th>
-                                                        <th>Trading Day</th>
-                                                        <th>Open</th>
-
-                                                        <th>High</th>
-                                                        <th>Low</th>
-                                                        <th>Close</th>
-                                                        <th>Volume</th>
-                                                        <th>Open Interest</th>
+                                                        <th>Name</th>
+                                                        <th>Entry Date</th>
+                                                        <th>Exit Date</th>
+                                                        <th>Result</th>
+                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                             </table>
@@ -182,144 +224,21 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-sm-12">
-            <div class="panel-group accordion">
-                <div class="panel panel-default">
-                    <div id="collapse6" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div style="height:200px; overflow:auto;">
-                                        <div class="table-responsive table_style">
-                                            <table id="Id_MarketDataListQuarterly" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Symbol</th>
-                                                        <th>TimeStamp</th>
-                                                        <th>Trading Day</th>
-                                                        <th>Open</th>
-
-                                                        <th>High</th>
-                                                        <th>Low</th>
-                                                        <th>Close</th>
-                                                        <th>Volume</th>
-                                                        <th>Open Interest</th>
-                                                    </tr>
-                                                </thead>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@<div class="col-sm-12">
-        <div class="panel-group accordion">
-            <div class="panel panel-default">
-                <div id="collapse7" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div style="height:200px; overflow:auto;">
-                                    <div class="table-responsive table_style">
-                                        <table id="Id_MarketDataListWeekly" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-12">
-        <div class="panel-group accordion">
-            <div class="panel panel-default">
-                <div id="collapse6" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div style="height:200px; overflow:auto;">
-                                    <div class="table-responsive table_style">
-                                        <table id="Id_MarketDataListMonthly" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-12">
-        <div class="panel-group accordion">
-            <div class="panel panel-default">
-                <div id="collapse6" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div style="height:200px; overflow:auto;">
-                                    <div class="table-responsive table_style">
-                                        <table id="Id_MarketDataListQuarterly" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </div>*@
 </div>
 <script>
     $(function () {
         GetMarketSetupData();
+
+        //$('#myModal').modal('toggle');
+
+        $("#BtnCancel").click(function () {
+            ResetModalPopup();
+        });
+
+        $("#BtnSave").click(function () {
+            SaveData();
+        });
     });
 
     function GetMarketSetupData() {
@@ -332,6 +251,9 @@
             success: function (data) {
                 if (data != null) {
                     BindDataTable1("MarketData1", data.blueFractal);
+                    BindBlueQuantDataTable("blueQuant", data.blueQuant);
+                    //BindLivePortfolioDataTable("livePortfolio", data.livePortfolio);
+                    //BindLast10CompletedTradesDataTable("last10CompletedTrades", data.Last10CompletedTrades);
                 }
             },
             error: function (error) {
@@ -381,8 +303,8 @@
                      {
                          "data": null, "name": "Options", render: function (data, type, row) {
                              return "<div>" +
-                                 "<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-edit' href='#'></a> " +
+                                 //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-edit' custom='SymbolName1,SymbolCode1' onclick='GetSingle('" + data.ID + "', this)' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-remove-circle' href='#'></a> " +
                              "</div>";
                          }
@@ -401,7 +323,7 @@
         });
     }
 
-    function BindDataTable2(selector, data) {
+    function BindBlueQuantDataTable(selector, data) {
         if ($.fn.dataTable.isDataTable('#' + selector)) {
             $('#' + selector).DataTable().destroy();
         }
@@ -416,11 +338,13 @@
                      },
                      { "data": "SymbolName", "name": "Name" },
                      { "data": "SymbolCode", "name": "symbol" },
+                     { "data": "QuantTradingType", "name": "action" },
+                     { "data": "Price", "name": "Price" },
                      {
                          "data": null, "name": "Options", render: function (data, type, row) {
                              return "<div>" +
-                                 "<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-edit' href='#'></a> " +
+                                 //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-edit' custom='SymbolName1,SymbolCode1,TradeAction1,Price1' onclick='GetSingle('" + data.ID + "', this)' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-remove-circle' href='#'></a> " +
                              "</div>";
                          }
@@ -436,6 +360,156 @@
                 }
             },
 
+        });
+    }
+
+    function BindLivePortfolioDataTable(selector, data) {
+        if ($.fn.dataTable.isDataTable('#' + selector)) {
+            $('#' + selector).DataTable().destroy();
+        }
+
+        var table = $('#' + selector).DataTable({
+            aaData: data,
+            "columns": [
+                     {
+                         "data": null, render: function (data, type, row) {
+                             return "";
+                         }
+                     },
+                     { "data": "SymbolCode", "name": "Symbol" },
+                     { "data": "SymbolName", "name": "Name" },
+                     { "data": "EntryDate", "name": "EntryDate" },
+                     { "data": "EntryPrice", "name": "EntryPrice" },
+                     {
+                         "data": null, "name": "Options", render: function (data, type, row) {
+                             return "<div>" +
+                                 //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-edit' custom='SymbolCode,SymbolName,EntryDate,EntryPrice' onclick='GetSingle('" + data.ID + "', this)' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-remove-circle' href='#'></a> " +
+                             "</div>";
+                         }
+                     }
+            ]
+
+        });
+    }
+
+    function BindLast10CompletedTradesDataTable(selector, data) {
+        if ($.fn.dataTable.isDataTable('#' + selector)) {
+            $('#' + selector).DataTable().destroy();
+        }
+
+        var table = $('#' + selector).DataTable({
+            aaData: data,
+            "columns": [
+                     { "data": "SymbolName", "name": "Name" },
+                     { "data": "SymbolCode", "name": "symbol" },
+                     { "data": "EntryDate", "name": "EntryDate" },
+                     { "data": "ExitDate", "name": "ExitDate" },
+                     { "data": "Result", "name": "Result" },
+                     {
+                         "data": null, "name": "Options", render: function (data, type, row) {
+                             return "<div>" +
+                                 //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-edit' custom='SymbolCode,SymbolName,EntryDate,EntryPrice' onclick='GetSingle('" + data.ID + "', this)' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-remove-circle' href='#'></a> " +
+                             "</div>";
+                         }
+                     }
+            ]
+        });
+    }
+
+
+    function ShowHideFields(sender) {
+        debugger;
+        $(".userfield").hide();
+        var values = $(sender).attr('custom');
+        valArray = values.split(',');
+        if (valArray.length > 0) {
+            $.each(valArray, function (i, obj) {
+                $("#" + obj).show();
+            });
+        }
+
+        //$('#myModal').modal('show');
+    }
+
+    function GetSingle(selected, sender) {
+        if (selected > 0) {
+            $.ajax({
+                type: "GET",
+                url: "/Home/GetMarketDataById",
+                dataType: "json",
+                async: true,
+                data: { "id": selected },//{ 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
+                success: function (data) {
+                    if (data != null) {
+                        BindDetailsInEdit(data);
+                        ShowHideFields(sender);
+                    }
+                },
+                error: function (error) {
+                    console.log(error);
+                    alert('Error');
+                }
+            });
+        }
+        else {
+            $('#myModal').modal('show');
+        }
+    }
+
+    function BindDetailsInEdit(data) {
+        $('#myModal').modal('show');
+        $("#Name").val(data.SymbolName);
+        $("#Symbol").val(data.SymbolName);
+        $("#TradeAction").val(data.SymbolName);
+        $("#Price").val(data.SymbolName);
+        $("#EntryDate").val(data.SymbolName);
+        $("#ExitDate").val(data.SymbolName);
+        $("#EntryPrice").val(data.SymbolName);
+        $("#Result").val(data.SymbolName);
+        $("#hfId").val(data.ID);
+        $("#BtnSave").val('Update');
+    }
+
+    function ResetModalPopup() {
+        //$('#myModal').clearForm(true);
+        $("#BtnSave").val('Save');
+        $('#myModal').modal('hide');
+    }
+
+    function SaveData() {
+        var jsonData = {
+            'Id': $("#hfId").val(),
+            'ProductTypeID': $("#hfId").val(),
+            'SymbolName': $("#hfId").val(),
+            'SymbolCode': $("#hfId").val(),
+            'QuantTradingType': $("#hfId").val(),
+            'Price': $("#hfId").val(),
+            'EntryPrice': $("#hfId").val(),
+            'EntryDate': $("#hfId").val(),
+            'ExitDate': $("#hfId").val(),
+            'Result': $("#hfId").val()
+        };
+
+        $.ajax({
+            type: "GET",
+            url: "/Home/SaveMarketData",
+            dataType: "json",
+            async: true,
+            data: jsonData,//{ 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
+            success: function (data) {
+                if (data != null) {
+                    alert('Data saved successfully');
+                    ResetModalPopup();
+                }
+            },
+            error: function (error) {
+                console.log(error);
+                alert('Error');
+            }
         });
     }
 </script>
