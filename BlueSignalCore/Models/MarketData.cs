@@ -26,4 +26,29 @@ namespace BlueSignalCore.Models
 
         public string Result { get; set; }
     }
+
+
+
+
+    public class WP_User
+    {
+
+        public string ID { get; set; }
+        public string user_login { get; set; }
+        public string user_password { get; set; }
+        public string user_nicename { get; set; }
+        public string user_email { get; set; }
+        public string user_registered { get; set; }
+        public string display_name { get; set; }
+        public WP_UserBundle user_bundle { get; set; }
+    }
+
+
+    public enum WP_UserBundle
+    {
+        BluFractal = 0,
+        BluNeural = 1,
+        BluQuant = 2,
+        BluCombo = 3,
+    }
 }

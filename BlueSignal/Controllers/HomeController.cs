@@ -7,29 +7,59 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using BlueSignal.Common;
 using BlueSignal.Models;
+using BlueSignalCore.Bal;
+using BlueSignalCore.Dto;
+using BlueSignalCore.Models;
 using BluSignalHelpMethod;
 using Comman.DBAccess;
 using Newtonsoft.Json;
-using BlueSignalCore.Dto;
 
 namespace BlueSignal.Controllers
 {
+
+
+
     public class HomeController : BaseController
     {
         public string apiKey = BluSignalComman.APIkey;
         WebClientHelp webClientHelp = new WebClientHelp();
+        [LogonAuthorize]
         public async Task<ActionResult> Index()
         {
             return await Task.FromResult(View());
         }
 
+
+        [AllowAnonymous]
+        public async Task<ActionResult> Auth()
+        {
+            var userName = Request.QueryString["E"];
+            var Password = Request.QueryString["P"];
+            using (var bal = new MarketBal())
+            {
+                var user = bal.GetWpUser(userName, Password);
+                if (user != null)
+                {
+                    SystemLogin(user);
+
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    SystemLogout();
+                    //Redirect To Unknown payment page
+                }
+            }
+            return await Task.FromResult(View());
+        }
+        [LogonAuthorize]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
-
+        [LogonAuthorize]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
@@ -37,14 +67,14 @@ namespace BlueSignal.Controllers
             return View();
         }
 
-
+        [LogonAuthorize]
         public ActionResult GoogleFinance()
         {
             ViewBag.Message = "Google Finance";
             return View();
         }
 
-
+        [LogonAuthorize]
         public ActionResult MarketData()
         {
             return View();
@@ -451,6 +481,27 @@ namespace BlueSignal.Controllers
                 return Json(result, JsonRequestBehavior.AllowGet);
             }
             return Json('0', JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult authFailed()
+        {
+            return View();
+        }
+
+
+
+        private void SystemLogin(WP_User user)
+        {
+            if (Session["SystemUser"] != null)
+            {
+                Session.Remove("SystemUser");
+            }
+            Session.Add("SystemUser", user);
+        }
+
+        private void SystemLogout()
+        {
+            Session.Remove("SystemUser");
         }
     }
 }
