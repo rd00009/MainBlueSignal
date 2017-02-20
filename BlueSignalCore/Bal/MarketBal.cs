@@ -1,10 +1,14 @@
-﻿using AutoMapper;
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
+using AutoMapper;
 using BlueSignalCore.Dto;
 using BlueSignalCore.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace BlueSignalCore.Bal
 {
@@ -102,6 +106,89 @@ namespace BlueSignalCore.Bal
             {
                 throw ex;
             }
+        }
+
+
+
+
+        public WP_User GetWpUser(string un, string pwd)
+        {
+
+
+            var user = new WP_User();
+
+            MySqlConnection myConnection = new MySqlConnection(
+                 ConfigurationManager.AppSettings["Wb_ConnectionString"]);
+            string strSQL = "SELECT * FROM wp_g3b4k2u7_users where user_login='" + un + "' and user_pass='" + pwd + "'";
+            MySqlDataAdapter myDataAdapter = new MySqlDataAdapter(strSQL, myConnection);
+            DataSet myDataSet = new DataSet();
+            myDataAdapter.Fill(myDataSet, "my_users");
+
+
+            if (myDataSet != null && myDataSet.Tables.Count > 0 && myDataSet.Tables[0].Rows.Count > 0)
+            {
+                //var objInList = myDataSet.Tables[0].ToList<WP_User>();
+                var objInList = myDataSet.Tables[0].Rows[0];
+                user.ID = Convert.ToString(objInList["ID"]).Trim();
+                user.user_login = Convert.ToString(objInList["user_login"]).Trim();
+                user.user_password = Convert.ToString(objInList["user_pass"]).Trim();
+                user.user_nicename = Convert.ToString(objInList["user_nicename"]).Trim();
+                user.user_email = Convert.ToString(objInList["user_email"]).Trim();
+                user.user_registered = Convert.ToString(objInList["user_registered"]).Trim();
+                user.display_name = Convert.ToString(objInList["display_name"]).Trim();
+                if (user != null && user.ID != "0" && user.ID != "")
+                {
+                    return user;
+                }
+
+            }
+
+
+            return new WP_User();
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+    public static class Extensions
+    {
+        public static List<T> ToList<T>(this DataTable table) where T : new()
+        {
+            IList<PropertyInfo> properties = typeof(T).GetProperties().ToList();
+            List<T> result = new List<T>();
+
+            foreach (var row in table.Rows)
+            {
+                var item = CreateItemFromRow<T>((DataRow)row, properties);
+                result.Add(item);
+            }
+
+            return result;
+        }
+
+        private static T CreateItemFromRow<T>(DataRow row, IList<PropertyInfo> properties) where T : new()
+        {
+            T item = new T();
+            foreach (var property in properties)
+            {
+                if (property.PropertyType == typeof(System.DayOfWeek))
+                {
+                    DayOfWeek day = (DayOfWeek)Enum.Parse(typeof(DayOfWeek), row[property.Name].ToString());
+                    property.SetValue(item, day, null);
+                }
+                else
+                {
+                    property.SetValue(item, row[property.Name], null);
+                }
+            }
+            return item;
         }
     }
 }
