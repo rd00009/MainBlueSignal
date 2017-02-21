@@ -1,5 +1,5 @@
 ﻿
-
+@using BlueSignal.Controllers;
 
 <script type="text/javascript">
     function callYahooFinance() {
@@ -21,16 +21,46 @@
                     <div class="col-sm-8">
                         <div class="row">
                             <label class="col-sm-3 symbol_text" for="code">Symbol:</label>
-                            <div class="col-sm-6 search_symbol">
-                                <input type="text" id="code" name="code" placeholder="Type valid Symbol" data-toggle="tooltip" title="Type a Valid Symbol" value="SPY" class="form-control codeValue">
-                                <span><i class="fa fa-search" data-toggle="tooltip" title="Lookup Symbol" aria-hidden="true"></i></span>
-                            </div>
-                            <div class="col-sm-3">
-                                @*<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Choose Major Market">*@
-                                @*<i class="fa fa-window-maximize" title="Major Market" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i>*@
-                                <button type="button" id="btnLoad" data-toggle="tooltip" title="Load Symbol" class="btn btn-primary btn_style btn_whitegray" onclick="InitilizeMarketList()">Load</button>
-                            </div>
-                            
+
+
+                            @if (HttpContextSessionWrapperExtension.SessionUser.IsBluFactrol)
+                            {
+                                <div class="col-sm-6 search_symbol">
+                                    <input type="text" id="code" name="code" placeholder="Type valid Symbol" data-toggle="tooltip" title="Type a Valid Symbol" value="SPY" class="form-control codeValue">
+                                    <span><i class="fa fa-search" data-toggle="tooltip" title="Lookup Symbol" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="col-sm-3">
+                                    @*<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Choose Major Market">*@
+                                    @*<i class="fa fa-window-maximize" title="Major Market" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i>*@
+                                    <button type="button" id="btnLoad" data-toggle="tooltip" title="Load Symbol" class="btn btn-primary btn_style btn_whitegray" onclick="InitilizeMarketList()">Load</button>
+                                </div>
+
+                            }
+                            else
+                            {
+                                <div class="col-sm-6 search_symbol">
+                                    <input type="text" id="code" readonly name="code" placeholder="Type valid Symbol" data-toggle="tooltip" title="Type a Valid Symbol" value="SPY" class="form-control codeValue">
+                                    <span><i class="fa fa-search" data-toggle="tooltip" title="Lookup Symbol" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="col-sm-3">
+                                    @*<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Choose Major Market">*@
+                                    @*<i class="fa fa-window-maximize" title="Major Market" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i>*@
+                                    <button type="button" id="btnLoad" disabled="disabled" data-toggle="tooltip" title="Load Symbol" class="btn btn-primary btn_style btn_whitegray" onclick="InitilizeMarketList()">Load</button>
+                                </div>
+
+
+                            }
+
+
+
+
+
+
+
+
+
+
+
                         </div>
                     </div>
                     <div class="col-sm-3" style="display:none;">
@@ -55,7 +85,13 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <button type="button" class="btn btn-primary btn_style pull-right btn_whitegray" data-toggle="modal" data-target="#myModal" title="Choose Major Market" @*onclick="callYahooFinance()"*@>Major Markets</button>
+
+                        @if (HttpContextSessionWrapperExtension.SessionUser.IsBluFactrol)
+                        {
+                            <button type="button" class="btn btn-primary btn_style pull-right btn_whitegray" data-toggle="modal" data-target="#myModal" title="Choose Major Market" @*onclick="callYahooFinance()"*@>Major Markets</button>
+                        }
+                        else
+                        { <button type="button" disabled="disabled" class="btn btn-primary btn_style pull-right btn_whitegray" data-toggle="modal" data-target="#myModal" title="Choose Major Market" @*onclick="callYahooFinance()"*@>Major Markets</button> }
                     </div>
                 </div>
                 <div class="sub_info">
@@ -373,10 +409,3 @@
     </div>
 
 </div>
-
-
-
-
-
-
-

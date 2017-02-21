@@ -10,6 +10,7 @@ D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\bin\Debug\EntityFram
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\bin\Debug\Mono.Reflection.dll
+D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\bin\Debug\MySql.Data.dll
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\bin\Debug\BlueSignalCommon.pdb
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\bin\Debug\AutoMapper.xml
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\bin\Debug\AutoMapper.EF6.xml

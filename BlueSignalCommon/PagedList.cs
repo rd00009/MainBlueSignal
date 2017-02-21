@@ -631,5 +631,10 @@ namespace BlueSignalCommon
         {
             return searchTerms.All(searchTerm => str.ToLower().Contains(searchTerm.ToLower()));
         }
+
+        public static string GetShortDateString(this DateTime? obj)
+        {
+            return obj.HasValue ? obj.Value.ToString("d") : string.Empty;
+        }
     }
 }
