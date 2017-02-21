@@ -5,5 +5,12 @@
 /.vs
 /BlueSignal/obj/Debug
 /BlueSignal/bin
+/BlueSignalCommon/bin/Debug
+/BlueSignalCommon/obj/Debug
 /Comman/bin/Debug
 /Comman/obj/Debug
+/BlueSignalCore/obj/Debug
+/BlueSignalCore/bin
+/BlueSignalCore/bin/Debug
+/BlueSignalHelpMethod/obj/Debug
+/BlueSignalHelpMethod/bin
