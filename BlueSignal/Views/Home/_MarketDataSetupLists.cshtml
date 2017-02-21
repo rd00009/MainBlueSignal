@@ -82,7 +82,7 @@
                         <div class="col-sm-6 userfield" id="Price1">
                             <div class="form-group">
                                 <label>Price</label>
-                                <input id="Price" type="text" class="form-control" />
+                                <div class="currency_sign"><span>$</span><input id="Price" type="text" class="form-control" /></div>
                             </div>
                         </div>
                         <div class="col-sm-6 userfield" id="EntryDate1">
@@ -100,7 +100,7 @@
                         <div class="col-sm-6 userfield" id="EntryPrice1">
                             <div class="form-group">
                                 <label>Entry Price</label>
-                                <input id="EntryPrice" type="text" class="form-control" />
+                                <div class="currency_sign"><span>$</span><input id="EntryPrice" type="text" class="form-control" /></div>
                             </div>
                         </div>
                         <div class="col-sm-6 userfield" id="Result1">
@@ -334,7 +334,7 @@
                              return "<div>" +
                                  //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-edit' custom='SymbolName1,SymbolCode1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-remove-circle' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-remove-circle' href='#' onclick='RemoveData(" + data.Id + ", this)'></a>" +
                              "</div>";
                          }
                      }
@@ -369,13 +369,17 @@
                      { "data": "SymbolName", "name": "Name" },
                      { "data": "SymbolCode", "name": "symbol" },
                      { "data": "QuantTradingType", "name": "action" },
-                     { "data": "Price", "name": "Price" },
+                     {
+                         "data": null, "name": "Price", render: function (data, type, row) {
+                             return "<span> $" + data.Price + " USD</span>";
+                         }
+                     },
                      {
                          "data": null, "name": "Options", render: function (data, type, row) {
                              return "<div>" +
                                  //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-edit' custom='SymbolName1,SymbolCode1,TradeAction1,Price1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-remove-circle' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-remove-circle' href='#' onclick='RemoveData(" + data.Id + ", this)'></a>" +
                              "</div>";
                          }
                      }
@@ -405,13 +409,17 @@
                      { "data": "SymbolCode", "name": "symbol" },
                      { "data": "SymbolName", "name": "Name" },
                      { "data": "StrEntryDate", "name": "EntryDate" },
-                     { "data": "EntryPrice", "name": "EntryPrice" },
+                     {
+                         "data": null, "name": "EntryPrice", render: function (data, type, row) {
+                             return "<span> $" + data.EntryPrice + " USD</span>";
+                         }
+                     },
                      {
                          "data": null, "name": "Options", render: function (data, type, row) {
                              return "<div>" +
                                  //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-edit' custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-remove-circle' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-remove-circle' href='#' onclick='RemoveData(" + data.Id + ", this)'></a>" +
                              "</div>";
                          }
                      }
@@ -441,7 +449,7 @@
                              return "<div>" +
                                  //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-edit' custom='SymbolCode1,SymbolName1,EntryDate1,EntryPrice1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-remove-circle' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-remove-circle' href='#' onclick='RemoveData(" + data.Id + ", this)'></a>" +
                              "</div>";
                          }
                      }
@@ -534,11 +542,12 @@
             url: "/Home/SaveMarketData",
             dataType: "json",
             async: true,
-            data: jsonData,//{ 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
+            data: jsonData,
             success: function (data) {
-                if (data != null) {
-                    alert('Data saved successfully');
+                if (data) {
+                    var productTypeId = $("#hdProductTypeId").val();
                     ResetModalPopup();
+                    RebindGrid(productTypeId, data);
                 }
             },
             error: function (error) {
@@ -559,6 +568,25 @@
             });
         }
         //$('#mySetupModal').modal('show');
+    }
+
+    function RemoveData(selected, sender) {
+        $.ajax({
+            type: "GET",
+            url: "/Home/DeleteMarketData",
+            dataType: "json",
+            async: true,
+            data: { "id": selected },
+            success: function (data) {
+                if (data) {
+                    RebindGrid(data.productTypeId, data.list);
+                }
+            },
+            error: function (error) {
+                console.log(error);
+                alert('Error');
+            }
+        });
     }
 
 
@@ -595,6 +623,24 @@
         else {
             if ($(ddlSelector).length > 0)
                 $(ddlSelector)[0].selectedIndex = 0;
+        }
+    }
+
+
+    function RebindGrid(productTypeId, data) {
+        switch (productTypeId) {
+            case "103":
+                BindBlueQuantDataTable("blueQuant", data);
+                break;
+            case "104":
+                BindLivePortfolioDataTable("livePortfolio", data);
+                break;
+            case "105":
+                BindLast10CompletedTradesDataTable("last10CompletedTrades", data);
+                break;
+            default:
+                BindDataTable1("MarketData1", data);
+                break;
         }
     }
 </script>

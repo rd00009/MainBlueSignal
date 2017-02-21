@@ -390,3 +390,7 @@ hr{border-color:#d1d1d1; }
 .checkbox-inline, .radio-inline{padding-left:0; padding-right:20px;}
 .checkbox-inline input[type="checkbox"], .radio-inline  input[type="radio"]{float:left; margin-right:5px; position:static; margin-left:0;}
 
+.currency_sign{position:relative;}
+.currency_sign span{position:absolute; top:7px; left:12px; font-weight:bold;}
+.currency_sign .form-control{padding:6px 12px 6px 25px;}
+

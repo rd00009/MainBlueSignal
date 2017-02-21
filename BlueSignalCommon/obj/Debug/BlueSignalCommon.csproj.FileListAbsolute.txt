@@ -7,3 +7,4 @@ D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCommon\bin\Debug\BlueSign
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCommon\bin\Debug\BlueSignalCommon.pdb
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCommon\obj\Debug\BlueSignalCommon.dll
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCommon\obj\Debug\BlueSignalCommon.pdb
+D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCommon\obj\Debug\BlueSignalCommon.csprojResolveAssemblyReference.cache

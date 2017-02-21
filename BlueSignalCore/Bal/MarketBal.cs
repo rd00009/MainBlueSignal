@@ -156,6 +156,25 @@ namespace BlueSignalCore.Bal
             return new WP_User();
         }
 
+        public async Task<int> DeleteMarketData(long id)
+        {
+            var result = -1;
+            try
+            {
+                using (var rep = uw.MarketDataRepository)
+                {
+                    var current = rep.GetSingle(id);
+                    current.IsActive = false;
+                    rep.UpdateEntity(current, current.Id);
+                    result = Convert.ToInt32(current.ProductTypeID);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return await Task.FromResult(result);
+        }
 
         public async Task<IEnumerable<SelectItem>> GetActiveMarketCategories()
         {

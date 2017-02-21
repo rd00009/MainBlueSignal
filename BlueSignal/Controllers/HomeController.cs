@@ -538,23 +538,29 @@ namespace BlueSignal.Controllers
             }
 
             var result = await MarketBal.SaveMarketData(vm);
-            return Json(result, JsonRequestBehavior.AllowGet);
+            if (result >= 0)
+            {
+                var jsonResult = await GetMarketSetDataByType(vm.ProductTypeID);
+                jsonResult.MaxJsonLength = int.MaxValue;
+                jsonResult.JsonRequestBehavior = JsonRequestBehavior.AllowGet;
+                return jsonResult;
+            }
+            return Json(new List<MarketDataDto>(), JsonRequestBehavior.AllowGet);
         }
 
         public async Task<JsonResult> DeleteMarketData(long id)
         {
-            var current = await MarketBal.GetMarketDataById(id);
-            if (current != null)
+            var result = await MarketBal.DeleteMarketData(id);
+            if (result >= 0)
             {
-                current.IsActive = false;
-                current.ModifiedBy = 1;
-                current.ModifiedDate = DateTime.Now;
-                var result = await MarketBal.SaveMarketData(current);
-                return Json(result, JsonRequestBehavior.AllowGet);
+                var jsonResult = await GetMarketSetDataByType(Convert.ToString(result));
+                jsonResult.Data = new { list = jsonResult.Data, productTypeId = result };
+                jsonResult.MaxJsonLength = int.MaxValue;
+                jsonResult.JsonRequestBehavior = JsonRequestBehavior.AllowGet;
+                return jsonResult;
             }
-            return Json('0', JsonRequestBehavior.AllowGet);
+            return Json(new List<MarketDataDto>(), JsonRequestBehavior.AllowGet);
         }
-
         #endregion
     }
 }
