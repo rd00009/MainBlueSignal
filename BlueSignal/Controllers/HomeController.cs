@@ -52,6 +52,8 @@ namespace BlueSignal.Controllers
             }
             return await Task.FromResult(View());
         }
+
+
         [LogonAuthorize]
         public ActionResult About()
         {
@@ -316,6 +318,102 @@ namespace BlueSignal.Controllers
 
         }
 
+        
+
+        [HttpPost]
+        public ActionResult Contact(ContactViewModel model)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var db = new BluSignalsEntities();
+
+                    var conact = new ContactLog()
+                    {
+
+                        Name = model.Name,
+                        Email = model.Email,
+                        Message = model.Message,
+                        Subject = model.Subject,
+                        CreatedDate = DateTime.UtcNow
+
+                    };
+
+
+                    var emailTemp = db.EmailTemplates.Where(e => e.EmailType == 1).FirstOrDefault();
+
+                    var EB = new StringBuilder(emailTemp.EmailBody);
+
+                    EB.Replace("@Name", conact.Name);
+                    EB.Replace("@Email", conact.Email);
+                    EB.Replace("@Subject", conact.Subject);
+                    EB.Replace("@Query", conact.Message);
+                    MailHelper.SendMailMessage(CommonConfig.AdminEmailID, "", "", emailTemp.EmailSubject + "-" + conact.Subject, EB.ToString(), true);
+
+                    db.ContactLogs.Add(conact);
+                    db.SaveChanges();
+
+
+
+
+
+                    var model2 = new ContactViewModel();
+                    ModelState.Clear();
+                    model2.IsSuccess = 2;
+                    //model2.Name = string.Empty;
+                    //model2.Email = string.Empty;
+                    //model2.Message = string.Empty;
+                    //model2.Subject = string.Empty;
+
+
+
+
+
+                    return PartialView("_ContactLog", model2);
+                }
+                else
+                {
+                    model.IsSuccess = 1;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return PartialView("_ContactLog", model);
+        }
+
+
+        
+
+        public ActionResult authFailed()
+        {
+            return View();
+        }
+
+
+
+        private void SystemLogin(WP_User user)
+        {
+            if (Session["SystemUser"] != null)
+            {
+                Session.Remove("SystemUser");
+            }
+            Session.Add("SystemUser", user);
+        }
+
+        private void SystemLogout()
+        {
+            Session.Remove("SystemUser");
+        }
+
+
+
+
+        #region Market Data Admin Setup Actions
+
         public async Task<JsonResult> GetMarketDataById(long id)
         {
             JsonResult json = null;
@@ -386,72 +484,6 @@ namespace BlueSignal.Controllers
 
         }
 
-        [HttpPost]
-        public ActionResult Contact(ContactViewModel model)
-        {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    var db = new BluSignalsEntities();
-
-                    var conact = new ContactLog()
-                    {
-
-                        Name = model.Name,
-                        Email = model.Email,
-                        Message = model.Message,
-                        Subject = model.Subject,
-                        CreatedDate = DateTime.UtcNow
-
-                    };
-
-
-                    var emailTemp = db.EmailTemplates.Where(e => e.EmailType == 1).FirstOrDefault();
-
-                    var EB = new StringBuilder(emailTemp.EmailBody);
-
-                    EB.Replace("@Name", conact.Name);
-                    EB.Replace("@Email", conact.Email);
-                    EB.Replace("@Subject", conact.Subject);
-                    EB.Replace("@Query", conact.Message);
-                    MailHelper.SendMailMessage(CommonConfig.AdminEmailID, "", "", emailTemp.EmailSubject + "-" + conact.Subject, EB.ToString(), true);
-
-                    db.ContactLogs.Add(conact);
-                    db.SaveChanges();
-
-
-
-
-
-                    var model2 = new ContactViewModel();
-                    ModelState.Clear();
-                    model2.IsSuccess = 2;
-                    //model2.Name = string.Empty;
-                    //model2.Email = string.Empty;
-                    //model2.Message = string.Empty;
-                    //model2.Subject = string.Empty;
-
-
-
-
-
-                    return PartialView("_ContactLog", model2);
-                }
-                else
-                {
-                    model.IsSuccess = 1;
-                }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            return PartialView("_ContactLog", model);
-        }
-
-
         public async Task<JsonResult> SaveMarketData(MarketDataDto vm)
         {
             if (vm.Id > 0)
@@ -483,25 +515,6 @@ namespace BlueSignal.Controllers
             return Json('0', JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult authFailed()
-        {
-            return View();
-        }
-
-
-
-        private void SystemLogin(WP_User user)
-        {
-            if (Session["SystemUser"] != null)
-            {
-                Session.Remove("SystemUser");
-            }
-            Session.Add("SystemUser", user);
-        }
-
-        private void SystemLogout()
-        {
-            Session.Remove("SystemUser");
-        }
+        #endregion
     }
 }

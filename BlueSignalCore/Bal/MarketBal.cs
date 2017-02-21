@@ -9,6 +9,8 @@ using AutoMapper;
 using BlueSignalCore.Dto;
 using BlueSignalCore.Models;
 using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
+
 
 namespace BlueSignalCore.Bal
 {
@@ -16,7 +18,11 @@ namespace BlueSignalCore.Bal
     {
         public MarketBal()
         {
-            Mapper.Initialize(cfg => cfg.CreateMap<MarketData, MarketDataDto>());
+            Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<MarketData, MarketDataDto>();
+                cfg.CreateMap<MarketDataDto, MarketData>();
+            });
         }
 
         public async Task<IEnumerable<MarketDataDto>> GetMarketData()
@@ -109,16 +115,13 @@ namespace BlueSignalCore.Bal
         }
 
 
-
-
         public WP_User GetWpUser(string un, string pwd)
         {
 
 
             var user = new WP_User();
 
-            MySqlConnection myConnection = new MySqlConnection(
-                 ConfigurationManager.AppSettings["Wb_ConnectionString"]);
+            MySqlConnection myConnection = new MySqlConnection(System.Configuration.ConfigurationSettings.AppSettings["Wb_ConnectionString"]);
             string strSQL = "SELECT * FROM wp_g3b4k2u7_users where user_login='" + un + "' and user_pass='" + pwd + "'";
             MySqlDataAdapter myDataAdapter = new MySqlDataAdapter(strSQL, myConnection);
             DataSet myDataSet = new DataSet();
@@ -146,15 +149,6 @@ namespace BlueSignalCore.Bal
 
             return new WP_User();
         }
-
-
-
-
-
-
-
-
-
     }
 
     public static class Extensions

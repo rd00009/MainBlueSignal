@@ -30,5 +30,10 @@ namespace BlueSignal.Common
             }
         }
 
+
+        public static string GetShortDateString(this DateTime? obj)
+        {
+            return obj.HasValue ? obj.Value.ToString("d") : string.Empty;
+        }
     }
 }
