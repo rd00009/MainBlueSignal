@@ -199,12 +199,16 @@ hr{border-color:#d1d1d1; }
 
 .nav-tabs > li > a.detail{height:41px; display:block; padding-left:25px; cursor:pointer;}
 .nav-tabs > li > a.data{height:41px; display:block; padding-left:25px;}
+.nav-tabs > li > a.setting{line-height:20px; display:block; padding-left:15px; color:#1f6df7; font-size:17px;}
 
 .nav-tabs > li > a.blufractal{background:#eee url(../images/blufractal_active.png) 10px 11px no-repeat; background-size:19px !important;}
 .nav-tabs > li > a.bluneural{background:#eee url(../images/bluneural_active.png) 10px 11px no-repeat;}
 .nav-tabs > li > a.bluquant{background:#eee url(../images/bluquant_active.png) 10px 11px no-repeat; background-size:19px !important;}
 .nav-tabs > li > a.detail{background:#eee url(../images/detail_active.png) 10px 9px no-repeat;}
 .nav-tabs > li > a.data{background:#eee url(../images/data_active.png) 10px 11px no-repeat;}
+
+
+
 .nav-tabs > li > a.BluFractal_BluNeural{background:#eee; padding-left:15px; padding-bottom:6px; padding-top:9px; line-height:25px;}
 .nav-tabs > li > a.BluFractal_BluNeural .bf_icon{background:#eee url(../images/blufractal_active.png) -0px 0px no-repeat; width:20px; height:20px; display:inline-block; float:left; background-size:19px !important;}
 .nav-tabs > li > a.BluFractal_BluNeural .bn_icon{background:#eee url(../images/bluneural_active.png) 0px 0px no-repeat;  width:20px; height:20px; display:inline-block; float:left;}
@@ -221,6 +225,7 @@ hr{border-color:#d1d1d1; }
 .nav-tabs > li > a.BluFractal_BluNeural:hover .bf_icon{background:#fff url(../images/blufractal_active.png) 0px 0px no-repeat; }
 .nav-tabs > li > a.BluFractal_BluNeural:hover .bn_icon{background:#fff url(../images/bluneural_active.png) 0px 0px no-repeat; }
 .nav-tabs > li > a.BluFractal_BluNeural:hover .combo_txt{color:#1f6df7;}
+
 
 .nav-tabs > li.active > a.blufractal{background:#fff url(../images/blufractal_active.png) 10px 10px no-repeat;}
 .nav-tabs > li.active > a.bluneural{background:#fff url(../images/bluneural_active.png) 10px 11px no-repeat;}
@@ -381,4 +386,7 @@ hr{border-color:#d1d1d1; }
 .company_info .blog_list i{float:left; margin:5px 5px 10px 0; color:#9e9fa0;}
 
 .alert-dismissable .close, .alert-dismissible .close{right:0px;}
+
+.checkbox-inline, .radio-inline{padding-left:0; padding-right:20px;}
+.checkbox-inline input[type="checkbox"], .radio-inline  input[type="radio"]{float:left; margin-right:5px; position:static; margin-left:0;}
 
