@@ -29,5 +29,6 @@ namespace Comman.DBAccess
         public int CreatedBy { get; set; }
         public Nullable<System.DateTime> ModifiedDate { get; set; }
         public Nullable<int> ModifiedBy { get; set; }
+        public Nullable<long> CategoryId { get; set; }
     }
 }

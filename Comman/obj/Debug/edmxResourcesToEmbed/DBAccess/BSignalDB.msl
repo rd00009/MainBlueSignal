@@ -41,6 +41,7 @@
     <EntitySetMapping Name="MarketData">
       <EntityTypeMapping TypeName="BluSignalsModel.MarketData">
         <MappingFragment StoreEntitySet="MarketData">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
           <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
@@ -55,6 +56,25 @@
           <ScalarProperty Name="SymbolCode" ColumnName="SymbolCode" />
           <ScalarProperty Name="SymbolName" ColumnName="SymbolName" />
           <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductType">
+      <EntityTypeMapping TypeName="BluSignalsModel.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MarketCategory">
+      <EntityTypeMapping TypeName="BluSignalsModel.MarketCategory">
+        <MappingFragment StoreEntitySet="MarketCategory">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>

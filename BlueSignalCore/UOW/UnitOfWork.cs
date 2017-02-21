@@ -77,6 +77,20 @@ namespace BlueSignalCore.UOW
                 return _MarketDataRepository;
             }
         }
+
+
+        private MarketCategoryRepository _MarketCategoryRepository;
+        public MarketCategoryRepository MarketCategoryRepository
+        {
+            get
+            {
+                if (_MarketCategoryRepository == null)
+                    _MarketCategoryRepository = new MarketCategoryRepository();
+                return _MarketCategoryRepository;
+            }
+        }
+
+
         #endregion
     }
 }

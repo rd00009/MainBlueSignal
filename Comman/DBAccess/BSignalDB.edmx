@@ -40,6 +40,14 @@
           <Property Name="DeletedBy" Type="int" />
           <Property Name="DeletedDate" Type="datetime" />
         </EntityType>
+        <EntityType Name="MarketCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
         <EntityType Name="MarketData">
           <Key>
             <PropertyRef Name="Id" />
@@ -59,11 +67,23 @@
           <Property Name="CreatedBy" Type="int" Nullable="false" />
           <Property Name="ModifiedDate" Type="datetime" />
           <Property Name="ModifiedBy" Type="int" />
+          <Property Name="CategoryId" Type="bigint" />
+        </EntityType>
+        <EntityType Name="ProductType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
         </EntityType>
         <EntityContainer Name="BluSignalsModelStoreContainer">
           <EntitySet Name="ContactLog" EntityType="Self.ContactLog" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="EmailTemplate" EntityType="Self.EmailTemplate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MarketCategory" EntityType="Self.MarketCategory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MarketData" EntityType="Self.MarketData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProductType" EntityType="Self.ProductType" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -92,6 +112,8 @@
           <EntitySet Name="ContactLogs" EntityType="Self.ContactLog" />
           <EntitySet Name="EmailTemplates" EntityType="BluSignalsModel.EmailTemplate" />
           <EntitySet Name="MarketData" EntityType="BluSignalsModel.MarketData" />
+          <EntitySet Name="ProductType" EntityType="BluSignalsModel.ProductType" />
+          <EntitySet Name="MarketCategory" EntityType="BluSignalsModel.MarketCategory" />
         </EntityContainer>
         <EntityType Name="EmailTemplate">
           <Key>
@@ -128,6 +150,24 @@
           <Property Name="CreatedBy" Type="Int32" Nullable="false" />
           <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
           <Property Name="ModifiedBy" Type="Int32" />
+          <Property Name="CategoryId" Type="Int64" />
+        </EntityType>
+        <EntityType Name="ProductType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="ProductName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MarketCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -175,6 +215,7 @@
           <EntitySetMapping Name="MarketData">
             <EntityTypeMapping TypeName="BluSignalsModel.MarketData">
               <MappingFragment StoreEntitySet="MarketData">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
                 <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
                 <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
                 <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
@@ -189,6 +230,25 @@
                 <ScalarProperty Name="SymbolCode" ColumnName="SymbolCode" />
                 <ScalarProperty Name="SymbolName" ColumnName="SymbolName" />
                 <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductType">
+            <EntityTypeMapping TypeName="BluSignalsModel.ProductType">
+              <MappingFragment StoreEntitySet="ProductType">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MarketCategory">
+            <EntityTypeMapping TypeName="BluSignalsModel.MarketCategory">
+              <MappingFragment StoreEntitySet="MarketCategory">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

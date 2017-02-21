@@ -355,7 +355,7 @@ namespace BlueSignal.Controllers
 
         }
 
-        
+
 
         [HttpPost]
         public ActionResult Contact(ContactViewModel model)
@@ -423,7 +423,7 @@ namespace BlueSignal.Controllers
         }
 
 
-        
+
 
         public ActionResult authFailed()
         {
@@ -478,14 +478,16 @@ namespace BlueSignal.Controllers
             try
             {
                 var list = await MarketBal.GetMarketData();
+                var categories = await MarketBal.GetActiveMarketCategories();
                 json = new JsonResult
                 {
                     Data = new
                     {
                         blueFractal = list.Where(a => a.ProductTypeID.Equals("101")),
                         blueQuant = list.Where(a => a.ProductTypeID.Equals("103")),
-                        livePortfolio = list,
-                        Last10CompletedTrades = list.Where(a => a.ExitDate.HasValue).OrderBy(n => n.ExitDate).Take(10)
+                        livePortfolio = list.Where(a => a.ProductTypeID.Equals("104")),
+                        Last10CompletedTrades = list.Where(a => a.ExitDate.HasValue && a.ProductTypeID.Equals("105")).OrderBy(n => n.ExitDate).Take(10),
+                        categories
                     },
                     JsonRequestBehavior = JsonRequestBehavior.AllowGet
                 };
@@ -523,6 +525,7 @@ namespace BlueSignal.Controllers
 
         public async Task<JsonResult> SaveMarketData(MarketDataDto vm)
         {
+            vm.IsActive = true;
             if (vm.Id > 0)
             {
                 vm.ModifiedBy = 1;

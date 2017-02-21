@@ -11,7 +11,7 @@ using BlueSignalCore.Dto;
 using BlueSignalCore.Models;
 using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
-
+using System.Data.Entity;
 
 namespace BlueSignalCore.Bal
 {
@@ -48,31 +48,37 @@ namespace BlueSignalCore.Bal
         public async Task<int> SaveMarketData(MarketDataDto vm)
         {
             var result = -1;
-            using (var rep = uw.MarketDataRepository)
+            try
             {
-                var model = Mapper.Map<MarketData>(vm);
-                if (model.Id > 0)
+                using (var rep = uw.MarketDataRepository)
                 {
-                    var current = rep.GetSingle(model.Id);
-                    current.CreatedBy = vm.CreatedBy;
-                    current.CreatedDate = vm.CreatedDate;
-                    current.EntryDate = vm.EntryDate;
-                    current.EntryPrice = vm.EntryPrice;
-                    current.ExitDate = vm.ExitDate;
-                    current.IsActive = vm.IsActive;
-                    current.ModifiedBy = vm.ModifiedBy;
-                    current.ModifiedDate = vm.ModifiedDate;
-                    current.Price = vm.Price;
-                    current.ProductTypeID = vm.ProductTypeID;
-                    current.QuantTradingType = vm.QuantTradingType;
-                    current.Result = vm.Result;
-                    current.SymbolCode = vm.SymbolCode;
-                    current.SymbolName = vm.SymbolName;
+                    var model = Mapper.Map<MarketData>(vm);
+                    if (model.Id > 0)
+                    {
+                        var current = rep.GetSingle(model.Id);
+                        current.EntryDate = vm.EntryDate;
+                        current.EntryPrice = vm.EntryPrice;
+                        current.ExitDate = vm.ExitDate;
+                        current.IsActive = vm.IsActive;
+                        current.ModifiedBy = vm.ModifiedBy;
+                        current.ModifiedDate = vm.ModifiedDate;
+                        current.Price = vm.Price;
+                        current.ProductTypeID = vm.ProductTypeID;
+                        current.QuantTradingType = vm.QuantTradingType;
+                        current.Result = vm.Result;
+                        current.SymbolCode = vm.SymbolCode;
+                        current.SymbolName = vm.SymbolName;
+                        current.CategoryId = vm.CategoryId;
 
-                    result = Convert.ToInt32(rep.Update(current));
+                        result = Convert.ToInt32(rep.UpdateEntity(current, current.Id));
+                    }
+                    else
+                        result = Convert.ToInt32(rep.Create(model));
                 }
-                else
-                    result = Convert.ToInt32(rep.Create(model));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
             return await Task.FromResult(result);
         }
@@ -115,7 +121,6 @@ namespace BlueSignalCore.Bal
             }
         }
 
-
         public WP_User GetWpUser(string un, string pwd)
         {
 
@@ -149,6 +154,25 @@ namespace BlueSignalCore.Bal
 
 
             return new WP_User();
+        }
+
+
+        public async Task<IEnumerable<SelectItem>> GetActiveMarketCategories()
+        {
+            var list = new List<SelectItem>();
+            using (var rep = uw.MarketCategoryRepository)
+            {
+                var categories = await rep.Where(a => a.IsActive != null && a.IsActive.Value).ToListAsync();
+                if (categories.Any())
+                {
+                    list.AddRange(categories.Select(a => new SelectItem
+                    {
+                        Text = a.CategoryName,
+                        Value = Convert.ToString(a.Id)
+                    }).OrderBy(a => a.Text));
+                }
+                return list;
+            }
         }
     }
 

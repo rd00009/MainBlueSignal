@@ -17,12 +17,15 @@ namespace BlueSignalCore.Dto
                 return EntryDate.GetShortDateString();
             }
         }
-        public string StrExitDate {
+        public string StrExitDate
+        {
             get
             {
                 return ExitDate.GetShortDateString();
             }
         }
+
+        public string Category { get; set; }
     }
 }
 

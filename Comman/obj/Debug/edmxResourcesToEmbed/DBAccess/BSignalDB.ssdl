@@ -35,6 +35,14 @@
     <Property Name="DeletedBy" Type="int" />
     <Property Name="DeletedDate" Type="datetime" />
   </EntityType>
+  <EntityType Name="MarketCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
   <EntityType Name="MarketData">
     <Key>
       <PropertyRef Name="Id" />
@@ -54,10 +62,22 @@
     <Property Name="CreatedBy" Type="int" Nullable="false" />
     <Property Name="ModifiedDate" Type="datetime" />
     <Property Name="ModifiedBy" Type="int" />
+    <Property Name="CategoryId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
   </EntityType>
   <EntityContainer Name="BluSignalsModelStoreContainer">
     <EntitySet Name="ContactLog" EntityType="Self.ContactLog" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="EmailTemplate" EntityType="Self.EmailTemplate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MarketCategory" EntityType="Self.MarketCategory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MarketData" EntityType="Self.MarketData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

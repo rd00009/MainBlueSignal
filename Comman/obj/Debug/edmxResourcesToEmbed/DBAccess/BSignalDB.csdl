@@ -23,6 +23,8 @@
     <EntitySet Name="ContactLogs" EntityType="Self.ContactLog" />
     <EntitySet Name="EmailTemplates" EntityType="BluSignalsModel.EmailTemplate" />
     <EntitySet Name="MarketData" EntityType="BluSignalsModel.MarketData" />
+    <EntitySet Name="ProductType" EntityType="BluSignalsModel.ProductType" />
+    <EntitySet Name="MarketCategory" EntityType="BluSignalsModel.MarketCategory" />
   </EntityContainer>
   <EntityType Name="EmailTemplate">
     <Key>
@@ -59,5 +61,23 @@
     <Property Name="CreatedBy" Type="Int32" Nullable="false" />
     <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
     <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="CategoryId" Type="Int64" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MarketCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
   </EntityType>
 </Schema>

@@ -20,10 +20,12 @@ namespace BlueSignalCore.Models
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Entity<MarketData>().ToTable("MarketData");
+            modelBuilder.Entity<MarketCategory>().ToTable("MarketCategory");
 
             base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<MarketData> MarketData { get; set; }
+        public DbSet<MarketCategory> MarketCategory { get; set; }
     }
 }
