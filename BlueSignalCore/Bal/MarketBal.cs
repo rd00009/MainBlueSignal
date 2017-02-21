@@ -122,9 +122,9 @@ namespace BlueSignalCore.Bal
 
             var user = new WP_User();
 
-            MySqlConnection myConnection = new MySqlConnection(System.Configuration.ConfigurationSettings.AppSettings["Wb_ConnectionString"]);
+            MySqlConnection myConnection = new MySqlConnection(ConfigurationSettings.AppSettings["Wb_ConnectionString"]);
             string strSQL = "SELECT * FROM wp_g3b4k2u7_users where user_login='" + un + "' and user_pass='" + pwd + "'";
-            MySqlDataAdapter myDataAdapter = new SqlDataAdapter(strSQL, myConnection);
+            MySqlDataAdapter myDataAdapter = new MySqlDataAdapter(strSQL, myConnection);
             DataSet myDataSet = new DataSet();
             myDataAdapter.Fill(myDataSet, "my_users");
 
