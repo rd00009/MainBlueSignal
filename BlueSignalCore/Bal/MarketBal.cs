@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -123,7 +124,7 @@ namespace BlueSignalCore.Bal
 
             MySqlConnection myConnection = new MySqlConnection(System.Configuration.ConfigurationSettings.AppSettings["Wb_ConnectionString"]);
             string strSQL = "SELECT * FROM wp_g3b4k2u7_users where user_login='" + un + "' and user_pass='" + pwd + "'";
-            MySqlDataAdapter myDataAdapter = new MySqlDataAdapter(strSQL, myConnection);
+            MySqlDataAdapter myDataAdapter = new SqlDataAdapter(strSQL, myConnection);
             DataSet myDataSet = new DataSet();
             myDataAdapter.Fill(myDataSet, "my_users");
 

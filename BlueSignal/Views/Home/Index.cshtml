@@ -1,7 +1,9 @@
-﻿@{
+﻿@using BlueSignal.Controllers;
+@{
     ViewBag.Title = "Home Page";
     Layout = "~/Views/Shared/_Layout.cshtml";
     var btnClass = "btnGetData";
+
 }
 
 
@@ -12,10 +14,47 @@
     onclick="return activaTab('Details');"
      onclick="return activaTab('Data');"*@
 <ul id="AllTables" class="nav nav-tabs">
-    <li class="active"><a class="blufractal" id="blude_code" data-toggle="tab" href="#BluFractal"><span>Blu</span>Fractal</a></li>
-    <li><a class="bluneural" id="blueNureal_codeD" data-toggle="tab" href="#BluNeural"><span>Blu</span>Neural</a></li>
-    <li><a class="BluFractal_BluNeural" id="blueCombo_codeBD" data-toggle="tab" href="#BluFractal_BluNeural"><span class="combo"><span class="bf_icon"></span>&nbsp;<span class="bn_icon"></span></span> <span class="combo_txt">Combo</span></a></li>
-    <li><a class="bluquant" id="blueQuote_codeDquent" data-toggle="tab" href="#BluQuant"><span>Blu</span>Quant</a></li>
+
+
+
+    @if (HttpContextSessionWrapperExtension.SessionUser.IsBluFactrol)
+    {
+        <li class="active"><a class="blufractal" id="blude_code" data-toggle="tab" href="#BluFractal"><span>Blu</span>Fractal</a></li>
+    }
+    else
+    {
+        <li class="active disabled"><a class="blufractal" id="blude_code" data-toggle="tab" href="#BluFractal"><span>Blu</span>Fractal</a></li>  }
+
+
+    @if (HttpContextSessionWrapperExtension.SessionUser.IsBluNeutral)
+    {
+        <li><a class="bluneural" id="blueNureal_codeD" data-toggle="tab" href="#BluNeural"><span>Blu</span>Neural</a></li>
+    }
+    else
+    {
+        <li><a class="bluneural disabled" id="blueNureal_codeD" data-toggle="tab" href="#"><span>Blu</span>Neural</a></li>
+    }
+
+
+    @if (HttpContextSessionWrapperExtension.SessionUser.IsBluCombo)
+    {
+        <li><a class="BluFractal_BluNeural" id="blueCombo_codeBD" data-toggle="tab" href="#BluFractal_BluNeural"><span class="combo"><span class="bf_icon"></span>&nbsp;<span class="bn_icon"></span></span> <span class="combo_txt">Combo</span></a></li>
+    }
+    else
+    {
+        <li><a class="BluFractal_BluNeural disabled" id="blueCombo_codeBD" data-toggle="tab" href="#"><span class="combo"><span class="bf_icon"></span>&nbsp;<span class="bn_icon"></span></span> <span class="combo_txt">Combo</span></a></li>
+    }
+
+    @if (HttpContextSessionWrapperExtension.SessionUser.IsBluQuant)
+    {
+        <li><a class="bluquant" id="blueQuote_codeDquent" data-toggle="tab" href="#BluQuant"><span>Blu</span>Quant</a></li>
+    }
+    else
+    {
+        <li><a class="bluquant disabled" id="blueQuote_codeDquent" data-toggle="tab" href="#"><span>Blu</span>Quant</a></li>
+    }
+
+
 
     <li class="pull-right help"><a href="@Url.Action("","Help")" data-toggle="tooltip" title="Help" target="_blank"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></li>
     <li class="pull-right"><a class="detail" data-toggle="tooltip" title="Detail" onclick="return OpenPopupWithTheQuote();"></a></li>
@@ -26,22 +65,82 @@
 </ul>
 
 <div class="tab-content">
+
+
+
+
+
+
+
     <div id="BluFractal" class="tab-pane fade in active">
 
-        @Html.Partial("MarketData")
+
+        @if (HttpContextSessionWrapperExtension.SessionUser.IsBluFactrol)
+        {
+            @Html.Partial("MarketData")
+        }
+        else
+        {
+            //Empty Or We can show user don't have access
+            @Html.Partial("MarketData")
+        }
+
     </div>
     <div id="BluNeural" class="tab-pane fade">
 
+
+
+
+        @if (HttpContextSessionWrapperExtension.SessionUser.IsBluNeutral)
+        {
         @Html.Partial("_DailyChartData")
+        }
+        else
+        {
+            //Empty Or We can show user don't have access
+        }
+
+
+
     </div>
     <div id="BluQuant" class="tab-pane fade">
         @*<h3>Blu Quant</h3>*@
-        @Html.Partial("_BluQuantData")
+
+
+
+
+        @if (HttpContextSessionWrapperExtension.SessionUser.IsBluQuant)
+        {
+            @Html.Partial("_BluQuantData")
+        }
+        else
+        {
+            //Empty Or We can show user don't have access
+        }
     </div>
     <div id="BluFractal_BluNeural" class="tab-pane fade">
         @*<h3>BluQuant</h3>*@
-        @Html.Partial("_BluQuantDataBlueNeturalData")
+
+
+
+        @if (HttpContextSessionWrapperExtension.SessionUser.IsBluCombo)
+        {
+            @Html.Partial("_BluQuantDataBlueNeturalData")
+        }
+        else
+        {
+            //Empty Or We can show user don't have access
+        }
     </div>
+
+
+
+
+
+
+
+
+
 
     <div id="Details" style="height:700px;" class="tab-pane fade">
         @*<h3>BluQuant</h3>*@
@@ -55,6 +154,10 @@
     <div id="MarketDataSetupLists" style="height:700px;" class="tab-pane fade">
         @Html.Partial("_MarketDataSetupLists")
     </div>
+
+
+
+
     <div id="Data" class="tab-pane fade">
         <div class="tab_block">
             <div class="col-sm-12">

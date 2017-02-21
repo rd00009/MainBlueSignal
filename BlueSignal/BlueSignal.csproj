@@ -334,6 +334,7 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="SSO.htm" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -379,6 +380,7 @@
     <Content Include="Views\Home\_ContactLog.cshtml" />
     <Content Include="Views\Home\_MarketDataLists.cshtml" />
     <Content Include="Views\Home\_MarketDataSetupLists.cshtml" />
+    <Content Include="Views\Home\authFailed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

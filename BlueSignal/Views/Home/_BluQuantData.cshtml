@@ -1,8 +1,29 @@
-﻿@{
+﻿@using BlueSignal.Controllers;
+
+@{
     // ViewBag.Title = "MarketData";
     // Layout = "~/Views/Shared/_Layout.cshtml";
     var btnClassQuant = "btnGetDataBlueQuant";
     var btnClassLivePortfolio = "btnClassLivePortfolio";
+
+    var btnClassToDisabled = "";
+
+
+    if (HttpContextSessionWrapperExtension.SessionUser.IsBluQuant)
+    {
+        btnClassQuant = "btnGetDataBlueQuant";
+        btnClassLivePortfolio = "btnClassLivePortfolio";
+        btnClassToDisabled = "";
+
+    }
+    else
+    {
+        btnClassQuant = "disabled";
+        btnClassLivePortfolio = "disabled";
+
+        btnClassToDisabled = "disabled";
+    }
+
 }
 
 <div class="tab_block">
@@ -20,7 +41,7 @@
 
                             @*<label type="text" id="Namequent" class="codeValue form-control form-width"> </label>*@
 
-                            <input type="text" id="codeDquent" disabled name="code"  class="form-control codeValue codeClassbluequont">
+                            <input type="text" id="codeDquent" disabled name="code" class="form-control codeValue codeClassbluequont">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -45,7 +66,7 @@
                         <input id="BlueQuanteCode" style="display:none;" class="form-control codeClass" type="text" value="SPY" />
                     </div>
 
-               
+
                 </div>
             </div>
         </div>
@@ -57,48 +78,51 @@
                         <div class="panel-body">
                             <div class="green_heading"><i class="fa fa-shopping-cart" aria-hidden="true"></i> BUY</div>
                             <div class="red_heading"><i class="fa fa-usd" aria-hidden="true"></i> SELL</div>
+
+
+
                             <div class="col-sm-6 border_right">
                                 <div class="todays_signal_list ">
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                 </div>
@@ -108,47 +132,51 @@
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol"  @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                 </div>
                             </div>
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -163,7 +191,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="head_form">
-                        <button type="button" class="btn btn-xs btn_major_market" data-toggle="modal" data-target="#myModal" title="Choose Major Market" @*onclick="callYahooFinance()"*@>Major Markets</button>
+                        <button type="button" class="btn btn-xs btn_major_market" @btnClassToDisabled data-toggle="modal" data-target="#myModal" title="Choose Major Market" @*onclick="callYahooFinance()"*@>Major Markets</button>
                     </div>
                     <h4 class="panel-title"> <a data-toggle="collapse" href="#collapse6">Chart</a> </h4>
                 </div>
@@ -304,35 +332,35 @@
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td style="text-align:center;"><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td style="text-align:center;"><input type="button" id="btnloanQuantData" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td><a href="#" class="@btnClassLivePortfolio">QQQ</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" @btnClassToDisabled onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td><a href="#" class="@btnClassLivePortfolio">QQQ</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" @btnClassToDisabled onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td><a href="#" class="@btnClassLivePortfolio">QQQ</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" @btnClassToDisabled onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td><a href="#" class="@btnClassLivePortfolio">QQQ</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" @btnClassToDisabled onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -346,7 +374,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Symbol</th>
-                                                        <th width="210"  class="text-center">Name</th>
+                                                        <th width="210" class="text-center">Name</th>
                                                         <th>Entry Date</th>
                                                         <th>Entry Price</th>
                                                         <th></th>
@@ -358,35 +386,35 @@
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td style="text-align:center;"><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td style="text-align:center;"><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" @btnClassToDisabled onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td><a href="#" class="@btnClassLivePortfolio">QQQ</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" @btnClassToDisabled onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td><a href="#" class="@btnClassLivePortfolio">QQQ</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" @btnClassToDisabled onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td><a href="#" class="@btnClassLivePortfolio">QQQ</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" @btnClassToDisabled onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                     <tr>
                                                         <td><a href="#" class="@btnClassLivePortfolio">QQQ</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Smith</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">Dec 4</a></td>
                                                         <td><a href="#" class="@btnClassLivePortfolio">21.45</a></td>
-                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
+                                                        <td><input type="button" id="btnloanQuantData" class="btn btn-success btn-xs btn_load" @btnClassToDisabled onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" /></td>
                                                     </tr>
                                                 </tbody>
                                             </table>

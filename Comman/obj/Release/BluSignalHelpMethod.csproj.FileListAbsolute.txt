@@ -1,9 +1,0 @@
-F:\Microfinance\Project\TestCharts-M2\TestCharts\Comman\bin\Release\Comman.dll
-F:\Microfinance\Project\TestCharts-M2\TestCharts\Comman\bin\Release\Comman.pdb
-F:\Microfinance\Project\TestCharts-M2\TestCharts\Comman\obj\Release\Comman.dll
-F:\Microfinance\Project\TestCharts-M2\TestCharts\Comman\obj\Release\Comman.pdb
-F:\Microfinance\Project\LatestCode_31Jan\Comman\bin\Release\Comman.dll
-F:\Microfinance\Project\LatestCode_31Jan\Comman\bin\Release\Comman.pdb
-F:\Microfinance\Project\LatestCode_31Jan\Comman\obj\Release\BluSignalHelpMethod.csprojResolveAssemblyReference.cache
-F:\Microfinance\Project\LatestCode_31Jan\Comman\obj\Release\Comman.dll
-F:\Microfinance\Project\LatestCode_31Jan\Comman\obj\Release\Comman.pdb
