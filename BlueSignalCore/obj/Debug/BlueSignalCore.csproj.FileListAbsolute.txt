@@ -43,3 +43,4 @@ D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\Microsoft.Practices.ServiceLocatio
 D:\GitHubProjects\BS\BlueSignalCore\obj\Debug\BlueSignalCore.csprojResolveAssemblyReference.cache
 D:\GitHubProjects\BS\BlueSignalCore\obj\Debug\BlueSignalCore.dll
 D:\GitHubProjects\BS\BlueSignalCore\obj\Debug\BlueSignalCore.pdb
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\MySql.Data.dll
