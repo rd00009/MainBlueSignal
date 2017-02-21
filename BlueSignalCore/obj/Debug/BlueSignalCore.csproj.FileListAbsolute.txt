@@ -20,3 +20,25 @@ D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\bin\Debug\Microsoft.
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\obj\Debug\BlueSignalCore.csprojResolveAssemblyReference.cache
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\obj\Debug\BlueSignalCore.dll
 D:\Projects\Spadez\BlueSignals - GitHub\Code\BlueSignalCore\obj\Debug\BlueSignalCore.pdb
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\BlueSignalCore.dll.config
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\BlueSignalCore.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\BlueSignalCore.pdb
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\AutoMapper.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\AutoMapper.EF6.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\BlueSignalCommon.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\DelegateDecompiler.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\DelegateDecompiler.EntityFramework.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\EntityFramework.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\Mono.Reflection.dll
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\BlueSignalCommon.pdb
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\AutoMapper.xml
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\AutoMapper.EF6.xml
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\EntityFramework.xml
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\GitHubProjects\BS\BlueSignalCore\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\GitHubProjects\BS\BlueSignalCore\obj\Debug\BlueSignalCore.csprojResolveAssemblyReference.cache
+D:\GitHubProjects\BS\BlueSignalCore\obj\Debug\BlueSignalCore.dll
+D:\GitHubProjects\BS\BlueSignalCore\obj\Debug\BlueSignalCore.pdb
