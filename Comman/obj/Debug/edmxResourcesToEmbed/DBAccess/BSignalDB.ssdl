@@ -41,6 +41,7 @@
     </Key>
     <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="CategoryName" Type="nvarchar" MaxLength="100" />
+    <Property Name="SortOrder" Type="bigint" Nullable="false" />
     <Property Name="IsActive" Type="bit" />
   </EntityType>
   <EntityType Name="MarketData">

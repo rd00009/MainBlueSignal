@@ -73,6 +73,7 @@
     <EntitySetMapping Name="MarketCategory">
       <EntityTypeMapping TypeName="BluSignalsModel.MarketCategory">
         <MappingFragment StoreEntitySet="MarketCategory">
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
           <ScalarProperty Name="IsActive" ColumnName="IsActive" />
           <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
           <ScalarProperty Name="Id" ColumnName="Id" />

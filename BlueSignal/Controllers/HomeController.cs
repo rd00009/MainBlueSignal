@@ -575,7 +575,7 @@ namespace BlueSignal.Controllers
                     Data = new
                     {
                         list = list,
-                        categories = categories.OrderBy(a => a.Value)
+                        categories = categories
                     },
                     JsonRequestBehavior = JsonRequestBehavior.AllowGet
                 };
