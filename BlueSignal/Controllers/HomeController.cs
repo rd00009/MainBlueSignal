@@ -561,6 +561,33 @@ namespace BlueSignal.Controllers
             }
             return Json(new List<MarketDataDto>(), JsonRequestBehavior.AllowGet);
         }
+
+
+        public async Task<JsonResult> GetAllMarketSetupData()
+        {
+            JsonResult json = null;
+            try
+            {
+                var list = await MarketBal.GetMarketData();
+                var categories = await MarketBal.GetActiveMarketCategories();
+                json = new JsonResult
+                {
+                    Data = new
+                    {
+                        list = list,
+                        categories = categories.OrderBy(a => a.Value)
+                    },
+                    JsonRequestBehavior = JsonRequestBehavior.AllowGet
+                };
+            }
+            catch (WebException ex) //if server is off it will throw exeception and here we need notify user
+            {
+                throw ex;
+            }
+
+            return json;
+
+        }
         #endregion
     }
 }

@@ -12,6 +12,7 @@ namespace BlueSignalCore.Models
         [Key]
         public long Id { get; set; }
         public string CategoryName { get; set; }
+        public long SortOrder { get; set; }
         public Nullable<bool> IsActive { get; set; }
     }
 }

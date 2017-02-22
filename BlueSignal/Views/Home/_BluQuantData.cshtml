@@ -1,5 +1,4 @@
 ﻿@using BlueSignal.Controllers;
-
 @{
     // ViewBag.Title = "MarketData";
     // Layout = "~/Views/Shared/_Layout.cshtml";
@@ -25,7 +24,6 @@
     }
 
 }
-
 <div class="tab_block">
     <div class="col-sm-12">
         <div class="col-sm-5 ">
@@ -38,9 +36,7 @@
                         <label class="col-sm-6"><span><img src="~/images/sideicon.jpg" /></span>Symbol</label>
                         <div class="col-sm-6">
                             @*<input type="text" id="Name" disabled class="form-control form-width ">*@
-
                             @*<label type="text" id="Namequent" class="codeValue form-control form-width"> </label>*@
-
                             <input type="text" id="codeDquent" disabled name="code" class="form-control codeValue codeClassbluequont">
                         </div>
                     </div>
@@ -51,7 +47,6 @@
                             @*<label type="text" id="Namequent" class="NameClass form-control form-width NameClassbluequont"> </label>*@
                         </div>
                     </div>
-
                     <div class="form-group row">
                         <label class="col-sm-6"><span><img src="~/images/sideicon.jpg" /></span>Current Price</label>
                         <div class="col-sm-6">
@@ -66,7 +61,6 @@
                         <input id="BlueQuanteCode" style="display:none;" class="form-control codeClass" type="text" value="SPY" />
                     </div>
 
-
                 </div>
             </div>
         </div>
@@ -78,8 +72,6 @@
                         <div class="panel-body">
                             <div class="green_heading"><i class="fa fa-shopping-cart" aria-hidden="true"></i> BUY</div>
                             <div class="red_heading"><i class="fa fa-usd" aria-hidden="true"></i> SELL</div>
-
-
 
                             <div class="col-sm-6 border_right">
                                 <div class="todays_signal_list ">
@@ -138,7 +130,7 @@
                                     <div class="info_row">
                                         <p>
                                             QQQ &nbsp; $17.53 &#64;11:03 am
-                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol"  @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
+                                            <input type="button" id="btnloanQuantData" data-toggle="tooltip" title="Load Symbol" @btnClassToDisabled class="btn btn-success btn-xs btn_load" onclick="IntializeOnlyBlueQuanteWithCode('QQQ')" value="Load" />
                                         </p>
                                     </div>
                                     <div class="info_row">
@@ -175,12 +167,9 @@
                             </div>
 
 
-
-
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -191,7 +180,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="head_form">
-                        <button type="button" class="btn btn-xs btn_major_market" @btnClassToDisabled data-toggle="modal" data-target="#myModal" title="Choose Major Market" @*onclick="callYahooFinance()"*@>Major Markets</button>
+                        <button type="button" class="btn btn-xs btn_major_market" @btnClassToDisabled data-toggle="modal" data-target="#myModalBlueQuant" title="Choose Major Market" @*onclick="callYahooFinance()"*@>Major Markets</button>
                     </div>
                     <h4 class="panel-title"> <a data-toggle="collapse" href="#collapse6">Chart</a> </h4>
                 </div>
@@ -205,7 +194,6 @@
     </div>
     <div id="myModalBlueQuant" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg modal_style">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -215,7 +203,8 @@
                 <div class="modal-body">
                     <div class="alert alert-info"> <strong>Note:</strong> If your symbol is not preset, please type it directly into the textbox </div>
                     <div class="table-responsive">
-                        <table class="table table-bordered table-striped">
+                        <input type="hidden" id="hfCssClass" value="@btnClassQuant" />
+                        <table class="table table-bordered table-striped" id="tblCategoriesList">
                             <thead>
                                 <tr>
                                     <th>US Market</th>
@@ -550,3 +539,57 @@
         </div>
     </div>
 </div>
+<script>
+    $(function () {
+        $.ajax({
+            type: "GET",
+            url: "/Home/GetAllMarketSetupData",
+            dataType: "json",
+            async: true,
+            cache: false,
+            data: null,
+            success: function (data) {
+                if (data != null) {
+                    BindMarketCategoriesPopupWindow(data);
+                }
+            },
+            error: function (error, status) {
+                console.log(error);
+            }
+        });
+    });
+
+
+    function BindMarketCategoriesPopupWindow(data) {
+        var cssClass = $("#hfCssClass").val();
+        $("#tblCategoriesList").empty();
+        var htmlContent = '<thead><tr>';
+        var trHtml = '';
+
+        var categoryId = 0;
+        $.each(data.categories, function (i, obj) {
+            htmlContent += '<th>' + obj.Text + '</th>';
+
+            var items = $.grep(data.list, function (i, obj1) {
+                return (i.CategoryId == obj.Value);
+            });
+
+            if (items.length > 0) {
+                trHtml = categoryId == 0 ? '<tbody><tr>' : "<tr>";
+
+                $.each(items, function (i, item) {
+                    trHtml += '<td><a href="#" class="' + cssClass + '">' + item.SymbolName + ' </td>';
+                });
+                trHtml += '</tr>';
+            }
+        });
+
+        htmlContent += '</thead>';
+
+        if (trHtml != '')
+            trHtml += '</tbody>';
+
+        htmlContent += trHtml;
+        $("#tblCategoriesList").html(htmlContent);
+    }
+</script>

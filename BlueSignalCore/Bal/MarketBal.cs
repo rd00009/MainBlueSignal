@@ -187,8 +187,9 @@ namespace BlueSignalCore.Bal
                     list.AddRange(categories.Select(a => new SelectItem
                     {
                         Text = a.CategoryName,
-                        Value = Convert.ToString(a.Id)
-                    }).OrderBy(a => a.Text));
+                        Value = Convert.ToString(a.Id),
+                        SortOrder = a.SortOrder
+                    }).OrderBy(a => a.SortOrder));
                 }
                 return list;
             }

@@ -17,5 +17,6 @@ namespace Comman.DBAccess
         public long Id { get; set; }
         public string CategoryName { get; set; }
         public Nullable<bool> IsActive { get; set; }
+        public long SortOrder { get; set; }
     }
 }
