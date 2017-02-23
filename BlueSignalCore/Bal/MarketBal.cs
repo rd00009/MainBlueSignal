@@ -12,6 +12,7 @@ using BlueSignalCore.Models;
 using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
 using System.Data.Entity;
+using BlueSignalCommon;
 
 namespace BlueSignalCore.Bal
 {
@@ -53,10 +54,11 @@ namespace BlueSignalCore.Bal
                 using (var rep = uw.MarketDataRepository)
                 {
                     var model = Mapper.Map<MarketData>(vm);
+
                     if (model.Id > 0)
                     {
                         var current = rep.GetSingle(model.Id);
-                        current.EntryDate = vm.EntryDate;
+                        current.EntryDate = vm.EntryDate.AddTimeToDateValue();
                         current.EntryPrice = vm.EntryPrice;
                         current.ExitDate = vm.ExitDate;
                         current.IsActive = vm.IsActive;

@@ -394,3 +394,8 @@ hr{border-color:#d1d1d1; }
 .currency_sign span{position:absolute; top:7px; left:12px; font-weight:bold;}
 .currency_sign .form-control{padding:6px 12px 6px 25px;}
 
+#tblCategoriesList1{border-bottom:none;}
+#tblCategoriesList1 td{padding:0; border:none;}
+#tblCategoriesList1 td table{margin-bottom:0; border:none;}
+#tblCategoriesList1 td table td{padding:5px; border:1px solid #d1d1d1;}
+

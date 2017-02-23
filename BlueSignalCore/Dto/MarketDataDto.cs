@@ -26,6 +26,22 @@ namespace BlueSignalCore.Dto
         }
 
         public string Category { get; set; }
+
+        public string StrEntryTimeValue
+        {
+            get
+            {
+                return EntryDate.Get12HourTimeString();
+            }
+        }
+
+        public string StrCreatedTimeValue
+        {
+            get
+            {
+                return CreatedDate.Get12HourTimeString();
+            }
+        }
     }
 }
 

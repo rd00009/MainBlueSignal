@@ -198,7 +198,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-12">
-                                <input type="button" id="BtnMD3" productType="105" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolCode1,SymbolName1,EntryDate1,EntryPrice1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
+                                <input type="button" id="BtnMD3" productType="105" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
                             </div>
                             <div class="col-sm-12">
                                 <div style="height:200px; overflow:auto;">
@@ -448,7 +448,7 @@
                          "data": null, "name": "Options", render: function (data, type, row) {
                              return "<div>" +
                                  //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-edit' custom='SymbolCode1,SymbolName1,EntryDate1,EntryPrice1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-edit' custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,,EntryPrice1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-remove-circle' href='#' onclick='RemoveData(" + data.Id + ", this)'></a>" +
                              "</div>";
                          }
@@ -547,7 +547,12 @@
                 if (data) {
                     var productTypeId = $("#hdProductTypeId").val();
                     ResetModalPopup();
-                    RebindGrid(productTypeId, data);
+                    RebindGrid(productTypeId, data.limitedData);
+
+                    if ($("#tblCategoriesList1").length > 0) {
+                        BindMarketCategoriesPopupWindow1(data.allData);
+                        BindActionData(data.allData.list);
+                    }
                 }
             },
             error: function (error) {
@@ -634,9 +639,13 @@
                 break;
             case "104":
                 BindLivePortfolioDataTable("livePortfolio", data);
+                //if ($("#livePortfolio1").length > 0)
+                //    BindLivePortfolioMain("livePortfolio1", data);
                 break;
             case "105":
                 BindLast10CompletedTradesDataTable("last10CompletedTrades", data);
+                //if ($("#lastCompletedTradesMain").length > 0)
+                //    BindLast10CompletedTradesMain("lastCompletedTradesMain", data);
                 break;
             default:
                 BindDataTable1("MarketData1", data);

@@ -540,9 +540,10 @@ namespace BlueSignal.Controllers
             var result = await MarketBal.SaveMarketData(vm);
             if (result >= 0)
             {
-                var jsonResult = await GetMarketSetDataByType(vm.ProductTypeID);
-                jsonResult.MaxJsonLength = int.MaxValue;
-                jsonResult.JsonRequestBehavior = JsonRequestBehavior.AllowGet;
+                var limitedData = await GetMarketSetDataByType(vm.ProductTypeID);
+
+                var jsonResult = await GetAllMarketSetupData();
+                jsonResult.Data = new { allData = jsonResult.Data, limitedData };
                 return jsonResult;
             }
             return Json(new List<MarketDataDto>(), JsonRequestBehavior.AllowGet);
@@ -575,7 +576,9 @@ namespace BlueSignal.Controllers
                     Data = new
                     {
                         list = list,
-                        categories = categories
+                        categories = categories,
+                        livePortfolio1 = list.Where(a => a.ProductTypeID.Equals("104")),
+                        lastCompletedTradesMain = list.Where(a => a.ExitDate.HasValue && a.ProductTypeID.Equals("105")).OrderBy(n => n.ExitDate).Take(10),
                     },
                     JsonRequestBehavior = JsonRequestBehavior.AllowGet
                 };
