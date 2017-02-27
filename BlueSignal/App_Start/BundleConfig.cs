@@ -22,11 +22,13 @@ namespace BlueSignal
                  "~/Scripts/moment.js",
                       "~/Scripts/bootstrap.js",
                        "~/Scripts/bootstrap-datepicker.min.js",
+                       "~/Scripts/bootstrap-datetimepicker.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
-                         "~/Content/bootstrap-datepicker.min.css",
+                         //"~/Content/bootstrap-datepicker.min.css",
+                         "~/Content/bootstrap-datetimepicker.min.css",
                       "~/Content/pages.css",
                       "~/Content/Site.css"));
 
