@@ -1,5 +1,5 @@
 ﻿
-<div class="tab_block">
+<div class="tab_block admin">
     <div class="col-sm-12">
         <div class="panel-group accordion">
             <div class="panel panel-default">
@@ -13,7 +13,7 @@
                                 <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdBlueFractal', '.radioMarketDataType')" class="radioMarketDataType" checked="checked" value="BlueFractal" id="rdBlueFractal" /> BluFractal</label>
                                 <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdBlueNeural', '.radioMarketDataType')" class="radioMarketDataType" value="BlueNeural" id="rdBlueNeural" /> BluNeural</label>
                             </div>
-                            <div class="col-md-6"><input type="button" productType="0" id="BtnMD1" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
+                            <div class="col-md-6 addnew_btn"><input type="button" style="top:37px;" productType="0" id="BtnMD1" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
                             <div class="col-sm-12">
                                 <div style="overflow:auto;">
                                     <div class="table-responsive table_style">
@@ -54,7 +54,7 @@
                     <div class="row">
                         <div class="col-sm-6 userfield" id="SymbolName1">
                             <div class="form-group">
-                                <label>Name</label>
+                                <label class="mandatory">Name</label>
                                 <input type="text" id="SymbName1" class="form-control" />
                             </div>
                         </div>
@@ -128,9 +128,9 @@
                 <div id="collapseblueQuant" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-12"><input type="button" id="BtnMD2" productType="103" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,TradeAction1,Price1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
+                            <div class="addnew_btn"><input type="button" id="BtnMD2" productType="103" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,TradeAction1,Price1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
                             <div class="col-sm-12">
-                                <div style="height:200px; overflow:auto;">
+                                <div>
                                     <div class="table-responsive table_style">
                                         <table id="blueQuant" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                             <thead>
@@ -163,9 +163,9 @@
                 <div id="collapseLivePortfolio" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-sm-12"><input type="button" id="BtnMD3" productType="104" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
+                            <div class="addnew_btn"><input type="button" id="BtnMD3" productType="104" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
                             <div class="col-sm-12">
-                                <div style="height:200px; overflow:auto;">
+                                <div>
                                     <div class="table-responsive table_style">
                                         <table id="livePortfolio" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                             <thead>
@@ -197,11 +197,11 @@
                 <div id="collapseLast10CompletedTrades" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="addnew_btn">
                                 <input type="button" id="BtnMD3" productType="105" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
                             </div>
                             <div class="col-sm-12">
-                                <div style="height:200px; overflow:auto;">
+                                <div>
                                     <div class="table-responsive table_style">
                                         <table id="last10CompletedTrades" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                             <thead>
