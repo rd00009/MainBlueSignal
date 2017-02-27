@@ -36,7 +36,18 @@ namespace BlueSignalCore.Bal
                 {
                     var m = rep.Where(a => a.IsActive).ToList();
                     if (m.Any())
-                        list.AddRange(m.Select(a => Mapper.Map<MarketDataDto>(a)));
+                    {
+                        list.AddRange(m.Select(a =>
+                        {
+                            var vm = Mapper.Map<MarketDataDto>(a);
+                            if (vm != null && vm.CategoryId.HasValue)
+                            {
+                                using (var rep1 = uw.MarketCategoryRepository)
+                                    vm.Category = rep1.Where(w => w.Id == vm.CategoryId.Value).Select(c => c.CategoryName).FirstOrDefault();
+                            }
+                            return vm;
+                        }));
+                    }
                 }
                 return await Task.FromResult(list);
             }
@@ -51,6 +62,11 @@ namespace BlueSignalCore.Bal
             var result = -1;
             try
             {
+                vm.IsActive = true;
+                TimeSpan? cTime = null;
+                if (!string.IsNullOrEmpty(vm.Time))
+                    cTime = TimeSpan.Parse(vm.Time);
+
                 using (var rep = uw.MarketDataRepository)
                 {
                     var model = Mapper.Map<MarketData>(vm);
@@ -58,7 +74,9 @@ namespace BlueSignalCore.Bal
                     if (model.Id > 0)
                     {
                         var current = rep.GetSingle(model.Id);
-                        current.EntryDate = vm.EntryDate.AddTimeToDateValue();
+                        current.ModifiedBy = 1;
+                        current.ModifiedDate = DateTime.Now;
+                        current.EntryDate = vm.EntryDate.AddTimeToDateValue(cTime);
                         current.EntryPrice = vm.EntryPrice;
                         current.ExitDate = vm.ExitDate;
                         current.IsActive = vm.IsActive;
@@ -75,7 +93,13 @@ namespace BlueSignalCore.Bal
                         result = Convert.ToInt32(rep.UpdateEntity(current, current.Id));
                     }
                     else
+                    {
+                        model.CreatedBy = 1;
+                        model.CreatedDate = DateTime.Now;
+                        if (vm.EntryDate.HasValue)
+                            model.EntryDate = vm.EntryDate.AddTimeToDateValue(cTime);
                         result = Convert.ToInt32(rep.Create(model));
+                    }
                 }
             }
             catch (Exception ex)
@@ -92,9 +116,20 @@ namespace BlueSignalCore.Bal
                 var list = new List<MarketDataDto>();
                 using (var rep = uw.MarketDataRepository)
                 {
-                    var m = rep.Where(a => a.IsActive && a.ProductTypeID.Equals(productTypeId)).ToList();
+                    var m = (productTypeId.Equals("101") || productTypeId.Equals("102")) ? rep.Where(a => a.IsActive && (a.ProductTypeID.Equals("101") || a.ProductTypeID.Equals("102"))).ToList() : rep.Where(a => a.IsActive && a.ProductTypeID.Equals(productTypeId)).ToList();
                     if (m.Any())
-                        list.AddRange(m.Select(a => Mapper.Map<MarketDataDto>(a)));
+                    {
+                        list.AddRange(m.Select(a =>
+                        {
+                            var vm = Mapper.Map<MarketDataDto>(a);
+                            if (vm != null && vm.CategoryId.HasValue)
+                            {
+                                using (var rep1 = uw.MarketCategoryRepository)
+                                    vm.Category = rep1.Where(w => w.Id == vm.CategoryId.Value).Select(c => c.CategoryName).FirstOrDefault();
+                            }
+                            return vm;
+                        }));
+                    }
                 }
                 return await Task.FromResult(list);
             }

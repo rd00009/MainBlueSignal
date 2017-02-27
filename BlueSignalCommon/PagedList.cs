@@ -637,9 +637,14 @@ namespace BlueSignalCommon
             return obj.HasValue ? obj.Value.ToString("d") : string.Empty;
         }
 
+        public static string Get24HourTimeString(this DateTime? obj)
+        {
+            return obj.HasValue ? obj.Value.ToString("HH:mm") : string.Empty;
+        }
+
         public static string Get12HourTimeString(this DateTime? obj)
         {
-            return obj.HasValue ? obj.Value.ToString("HH:mm tt") : string.Empty;
+            return obj.HasValue ? obj.Value.ToString("hh:mm tt") : string.Empty;
         }
 
         public static string Get12HourTimeString(this DateTime obj)
@@ -647,12 +652,12 @@ namespace BlueSignalCommon
             return obj.ToString("HH:mm tt");
         }
 
-        public static DateTime AddTimeToDateValue(this DateTime? obj)
+        public static DateTime AddTimeToDateValue(this DateTime? obj, TimeSpan? cTime)
         {
-            if(obj.HasValue)
+            if (obj.HasValue)
             {
-                var time = DateTime.Now.TimeOfDay;
-                obj.Value.Add(time);
+                var time = cTime.HasValue ? cTime.Value : DateTime.Now.TimeOfDay;
+                return obj.Value.Add(time);
             }
             return DateTime.Now;
         }
