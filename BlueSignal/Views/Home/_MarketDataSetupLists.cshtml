@@ -1,4 +1,5 @@
 ﻿
+<div class="tab_block">
 <div class="tab_block admin">
     <div class="col-sm-12">
         <div class="panel-group accordion">
@@ -43,14 +44,18 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Select Market</h4>
+                    <h4 class="modal-title" id="AddEditFormHeading">Select Market</h4>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" id="hfId" value="0" />
                     <input type="hidden" id="hdProductTypeId" value="0" />
-                    @*<div class="alert alert-info">
-                            <strong>Note:</strong> If your symbol is not preset, please type it directly into the textbox
-                        </div>*@
+                    <input type="hidden" id="hfSelectedEventId" value="" />
+                    <div class="row">
+                        <div class="col-md-6 userfield" id="radioButtonList1">
+                            <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdBlueFractal', '.radioMarketDataType')" class="radioMarketDataType" checked="checked" value="BlueFractal" id="rdBlueFractal" /> BluFractal</label>
+                            <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdBlueNeural', '.radioMarketDataType')" class="radioMarketDataType" value="BlueNeural" id="rdBlueNeural" /> BluNeural</label>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-6 userfield" id="SymbolName1">
                             <div class="form-group">
@@ -91,6 +96,12 @@
                                 <input id="EntryDate" type="text" class="form-control datepicker1" />
                             </div>
                         </div>
+                        <div class="col-sm-6 userfield" id="EntryTime1">
+                            <div class="form-group">
+                                <label>Time</label>
+                                <input id="EntryTime" type="text" class="form-control timepicker1" />
+                            </div>
+                        </div>
                         <div class="col-sm-6 userfield" id="ExitDate1">
                             <div class="form-group">
                                 <label>Exit Date</label>
@@ -123,11 +134,47 @@
         <div class="panel-group accordion">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class="panel-title pannel_bg_blue"> <a data-toggle="collapse" href="#collapseblueQuant">BluQuant Manual Trade</a> </h4>
+                    <h4 class="panel-title pannel_bg_blue"> <a data-toggle="collapse" href="#collapseMD1">Major Markets List</a> </h4>
+                </div>
+                <div id="collapseMD1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="button" productType="0" id="BtnMD1" title="Add to Major Markets" rFields="SymbolName1,SymbolCode1,MarketCategory1" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,MarketCategory1,radioButtonList1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
+                            </div>
+                            <div class="col-sm-12">
+                                <div style="overflow:auto;">
+                                    <div class="table-responsive table_style">
+                                        <table id="MarketData1" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Name</th>
+                                                    <th>Symbol</th>
+                                                    <th>Options</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="panel-group accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title pannel_bg_blue"> <a data-toggle="collapse" href="#collapseblueQuant">BluQuant Manual Edit</a> </h4>
                 </div>
                 <div id="collapseblueQuant" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="row">
+                            <div class="col-md-12"><input type="button" id="BtnMD2" title="Send New Trade" productType="103" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' rFields='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
                             <div class="addnew_btn"><input type="button" id="BtnMD2" productType="103" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,TradeAction1,Price1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
                             <div class="col-sm-12">
                                 <div>
@@ -135,11 +182,12 @@
                                         <table id="blueQuant" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                             <thead>
                                                 <tr>
-                                                    <th>Sr. No.</th>
                                                     <th>Name</th>
                                                     <th>Symbol</th>
-                                                    <th>Trading Type</th>
+                                                    <th>Type</th>
                                                     <th>Price</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -228,8 +276,25 @@
 <script>
     $(function () {
         GetMarketSetupData();
-        $('.datepicker1').datepicker();
-        //$('#mySetupModal').modal('toggle');
+        $('.datepicker1').datepicker({
+            //format: 'mm/dd/yyyy',
+            autoclose: true,
+            //todayHighlight: true,
+            //pickSeconds: false,
+            //maxView: 1,
+        });
+        $('.timepicker1').datetimepicker({
+            format: 'hh:ii',
+            use24hours: true,
+            pickDate: false,
+            pickSeconds: false,
+            autoclose: true,
+            startView: 0,
+            todayHighlight: true,
+            maxView: 0,
+            //showMeridian: true,
+            //startView: 1,
+        });
 
         $("#BtnCancel").click(function () {
             ResetModalPopup();
@@ -292,25 +357,35 @@
 
     //Toggling the Radio buttons for BluNeural and BlueFractal, being used at first section
     function ToggleRadioButtons(activeSelector, cssClass) {
-        var selectedId = activeSelector.indexOf('BlueNeural') != -1 ? "102" : "101";
-        $.ajax({
-            type: "GET",
-            url: "/Home/GetMarketSetDataByType",
-            dataType: "json",
-            async: true,
-            data: { 'typeId': selectedId },//{ 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
-            success: function (data) {
-                if (data != null) {
-                    BindDataTable1("MarketData1", data);
-                    $(cssClass).prop("checked", false);
-                    $(activeSelector).prop("checked", "checked");
-                }
-            },
-            error: function (error) {
-                console.log(error);
-                alert('Error');
+        $(cssClass).prop("checked", false);
+        $(activeSelector).prop("checked", "checked");
+        var productTypeId = $(this).attr("productType");
+        if (productTypeId != null) {
+            if (productTypeId == "0") {
+                var value = $(".radioMarketDataType:checked").val();
+                productTypeId = value.indexOf('BlueNeural') != -1 ? "102" : "101";
             }
-        });
+            $("#hdProductTypeId").val(productTypeId);
+        }
+        //var selectedId = activeSelector.indexOf('BlueNeural') != -1 ? "102" : "101";
+        //$.ajax({
+        //    type: "GET",
+        //    url: "/Home/GetMarketSetDataByType",
+        //    dataType: "json",
+        //    async: true,
+        //    data: { 'typeId': selectedId },//{ 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
+        //    success: function (data) {
+        //        if (data != null) {
+        //            BindDataTable1("MarketData1", data);
+        //            $(cssClass).prop("checked", false);
+        //            $(activeSelector).prop("checked", "checked");
+        //        }
+        //    },
+        //    error: function (error) {
+        //        console.log(error);
+        //        alert('Error');
+        //    }
+        //});
     }
 
     //Binding of the first section i.e. BlueFractal / BlueNeural
@@ -322,32 +397,34 @@
         var table = $('#' + selector).DataTable({
             aaData: data,
             "columns": [
-                     {
-                         "data": null, render: function (data, type, row) {
-                             return "";
-                         }
-                     },
+                     //{
+                     //    "data": "Category", render: function (data, type, row) {
+                     //        return "";
+                     //    }
+                     //},
+                     { "data": "Category", "name": "Category" },
                      { "data": "SymbolName", "name": "Name" },
                      { "data": "SymbolCode", "name": "symbol" },
                      {
-                         "data": null, "name": "Options", render: function (data, type, row) {
+                         "data": null, "name": "Action", "orderable": false, render: function (data, type, row) {
                              return "<div>" +
                                  //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-edit' custom='SymbolName1,SymbolCode1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-edit' id='btnEdit1' rFields=\"SymbolName1,SymbolCode1,MarketCategory1\" title=\"Edit Major Market\" custom='SymbolName1,SymbolCode1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-remove-circle' href='#' onclick='RemoveData(" + data.Id + ", this)'></a>" +
                              "</div>";
                          }
                      }
             ]
-            , select: true,
-            "fnDrawCallback": function (oSettings) {
-                /* Need to redo the counters if filtered or sorted */
-                if (oSettings.bSorted || oSettings.bFiltered) {
-                    for (var i = 0, iLen = oSettings.aiDisplay.length ; i < iLen ; i++) {
-                        $('td:eq(0)', oSettings.aoData[oSettings.aiDisplay[i]].nTr).html(i + 1);
-                    }
-                }
-            },
+            , select: true
+            //,
+            //"fnDrawCallback": function (oSettings) {
+            //    /* Need to redo the counters if filtered or sorted */
+            //    if (oSettings.bSorted || oSettings.bFiltered) {
+            //        for (var i = 0, iLen = oSettings.aiDisplay.length ; i < iLen ; i++) {
+            //            $('td:eq(0)', oSettings.aoData[oSettings.aiDisplay[i]].nTr).html(i + 1);
+            //        }
+            //    }
+            //},
 
         });
     }
@@ -361,38 +438,40 @@
         var table = $('#' + selector).DataTable({
             aaData: data,
             "columns": [
-                     {
-                         "data": null, render: function (data, type, row) {
-                             return "";
-                         }
-                     },
+                     //{
+                     //    "data": null, render: function (data, type, row) {
+                     //        return "";
+                     //    }
+                     //},
                      { "data": "SymbolName", "name": "Name" },
-                     { "data": "SymbolCode", "name": "symbol" },
-                     { "data": "QuantTradingType", "name": "action" },
+                     { "data": "SymbolCode", "name": "Symbol" },
+                     { "data": "QuantTradingType", "name": "Type" },
                      {
                          "data": null, "name": "Price", render: function (data, type, row) {
                              return "<span> $" + data.Price + " USD</span>";
                          }
                      },
+                     { "data": "StrEntryDate", "name": "Date" },
+                     { "data": "StrEntryTimeValue", "name": "Time" },
                      {
-                         "data": null, "name": "Options", render: function (data, type, row) {
+                         "data": null, "name": "Action", "orderable": false, render: function (data, type, row) {
                              return "<div>" +
-                                 //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-edit' custom='SymbolName1,SymbolCode1,TradeAction1,Price1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-edit' id='btnEdit2' title=\"Edit BluQuant Trade\" rFields=\"SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1\"  custom='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-remove-circle' href='#' onclick='RemoveData(" + data.Id + ", this)'></a>" +
                              "</div>";
                          }
                      }
             ]
-            , select: true,
-            "fnDrawCallback": function (oSettings) {
-                /* Need to redo the counters if filtered or sorted */
-                if (oSettings.bSorted || oSettings.bFiltered) {
-                    for (var i = 0, iLen = oSettings.aiDisplay.length ; i < iLen ; i++) {
-                        $('td:eq(0)', oSettings.aoData[oSettings.aiDisplay[i]].nTr).html(i + 1);
-                    }
-                }
-            },
+            , select: true
+            //,
+            //"fnDrawCallback": function (oSettings) {
+            //    /* Need to redo the counters if filtered or sorted */
+            //    if (oSettings.bSorted || oSettings.bFiltered) {
+            //        for (var i = 0, iLen = oSettings.aiDisplay.length ; i < iLen ; i++) {
+            //            $('td:eq(0)', oSettings.aoData[oSettings.aiDisplay[i]].nTr).html(i + 1);
+            //        }
+            //    }
+            //},
 
         });
     }
@@ -411,14 +490,17 @@
                      { "data": "StrEntryDate", "name": "EntryDate" },
                      {
                          "data": null, "name": "EntryPrice", render: function (data, type, row) {
-                             return "<span> $" + data.EntryPrice + " USD</span>";
+                             if (data.EntryPrice != null)
+                                 return "<span> $" + data.EntryPrice + " USD</span>";
+                             else
+                                 return "<span></span>";
                          }
                      },
                      {
-                         "data": null, "name": "Options", render: function (data, type, row) {
+                         "data": null, "name": "Action", "orderable": false, render: function (data, type, row) {
                              return "<div>" +
                                  //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-edit' custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-edit' id='btnEdit3' title=\"Live Portfolio Edit\" custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1' rFields='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-remove-circle' href='#' onclick='RemoveData(" + data.Id + ", this)'></a>" +
                              "</div>";
                          }
@@ -438,17 +520,25 @@
 
         var table = $('#' + selector).DataTable({
             aaData: data,
+            "bPaginate": false,
+            //paging: false,
             "columns": [
+                     { "data": "SymbolCode", "name": "Symbol" },
                      { "data": "SymbolName", "name": "Name" },
-                     { "data": "SymbolCode", "name": "symbol" },
                      { "data": "StrEntryDate", "name": "EntryDate" },
                      { "data": "StrExitDate", "name": "ExitDate" },
-                     { "data": "Result", "name": "Result" },
                      {
-                         "data": null, "name": "Options", render: function (data, type, row) {
+                         "data": null, "name": "Result", render: function (data, type, row) {
+                             if (data.Result != '') {
+                                 return "<span>" + parseFloat(data.Result).toFixed(1) + "%</span>";
+                             }
+                             return "<span>0.0%</span>";
+                         }
+                     },
+                     {
+                         "data": null, "name": "Action", "orderable": false, render: function (data, type, row) {
                              return "<div>" +
-                                 //"<a class='glyphicon glyphicon-plus-sign' href='#'></a> " +
-                                 "<a class='glyphicon glyphicon-edit' custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,,EntryPrice1,MarketCategory1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
+                                 "<a class='glyphicon glyphicon-edit' id='btnEdit4' title=\"Edit Completed Trade\" rFields='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,,EntryPrice1' custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,,EntryPrice1' onclick='GetSingle(" + data.Id + ", this)' href='#'></a> " +
                                  "<a class='glyphicon glyphicon-remove-circle' href='#' onclick='RemoveData(" + data.Id + ", this)'></a>" +
                              "</div>";
                          }
@@ -491,6 +581,7 @@
         $("#TradeAction").val(data.QuantTradingType);
         $("#Price").val(data.Price);
         $("#EntryDate").val(data.StrEntryDate);
+        $("#EntryTime").val(data.StrEntryTime24Value);
         $("#ExitDate").val(data.StrExitDate);
         $("#EntryPrice").val(data.EntryPrice);
         $("#Result").val(data.Result);
@@ -505,22 +596,46 @@
     //Resets the Modal Popup window before it opens up.
     function ResetModalPopup() {
         $("#BtnSave").val('Save');
-        $("#Symbol").val('');
-        $("#TradeAction").val('');
-        $("#Price").val('');
-        $("#EntryDate").val('');
-        $("#ExitDate").val('');
-        $("#EntryPrice").val('');
-        $("#Result").val('');
-        $("#hfId").val('');
-        $("#hdProductTypeId").val('');
-        $("#SymbName1").val('');
+        //$("#Symbol").val('');
+        //$("#Price").val('');
+        //$("#EntryDate").val('');
+        //$("#ExitDate").val('');
+        //$("#EntryPrice").val('');
+        //$("#Result").val('');
+        //$("#hfId").val('');
+        //$("#hdProductTypeId").val('');
+        //$("#SymbName1").val('');
+        //$("#hfSelectedEventId").val('');
         $('#mySetupModal').modal('hide');
         $("#categorySelect").val('0');
+        $("#TradeAction").val('');
+
+        $(".userfield input").each(function () {
+            $(this).removeClass("mandatory");
+            $(this).val("");
+        });
     }
 
     //Common Save method for saving market data, fired from each section in Market Admin Setup screen
     function SaveData() {
+        //Validations
+        var sender = $("#hfSelectedEventId").val();
+        if (sender != '') {
+            var reqFieldsArray = $(sender).attr('rFields').split(',');
+            if (reqFieldsArray != null && reqFieldsArray.length > 0) {
+                var selected = $.grep(reqFieldsArray, function (i, obj1) {
+                    return $("#" + obj1).val() == '';
+                });
+                if (selected.length > 0) {
+                    $.each(selected, function (i, item) {
+                        $("#" + item).addClass("mandatory");
+                        return;
+                    });
+                }
+            }
+        }
+
+
         var jsonData = {
             'Id': $("#hfId").val(),
             'ProductTypeID': $("#hdProductTypeId").val(),
@@ -534,6 +649,7 @@
             'Result': $("#Result").val(),
             'StrEntryDate': $("#EntryDate").val(),
             'StrExitDate': $("#ExitDate").val(),
+            'Time': $("#EntryTime").val(),
             'CategoryId': $("#categorySelect").val()
         };
 
@@ -545,6 +661,7 @@
             data: jsonData,
             success: function (data) {
                 if (data) {
+                    debugger;
                     var productTypeId = $("#hdProductTypeId").val();
                     ResetModalPopup();
                     RebindGrid(productTypeId, data.limitedData);
@@ -556,8 +673,8 @@
                 }
             },
             error: function (error) {
+                debugger;
                 console.log(error);
-                alert('Error');
             }
         });
     }
@@ -566,13 +683,17 @@
     function ShowHideFields(sender) {
         $(".userfield").hide();
         var values = $(sender).attr('custom');
+        var title = $(sender).attr('title');
         valArray = values.split(',');
         if (valArray.length > 0) {
             $.each(valArray, function (i, obj) {
                 $("#" + obj).show();
             });
         }
-        //$('#mySetupModal').modal('show');
+        if (title != '')
+            $('#AddEditFormHeading').html(title);
+
+        $("#hfSelectedEventId").val($(sender).attr('id'));
     }
 
     function RemoveData(selected, sender) {

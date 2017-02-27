@@ -483,7 +483,7 @@ namespace BlueSignal.Controllers
                 {
                     Data = new
                     {
-                        blueFractal = list.Where(a => a.ProductTypeID.Equals("101")),
+                        blueFractal = list.Where(a => a.ProductTypeID.Equals("101") || a.ProductTypeID.Equals("102")),
                         blueQuant = list.Where(a => a.ProductTypeID.Equals("103")),
                         livePortfolio = list.Where(a => a.ProductTypeID.Equals("104")),
                         Last10CompletedTrades = list.Where(a => a.ExitDate.HasValue && a.ProductTypeID.Equals("105")).OrderBy(n => n.ExitDate).Take(10),
@@ -525,25 +525,15 @@ namespace BlueSignal.Controllers
 
         public async Task<JsonResult> SaveMarketData(MarketDataDto vm)
         {
-            vm.IsActive = true;
-            if (vm.Id > 0)
-            {
-                vm.ModifiedBy = 1;
-                vm.ModifiedDate = DateTime.Now;
-            }
-            else
-            {
-                vm.CreatedBy = 1;
-                vm.CreatedDate = DateTime.Now;
-            }
-
             var result = await MarketBal.SaveMarketData(vm);
             if (result >= 0)
             {
                 var limitedData = await GetMarketSetDataByType(vm.ProductTypeID);
 
                 var jsonResult = await GetAllMarketSetupData();
-                jsonResult.Data = new { allData = jsonResult.Data, limitedData };
+                jsonResult.Data = new { allData = jsonResult.Data, limitedData = limitedData.Data};
+                jsonResult.JsonRequestBehavior = JsonRequestBehavior.AllowGet;
+                jsonResult.MaxJsonLength = int.MaxValue;
                 return jsonResult;
             }
             return Json(new List<MarketDataDto>(), JsonRequestBehavior.AllowGet);
