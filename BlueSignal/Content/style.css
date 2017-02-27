@@ -399,3 +399,13 @@ hr{border-color:#d1d1d1; }
 #tblCategoriesList1 td table{margin-bottom:0; border:none;}
 #tblCategoriesList1 td table td{padding:5px; border:1px solid #d1d1d1;}
 
+.login{background:#fff; border:1px solid #b2b3b4; padding:15px; margin:100px 0; border-radius:5px; text-align:center; box-shadow:0px 2px 5px #ACACAC;}
+.login h1{font-size:16px;}
+.login .btn{margin-bottom:15px;}
+
+.admin .addnew_btn{position:relative;}
+.admin .addnew_btn .btn{position:absolute; top:13px; right:18px; z-index:99;}
+.admin .dataTables_filter{margin-right:88px;}
+
+.mandatory:after{content:"*"; color:red;}
+
