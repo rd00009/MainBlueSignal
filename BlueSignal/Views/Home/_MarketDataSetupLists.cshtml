@@ -1,43 +1,5 @@
 ﻿
-<div class="tab_block">
 <div class="tab_block admin">
-    <div class="col-sm-12">
-        <div class="panel-group accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title pannel_bg_blue"> <a data-toggle="collapse" href="#collapseMD1">Preload List</a> </h4>
-                </div>
-                <div id="collapseMD1" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdBlueFractal', '.radioMarketDataType')" class="radioMarketDataType" checked="checked" value="BlueFractal" id="rdBlueFractal" /> BluFractal</label>
-                                <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdBlueNeural', '.radioMarketDataType')" class="radioMarketDataType" value="BlueNeural" id="rdBlueNeural" /> BluNeural</label>
-                            </div>
-                            <div class="col-md-6 addnew_btn"><input type="button" style="top:37px;" productType="0" id="BtnMD1" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
-                            <div class="col-sm-12">
-                                <div style="overflow:auto;">
-                                    <div class="table-responsive table_style">
-                                        <table id="MarketData1" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-                                            <thead>
-                                                <tr>
-                                                    <th>Sr. No.</th>
-                                                    <th>Name</th>
-                                                    <th>Symbol</th>
-                                                    <th>Options</th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="mySetupModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -59,7 +21,7 @@
                     <div class="row">
                         <div class="col-sm-6 userfield" id="SymbolName1">
                             <div class="form-group">
-                                <label class="mandatory">Name</label>
+                                <label>Name</label>
                                 <input type="text" id="SymbName1" class="form-control" />
                             </div>
                         </div>
@@ -139,7 +101,7 @@
                 <div id="collapseMD1" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 addnew_btn">
                                 <input type="button" productType="0" id="BtnMD1" title="Add to Major Markets" rFields="SymbolName1,SymbolCode1,MarketCategory1" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,MarketCategory1,radioButtonList1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
                             </div>
                             <div class="col-sm-12">
@@ -174,8 +136,9 @@
                 <div id="collapseblueQuant" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-12"><input type="button" id="BtnMD2" title="Send New Trade" productType="103" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' rFields='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
-                            <div class="addnew_btn"><input type="button" id="BtnMD2" productType="103" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,TradeAction1,Price1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
+                            <div class="addnew_btn">
+                                <input type="button" id="BtnMD2" title="Send New Trade" productType="103" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' rFields='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
+                            </div>
                             <div class="col-sm-12">
                                 <div>
                                     <div class="table-responsive table_style">
@@ -211,7 +174,10 @@
                 <div id="collapseLivePortfolio" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="addnew_btn"><input type="button" id="BtnMD3" productType="104" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New"></div>
+                            <div class="addnew_btn">
+                                @*<input type="button" id="BtnMD3" productType="104" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New">*@
+                                <input type="button" id="BtnMD3" title="Add Live Portfolio" productType="104" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1' rFields='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
+                            </div>
                             <div class="col-sm-12">
                                 <div>
                                     <div class="table-responsive table_style">
@@ -246,7 +212,8 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="addnew_btn">
-                                <input type="button" id="BtnMD3" productType="105" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
+                                @*<input type="button" id="BtnMD3" title="" productType="105" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' rFields='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' data-toggle="modal" data-target="#mySetupModal" value="Add New">*@
+                                <input type="button" id="BtnMD3" productType="105" title="Add to Completed Trades List" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' rFields='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
                             </div>
                             <div class="col-sm-12">
                                 <div>
@@ -619,18 +586,24 @@
     //Common Save method for saving market data, fired from each section in Market Admin Setup screen
     function SaveData() {
         //Validations
+        $(".userfield").each(function () {
+            var id = $(this).attr('id');
+            if ($("#" + id + " label").length > 0)
+                $("#" + id + " label").removeClass("mandatory");
+        });
+
         var sender = $("#hfSelectedEventId").val();
         if (sender != '') {
-            var reqFieldsArray = $(sender).attr('rFields').split(',');
+            var reqFieldsArray = $("#" + sender).attr('rFields').split(',');
             if (reqFieldsArray != null && reqFieldsArray.length > 0) {
                 var selected = $.grep(reqFieldsArray, function (i, obj1) {
-                    return $("#" + obj1).val() == '';
+                    return $("#" + i + " input").val() == '' || $("#" + i + " select").val() == '' || $("#" + i + " select").val() == "0";
                 });
                 if (selected.length > 0) {
                     $.each(selected, function (i, item) {
-                        $("#" + item).addClass("mandatory");
-                        return;
+                        $("#" + item + " label").addClass("mandatory");
                     });
+                    return;
                 }
             }
         }
@@ -681,6 +654,13 @@
 
     //Show Hide Fields based on the selected product type e.g. BluFractal will show 2 fields such as Name and Symbol Code.
     function ShowHideFields(sender) {
+        $(".userfield").each(function () {
+            var id = $(this).attr('id');
+            if ($("#" + id + " label").length > 0)
+                $("#" + id + " label").removeClass("mandatory");
+        });
+
+
         $(".userfield").hide();
         var values = $(sender).attr('custom');
         var title = $(sender).attr('title');
@@ -760,13 +740,13 @@
                 break;
             case "104":
                 BindLivePortfolioDataTable("livePortfolio", data);
-                //if ($("#livePortfolio1").length > 0)
-                //    BindLivePortfolioMain("livePortfolio1", data);
+                if ($("#livePortfolio1").length > 0)
+                    BindLivePortfolioMain("livePortfolio1", data);
                 break;
             case "105":
                 BindLast10CompletedTradesDataTable("last10CompletedTrades", data);
-                //if ($("#lastCompletedTradesMain").length > 0)
-                //    BindLast10CompletedTradesMain("lastCompletedTradesMain", data);
+                if ($("#lastCompletedTradesMain").length > 0)
+                    BindLast10CompletedTradesMain("lastCompletedTradesMain", data);
                 break;
             default:
                 BindDataTable1("MarketData1", data);
