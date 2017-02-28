@@ -116,7 +116,8 @@ namespace BlueSignalCore.Bal
                 var list = new List<MarketDataDto>();
                 using (var rep = uw.MarketDataRepository)
                 {
-                    var m = (productTypeId.Equals("101") || productTypeId.Equals("102")) ? rep.Where(a => a.IsActive && (a.ProductTypeID.Equals("101") || a.ProductTypeID.Equals("102"))).ToList() : rep.Where(a => a.IsActive && a.ProductTypeID.Equals(productTypeId)).ToList();
+                    //var m = (productTypeId.Equals("101") || productTypeId.Equals("102")) ? rep.Where(a => a.IsActive && (a.ProductTypeID.Equals("101") || a.ProductTypeID.Equals("102"))).ToList() : rep.Where(a => a.IsActive && a.ProductTypeID.Equals(productTypeId)).ToList();
+                    var m = rep.Where(a => a.IsActive && a.ProductTypeID.Equals(productTypeId)).ToList();
                     if (m.Any())
                     {
                         list.AddRange(m.Select(a =>

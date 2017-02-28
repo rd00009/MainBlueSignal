@@ -13,12 +13,6 @@
                     <input type="hidden" id="hdProductTypeId" value="0" />
                     <input type="hidden" id="hfSelectedEventId" value="" />
                     <div class="row">
-                        <div class="col-md-6 userfield" id="radioButtonList1">
-                            <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdBlueFractal', '.radioMarketDataType')" class="radioMarketDataType" checked="checked" value="BlueFractal" id="rdBlueFractal" /> BluFractal</label>
-                            <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdBlueNeural', '.radioMarketDataType')" class="radioMarketDataType" value="BlueNeural" id="rdBlueNeural" /> BluNeural</label>
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col-sm-6 userfield" id="SymbolName1">
                             <div class="form-group">
                                 <label>Name</label>
@@ -101,8 +95,14 @@
                 <div id="collapseMD1" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="row">
+                            <div class="col-md-12">
+                                <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdBluQuant', '.radioMarketDataType')" class="radioMarketDataType" value="BluQuant" id="rdBluQuant" /> BluQuant</label>
+                                <label class="radio-inline"><input type="radio" onchange="ToggleRadioButtons('#rdOther', '.radioMarketDataType')" class="radioMarketDataType" checked="checked" value="Other" id="rdOther" /> Other</label>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-12 addnew_btn">
-                                <input type="button" productType="0" id="BtnMD1" title="Add to Major Markets" rFields="SymbolName1,SymbolCode1,MarketCategory1" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,MarketCategory1,radioButtonList1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
+                                <input type="button" style="top:12px;" productType="0" id="BtnMD1" title="Add to Major Markets" rFields="SymbolName1,SymbolCode1,MarketCategory1" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,MarketCategory1' data-toggle="modal" value="Add New">
                             </div>
                             <div class="col-sm-12">
                                 <div style="overflow:auto;">
@@ -137,7 +137,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="addnew_btn">
-                                <input type="button" id="BtnMD2" title="Send New Trade" productType="103" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' rFields='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
+                                <input type="button" id="BtnMD2" title="Send New Trade" productType="103" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' rFields='SymbolName1,SymbolCode1,TradeAction1,Price1,EntryDate1,EntryTime1' data-toggle="modal" value="Add New">
                             </div>
                             <div class="col-sm-12">
                                 <div>
@@ -174,10 +174,9 @@
                 <div id="collapseLivePortfolio" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="addnew_btn">
-                                @*<input type="button" id="BtnMD3" productType="104" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1,MarketCategory1' data-toggle="modal" data-target="#mySetupModal" value="Add New">*@
-                                <input type="button" id="BtnMD3" title="Add Live Portfolio" productType="104" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1' rFields='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
-                            </div>
+                            @*<div class="addnew_btn">
+                                    <input type="button" id="BtnMD3" title="Add Live Portfolio" productType="104" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1' rFields='SymbolName1,SymbolCode1,EntryDate1,EntryPrice1' data-toggle="modal" value="Add New">
+                                </div>*@
                             <div class="col-sm-12">
                                 <div>
                                     <div class="table-responsive table_style">
@@ -213,7 +212,7 @@
                         <div class="row">
                             <div class="addnew_btn">
                                 @*<input type="button" id="BtnMD3" title="" productType="105" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' rFields='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' data-toggle="modal" data-target="#mySetupModal" value="Add New">*@
-                                <input type="button" id="BtnMD3" productType="105" title="Add to Completed Trades List" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' rFields='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' data-toggle="modal" data-target="#mySetupModal" value="Add New">
+                                <input type="button" id="BtnMD3" productType="105" title="Add to Completed Trades List" onclick="ShowHideFields(this);" class="btn btn-primary pull-right addnew" custom='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' rFields='SymbolCode1,SymbolName1,EntryDate1,ExitDate1,Result1,EntryPrice1' data-toggle="modal" value="Add New">
                             </div>
                             <div class="col-sm-12">
                                 <div>
@@ -274,27 +273,31 @@
         });
 
         $(".addnew").click(function () {
-            $("#Name").val('');
-            $("#Symbol").val('');
-            $("#TradeAction").val('Buy');
-            $("#Price").val('');
-            $("#EntryDate").val('');
-            $("#ExitDate").val('');
-            $("#EntryPrice").val('');
-            $("#Result").val('');
-            $("#hfId").val('');
-            $("#hdProductTypeId").val('');
-
             var productTypeId = $(this).attr("productType");
-            if (productTypeId != null) {
-                if (productTypeId == "0") {
-                    var value = $(".radioMarketDataType:checked").val();
-                    productTypeId = value.indexOf('BlueNeural') != -1 ? "102" : "101";
-                }
-                $("#hdProductTypeId").val(productTypeId);
-            }
+            var result = productTypeId == "105" ? confirm("Do you really want to Add Completed Trades?") : true;
+            if (result) {
+                $("#Name").val('');
+                $("#Symbol").val('');
+                $("#TradeAction").val('Buy');
+                $("#Price").val('');
+                $("#EntryDate").val('');
+                $("#ExitDate").val('');
+                $("#EntryPrice").val('');
+                $("#Result").val('');
+                $("#hfId").val('');
+                $("#hdProductTypeId").val('');
 
-            $("#BtnSave").val('Save');
+                if (productTypeId != null) {
+                    if (productTypeId == "0") {
+                        var value = $(".radioMarketDataType:checked").val();
+                        productTypeId = value.indexOf('BluQuant') != -1 ? "103" : "102";
+                    }
+                    $("#hdProductTypeId").val(productTypeId);
+                }
+
+                $("#BtnSave").val('Save');
+                $('#mySetupModal').modal('show');
+            }
         });
     });
 
@@ -326,35 +329,34 @@
 
     //Toggling the Radio buttons for BluNeural and BlueFractal, being used at first section
     function ToggleRadioButtons(activeSelector, cssClass) {
-        $(cssClass).prop("checked", false);
-        $(activeSelector).prop("checked", "checked");
-        var productTypeId = $(this).attr("productType");
-        if (productTypeId != null) {
-            if (productTypeId == "0") {
-                var value = $(".radioMarketDataType:checked").val();
-                productTypeId = value.indexOf('BlueNeural') != -1 ? "102" : "101";
+        var selectedId = activeSelector.indexOf('BluQuant') != -1 ? "103" : "102";
+        $("#hdProductTypeId").val(selectedId);
+        $.ajax({
+            type: "GET",
+            url: "/Home/GetMarketSetDataByType",
+            dataType: "json",
+            async: true,
+            data: { 'typeId': selectedId },//{ 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
+            success: function (data) {
+                if (data != null) {
+                    BindDataTable1("MarketData1", data);
+                    $(cssClass).prop("checked", false);
+                    $(activeSelector).prop("checked", "checked");
+                    //var productTypeId = $(this).attr("productType");
+                    //if (productTypeId != null) {
+                    //    if (productTypeId == "0") {
+                    //        var value = $(".radioMarketDataType:checked").val();
+                    //        productTypeId = value.indexOf('BluQuant') != -1 ? "103" : "102";
+                    //    }
+                    //    $("#hdProductTypeId").val(productTypeId);
+                    //}
+                }
+            },
+            error: function (error) {
+                console.log(error);
+                alert('Error');
             }
-            $("#hdProductTypeId").val(productTypeId);
-        }
-        //var selectedId = activeSelector.indexOf('BlueNeural') != -1 ? "102" : "101";
-        //$.ajax({
-        //    type: "GET",
-        //    url: "/Home/GetMarketSetDataByType",
-        //    dataType: "json",
-        //    async: true,
-        //    data: { 'typeId': selectedId },//{ 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
-        //    success: function (data) {
-        //        if (data != null) {
-        //            BindDataTable1("MarketData1", data);
-        //            $(cssClass).prop("checked", false);
-        //            $(activeSelector).prop("checked", "checked");
-        //        }
-        //    },
-        //    error: function (error) {
-        //        console.log(error);
-        //        alert('Error');
-        //    }
-        //});
+        });
     }
 
     //Binding of the first section i.e. BlueFractal / BlueNeural
@@ -679,24 +681,25 @@
     }
 
     function RemoveData(selected, sender) {
-        $.ajax({
-            type: "GET",
-            url: "/Home/DeleteMarketData",
-            dataType: "json",
-            async: true,
-            data: { "id": selected },
-            success: function (data) {
-                if (data) {
-                    RebindGrid(data.productTypeId, data.list);
+        if (confirm("This action will delete the current item. Continue?")) {
+            $.ajax({
+                type: "GET",
+                url: "/Home/DeleteMarketData",
+                dataType: "json",
+                async: true,
+                data: { "id": selected },
+                success: function (data) {
+                    if (data) {
+                        RebindGrid(data.productTypeId, data.list);
+                    }
+                },
+                error: function (error) {
+                    console.log(error);
+                    alert('Error');
                 }
-            },
-            error: function (error) {
-                console.log(error);
-                alert('Error');
-            }
-        });
+            });
+        }
     }
-
 
     /// <summary>
     /// Binds the dropdown data.
@@ -739,6 +742,7 @@
         switch (productTypeId) {
             case "103":
                 BindBlueQuantDataTable("blueQuant", data);
+                BindDataTable1("MarketData1", data);
                 break;
             case "104":
                 BindLivePortfolioDataTable("livePortfolio", data);
