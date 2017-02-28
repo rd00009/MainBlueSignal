@@ -41,8 +41,8 @@
                             <div class="form-group">
                                 <label>Action</label>
                                 <select id="TradeAction" class="form-control">
-                                    <option selected="selected">Buy</option>
-                                    <option>Sell</option>
+                                    <option value="Buy">Buy</option>
+                                    <option value="Sell">Sell</option>
                                 </select>
                             </div>
                         </div>
@@ -242,6 +242,8 @@
 </div>
 <script>
     $(function () {
+        $("#TradeAction").val('Buy');
+
         GetMarketSetupData();
         $('.datepicker1').datepicker({
             //format: 'mm/dd/yyyy',
@@ -274,7 +276,7 @@
         $(".addnew").click(function () {
             $("#Name").val('');
             $("#Symbol").val('');
-            $("#TradeAction").val('');
+            $("#TradeAction").val('Buy');
             $("#Price").val('');
             $("#EntryDate").val('');
             $("#ExitDate").val('');
