@@ -407,5 +407,7 @@ hr{border-color:#d1d1d1; }
 .admin .addnew_btn .btn{position:absolute; top:13px; right:18px; z-index:99;}
 .admin .dataTables_filter{margin-right:88px;}
 
+#collapseLivePortfolio .dataTables_filter{margin-right:0px;}
+
 .mandatory:after{content:" *"; color:red;}
 
