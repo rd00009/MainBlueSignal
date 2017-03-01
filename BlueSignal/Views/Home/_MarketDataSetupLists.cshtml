@@ -419,7 +419,9 @@
                      { "data": "QuantTradingType", "name": "Type" },
                      {
                          "data": null, "name": "Price", render: function (data, type, row) {
-                             return "<span> $" + data.Price + " USD</span>";
+                             if (data.Price != null && data.Price != "")
+                                 return "<span> $" + parseFloat(data.Price).toFixed(2) + " USD</span>";
+                             return "<span></span>";
                          }
                      },
                      { "data": "StrEntryDate", "name": "Date" },
@@ -462,7 +464,7 @@
                      {
                          "data": null, "name": "EntryPrice", render: function (data, type, row) {
                              if (data.EntryPrice != null)
-                                 return "<span> $" + data.EntryPrice + " USD</span>";
+                                 return "<span> $" + parseFloat(data.EntryPrice).toFixed(2) + " USD</span>";
                              else
                                  return "<span></span>";
                          }
@@ -739,17 +741,18 @@
 
 
     function RebindGrid(productTypeId, data) {
-        switch (productTypeId) {
-            case "103":
+        var pId = parseInt(productTypeId)
+        switch (pId) {
+            case 103:
                 BindBlueQuantDataTable("blueQuant", data);
                 BindDataTable1("MarketData1", data);
                 break;
-            case "104":
+            case 104:
                 BindLivePortfolioDataTable("livePortfolio", data);
                 if ($("#livePortfolio1").length > 0)
                     BindLivePortfolioMain("livePortfolio1", data);
                 break;
-            case "105":
+            case 105:
                 BindLast10CompletedTradesDataTable("last10CompletedTrades", data);
                 if ($("#lastCompletedTradesMain").length > 0)
                     BindLast10CompletedTradesMain("lastCompletedTradesMain", data);
