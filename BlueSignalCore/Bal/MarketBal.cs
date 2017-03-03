@@ -183,13 +183,31 @@ namespace BlueSignalCore.Bal
                 user.user_email = Convert.ToString(objInList["user_email"]).Trim();
                 user.user_registered = Convert.ToString(objInList["user_registered"]).Trim();
                 user.display_name = Convert.ToString(objInList["display_name"]).Trim();
-                if (user != null && user.ID != "0" && user.ID != "")
-                {
-                    return user;
-                }
+                //user.display_AdminKey = Convert.ToString(objInList["display_name"]).Trim();
+                
 
             }
+            DataSet myDataSetUserType = new DataSet();
+            if (Convert.ToString(user.ID).Length > 0)
+            {
+                MySqlConnection myConnectionUserType = new MySqlConnection(ConfigurationSettings.AppSettings["Wb_ConnectionString"]);
+                string strSQLUserType = "select * from  wp_g3b4k2u7_usermeta where user_id = '"+ Convert.ToString(user.ID) + "' and meta_key = 'wp_g3b4k2u7_capabilities' ";
+                MySqlDataAdapter myDataAdapterUserType = new MySqlDataAdapter(strSQLUserType, myConnectionUserType);
 
+                myDataAdapterUserType.Fill(myDataSetUserType, "my_usersUserType");
+
+            }
+            if (myDataSetUserType != null && myDataSetUserType.Tables.Count > 0 && myDataSetUserType.Tables[0].Rows.Count > 0)
+            {
+
+                var objInListUserType = myDataSetUserType.Tables[0].Rows[0];
+                user.display_AdminKey = Convert.ToString(objInListUserType["meta_value"]).Trim();
+            }
+
+            if (user != null && user.ID != "0" && user.ID != "")
+            {
+                 return user;
+            }
 
             return new WP_User();
         }
