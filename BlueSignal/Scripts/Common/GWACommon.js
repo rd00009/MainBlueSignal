@@ -5,7 +5,22 @@
 function HideLoader()
 { $(".customLoader").fadeOut("slow"); }
 
+function ShowLoaderCustom() {
+    $('#loading').modal('show');
+    //$('#ModelBackGround_Custom').show(500);
 
+    $('#loading').show();
+    $('#ModelBackGround_Custom').show();
+    
+}
+
+function HideLoaderCustom() {
+    $('#loading').hide();
+    $('#loading').modal('hide');
+    $('#ModelBackGround_Custom').hide();
+    $('.modal-backdrop').hide();
+    
+}
 
 function OpenGWAModelPopup(modelTitle, Body) {
     $('#modalTitle').text(modelTitle);

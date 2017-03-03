@@ -45,19 +45,19 @@
                         <div class="row">
                             <label class="col-sm-3 symbol_text" for="code">Symbol:</label>
                             <div class="col-sm-6 search_symbol">
-                                <input type="text" id="codeD" readonly name="code" placeholder="Type valid Symbol" data-toggle="tooltip" title="Type a Valid Symbol" value="SPY" class="form-control codeValue">
+                                <input type="text" id="codeD" readonly name="code" placeholder="Type valid Symbol" data-toggle="tooltip" title="@HttpContextSessionWrapperExtension.UnAuthorizedUserAccessMessage" value="SPY" class="form-control codeValue">
                                 <span><i class="fa fa-search" data-toggle="tooltip" title="Lookup Symbol" aria-hidden="true"></i></span>
                             </div>
                             <div class="col-sm-3">
 
-                                <button type="button" disabled="disabled" id="btnLoad" data-toggle="tooltip" title="Load Symbol" class="btn btn-primary btn_style btn_whitegray" onclick="InitilizeMarketListWithCode($('#codeD'))">Load</button>
+                                <button type="button" disabled="disabled" id="btnLoad" data-toggle="tooltip" title="@HttpContextSessionWrapperExtension.UnAuthorizedUserAccessMessage" class="btn btn-primary btn_style btn_whitegray" onclick="InitilizeMarketListWithCode($('#codeD'))">Load</button>
                             </div>
 
                         </div>
                     </div>
 
                     <div class="col-sm-4">
-                        <button type="button" disabled="disabled" class="btn btn-primary btn_style pull-right btn_whitegray" data-toggle="modal" data-target="#myModal" title="Choose Major Market" @*onclick="callYahooFinance()"*@>Major Markets</button>
+                        <button type="button" disabled="disabled" class="btn btn-primary btn_style pull-right btn_whitegray" data-toggle="modal" data-target="#myModal" title="@HttpContextSessionWrapperExtension.UnAuthorizedUserAccessMessage" @*onclick="callYahooFinance()"*@>Major Markets</button>
                     </div>
 
                 }

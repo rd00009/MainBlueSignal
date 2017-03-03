@@ -303,6 +303,8 @@
 
     //Bind Lists on page load
     function GetMarketSetupData() {
+
+        ShowLoaderCustom();
         $.ajax({
             type: "GET",
             url: "/Home/GetMarketSetupData",
@@ -310,6 +312,7 @@
             async: true,
             data: null,//{ 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
             success: function (data) {
+                HideLoaderCustom();
                 if (data != null) {
                     BindDataTable1("MarketData1", data.blueFractal);
                     BindBlueQuantDataTable("blueQuant", data.blueQuant);
@@ -321,7 +324,7 @@
             },
             error: function (error, status) {
                 console.log(error);
-
+                HideLoaderCustom();
                 //alert('Error');
             }
         });
@@ -331,6 +334,7 @@
     function ToggleRadioButtons(activeSelector, cssClass) {
         var selectedId = activeSelector.indexOf('BluQuant') != -1 ? "103" : "102";
         $("#hdProductTypeId").val(selectedId);
+        ShowLoaderCustom();
         $.ajax({
             type: "GET",
             url: "/Home/GetMarketSetDataByType",
@@ -338,6 +342,7 @@
             async: true,
             data: { 'typeId': selectedId },//{ 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
             success: function (data) {
+                HideLoaderCustom();
                 if (data != null) {
                     BindDataTable1("MarketData1", data);
                     $(cssClass).prop("checked", false);
@@ -354,6 +359,7 @@
             },
             error: function (error) {
                 console.log(error);
+                HideLoaderCustom();
                 alert('Error');
             }
         });
@@ -524,7 +530,10 @@
 
     //Get the current records in edit mode
     function GetSingle(selected, sender) {
+
+       
         if (selected > 0) {
+            ShowLoaderCustom();
             $.ajax({
                 type: "GET",
                 url: "/Home/GetMarketDataById",
@@ -532,13 +541,17 @@
                 async: true,
                 data: { "id": selected },
                 success: function (data) {
+
+                  
                     if (data != null) {
                         BindDetailsInEdit(data);
                         ShowHideFields(sender);
                     }
+                    HideLoaderCustom();
                 },
                 error: function (error) {
                     console.log(error);
+                    HideLoaderCustom();
                     alert('Error');
                 }
             });
@@ -632,6 +645,7 @@
             'CategoryId': $("#categorySelect").val()
         };
 
+        ShowLoaderCustom();
         $.ajax({
             type: "GET",
             url: "/Home/SaveMarketData",
@@ -639,8 +653,7 @@
             async: true,
             data: jsonData,
             success: function (data) {
-                if (data) {
-                    debugger;
+                if (data) {                   
                     var productTypeId = $("#hdProductTypeId").val();
                     ResetModalPopup();
                     RebindGrid(productTypeId, data.limitedData);
@@ -650,9 +663,10 @@
                         BindActionData(data.allData.list);
                     }
                 }
+                HideLoaderCustom();
             },
-            error: function (error) {
-                debugger;
+            error: function (error) {    
+                HideLoaderCustom();
                 console.log(error);
             }
         });
@@ -684,6 +698,8 @@
 
     function RemoveData(selected, sender) {
         if (confirm("This action will delete the current item. Continue?")) {
+
+            ShowLoaderCustom();
             $.ajax({
                 type: "GET",
                 url: "/Home/DeleteMarketData",
@@ -694,9 +710,11 @@
                     if (data) {
                         RebindGrid(data.productTypeId, data.list);
                     }
+                    HideLoaderCustom();
                 },
                 error: function (error) {
                     console.log(error);
+                    HideLoaderCustom();
                     alert('Error');
                 }
             });

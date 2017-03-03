@@ -135,13 +135,15 @@
 
         //alert(1);
         //setInterval(function () { GetTheGoogleCodes($('#code').val()); }, 3000);
-
+        ShowLoaderCustom();
         $.ajax({
             type: "GET",
             url: "/Home/GetGoogleFinanceInfo",
             dataType: "html",
             data: { 'q': $('#code').val() },
             success: function (data) {
+
+                HideLoaderCustom();
                 $("#myTable").empty();
 
                                 $('#RefershLable').html('');

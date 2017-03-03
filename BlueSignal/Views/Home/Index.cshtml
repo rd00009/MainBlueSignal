@@ -23,7 +23,7 @@
     }
     else
     {
-        <li class="active disabled"><a class="blufractal" id="blude_code" data-toggle="tab" href="#BluFractal"><span>Blu</span>Fractal</a></li>  }
+        <li class="active disabled" data-toggle="tooltip" title="@HttpContextSessionWrapperExtension.UnAuthorizedUserAccessMessage"><a class="blufractal" id="blude_code" data-toggle="tab" href="#BluFractal"><span>Blu</span>Fractal</a></li>  }
 
 
     @if (HttpContextSessionWrapperExtension.SessionUser.IsBluNeutral)
@@ -32,7 +32,7 @@
     }
     else
     {
-        <li><a class="bluneural disabled" id="blueNureal_codeD" data-toggle="tab" href="#"><span>Blu</span>Neural</a></li>
+        <li data-toggle="tooltip" title="@HttpContextSessionWrapperExtension.UnAuthorizedUserAccessMessage"><a class="bluneural disabled" id="blueNureal_codeD" data-toggle="tab" href="#"><span>Blu</span>Neural</a></li>
     }
 
 
@@ -42,7 +42,7 @@
     }
     else
     {
-        <li><a class="BluFractal_BluNeural disabled" id="blueCombo_codeBD" data-toggle="tab" href="#"><span class="combo"><span class="bf_icon"></span>&nbsp;<span class="bn_icon"></span></span> <span class="combo_txt">Combo</span></a></li>
+        <li data-toggle="tooltip" title="@HttpContextSessionWrapperExtension.UnAuthorizedUserAccessMessage"><a class="BluFractal_BluNeural disabled" id="blueCombo_codeBD" data-toggle="tab" href="#"><span class="combo"><span class="bf_icon"></span>&nbsp;<span class="bn_icon"></span></span> <span class="combo_txt">Combo</span></a></li>
     }
 
     @if (HttpContextSessionWrapperExtension.SessionUser.IsBluQuant)
@@ -51,17 +51,28 @@
     }
     else
     {
-        <li><a class="bluquant disabled" id="blueQuote_codeDquent" data-toggle="tab" href="#"><span>Blu</span>Quant</a></li>
+        <li data-toggle="tooltip" title="@HttpContextSessionWrapperExtension.UnAuthorizedUserAccessMessage"><a class="bluquant disabled" id="blueQuote_codeDquent" data-toggle="tab" href="#"><span>Blu</span>Quant</a></li>
     }
 
 
 
     <li class="pull-right help"><a href="@Url.Action("","Help")" data-toggle="tooltip" title="Help" target="_blank"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></li>
-    <li class="pull-right"><a class="detail" data-toggle="tooltip" title="Detail" onclick="return OpenPopupWithTheQuote();"></a></li>
+    <li class="pull-right"><a class="detail" data-toggle="tab" title="Detail" href="#Details" onclick="return OpenPopupWithTheQuote();"></a></li>
     <li class="pull-right">@*<a class="data" data-toggle="tooltip" title="Data" href="#Data"></a>*@</li>
-    <li class="pull-right"><a class="data MarketDataLists" data-toggle="tooltip" title="Data" href="#MarketDataLists"></a></li>
+
+
+    <li class="pull-right"><a class="data MarketDataLists" data-toggle="tab" title="Data" href="#MarketDataLists"></a></li>
+
+
+
+
+
+
     <li class="pull-right">@*<a class="data" data-toggle="tooltip" title="Data" href="#Data"></a>*@</li>
-    <li class="pull-right"><a class="glyphicon glyphicon-cog MarketDataSetupLists setting" data-toggle="tab" title="Data" href="#MarketDataSetupLists"></a></li>
+    @if (HttpContextSessionWrapperExtension.SessionUser.IsAdminUser)
+    {
+        <li class="pull-right"><a class="glyphicon glyphicon-cog MarketDataSetupLists setting" data-toggle="tab" title="Admin" href="#MarketDataSetupLists"></a></li>
+    }
 </ul>
 
 <div class="tab-content">
@@ -93,7 +104,7 @@
 
         @if (HttpContextSessionWrapperExtension.SessionUser.IsBluNeutral)
         {
-        @Html.Partial("_DailyChartData")
+            @Html.Partial("_DailyChartData")
         }
         else
         {
@@ -465,9 +476,9 @@
             customColor = ['#f45b5b', '#8085e9', '#8d4654', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'];
         }
 
+        ShowLoaderCustom();
 
-
-
+       
         var rangeEnabled = true;
 
         var containterID = 'chartcontainer_' + typeID;
@@ -478,6 +489,7 @@
             data: { 'startDate': $('#date').val(), 'Type': typeID, 'symbol': symb },
             success: function (data) {
                 if (data != '') {
+                 
                     for (i in data) {
                         data[i][0] = new Date(data[i][0]).getTime();
                     }
@@ -559,6 +571,8 @@
     }
     function RebindMarketData(selectedCode) {
         var a = $('#date').val(); var Type = $('#datafrequency').val();
+
+        ShowLoaderCustom();
         $.ajax({
             type: "GET",
             url: "/Home/GetAllMarketData",
@@ -566,6 +580,7 @@
             async: true,
             data: { 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
             success: function (data) {
+       
                 if (data != null) {
                     var dailyData = $.parseJSON(data.MarketDataDaily);
                     $.each(dailyData.results, function (i, d) {
@@ -670,6 +685,7 @@
                             clearChart('dailyBlueNeural');
 
                             alert(symbolData.status.message);
+                            HideLoaderCustom();
                         } else {
                             GetMarketChartNearTermData('daily');
                             GetMarketChartNearTermData('weekly');
@@ -678,7 +694,7 @@
 
                             GetMarketChartNearTermData('dailyBuleFractal');
                             GetMarketChartNearTermData('dailyBlueNeural');
-
+                            HideLoaderCustom();
                         }
 
 
@@ -692,7 +708,7 @@
                 }
             },
             error: function (error) {
-                console.log(error);
+                console.log(error);       
                 alert('Error');
             }
         });
@@ -702,13 +718,15 @@
 
     function RebindBuleQuentData(selectedCode) {
         var a = $('#date').val(); var Type = $('#datafrequency').val();
+
+        ShowLoaderCustom();
         $.ajax({
             type: "GET",
             url: "/Home/GetAllMarketData",
             dataType: "json",
             async: true,
             data: { 'startDate': $('#date').val(), 'Type': $('#datafrequency').val(), 'selectedCode': selectedCode },
-            success: function (data) {
+            success: function (data) {            
                 if (data != null) {
 
                     $("#BlueQuanteCode").val(data.Code);
@@ -744,10 +762,11 @@
 
 
                             alert(symbolData.status.message);
+                            HideLoaderCustom();
                         } else {
 
                             GetMarketChartNearTermData('dailyBulQuantData');
-
+                            HideLoaderCustom();
 
                         }
 
@@ -762,7 +781,7 @@
                 }
             },
             error: function (error) {
-                console.log(error);
+                console.log(error);       
                 alert('Error');
             }
         });
@@ -834,7 +853,7 @@
 
 
 
-        return false;
+        //return false;
 
     }
 

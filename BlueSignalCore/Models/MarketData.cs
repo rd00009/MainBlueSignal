@@ -53,14 +53,14 @@ namespace BlueSignalCore.Models
 
         public List<bundles> bundles { get; set; }
 
-        public bool IsBluFactrol { get { return (this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUFA || x.id == (int)WP_UserBundle.BLUFM || IsAdminUser == true))); } }
-        public bool IsBluNeutral { get { return (this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUNA || x.id == (int)WP_UserBundle.BLUNM || IsAdminUser == true))); } }
-        public bool IsBluQuant { get { return (this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUQA || x.id == (int)WP_UserBundle.BLUQM || IsAdminUser == true))); } }
-        public bool IsBluCombo { get { return (IsBluNeutral && IsBluFactrol); } }
+        public bool IsBluFactrol { get { return ((this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUFA) || x.id == (int)WP_UserBundle.BLUFM || IsAdminUser)) || IsAdminUser); } }
+        public bool IsBluNeutral { get { return ((this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUNA) || x.id == (int)WP_UserBundle.BLUNM)) || IsAdminUser); } }
+        public bool IsBluQuant { get { return ((this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUQA) || x.id == (int)WP_UserBundle.BLUQM)) || IsAdminUser); } }
+        public bool IsBluCombo { get { return ((IsBluNeutral && IsBluFactrol) || IsAdminUser); } }
         public bool IsAdminUser { get { return display_AdminKey.Contains("administrator"); } } //We will change logic once we get
 
 
-
+        //public bool IsAdminUser { get { return false; } } //We will change logic once we get
 
     }
 

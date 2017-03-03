@@ -93,6 +93,9 @@ namespace BlueSignal.Controllers
 
         public static WP_User SessionUser { get { return HttpContextSessionWrapper.SessionUser; } }
 
+        public static string UnAuthorizedUserAccessMessage { get { return "You are not authorized to access it, Please upgrade your plan."; } }
+
+
     }
 
     public class HttpContextSessionWrapper

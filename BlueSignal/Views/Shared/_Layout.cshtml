@@ -76,15 +76,24 @@
 
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <div class="col-sm-12">
-                <p>&copy; @DateTime.Now.Year BluSignals</p>
-            </div>
-        </footer>
+
+        @{
+            if (HttpContextSessionWrapperExtension.SessionUser != null)
+            {
+                <hr />
+
+
+                <footer>
+                    <div class="col-sm-12">
+                        <p>&copy; @DateTime.Now.Year BluSignals</p>
+                    </div>
+                </footer>
+            }
+
+        }
     </div>
     <!--loader-->
-    <div class="modal fade" id="loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="loading" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm modal_position">
             <div class="modal-content">
                 <div class="modal-header">
@@ -97,7 +106,7 @@
         </div>
     </div>
 
-    <div id="ModelBackGround" class="modal-backdrop fade in" style="display: none;"></div>
+    <div id="ModelBackGround_Custom" class="modal-backdrop fade in" style="display: none;"></div>
     <!--loader-->
 
 
@@ -129,6 +138,10 @@
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
+
+
+
+
     </script>
 </body>
 </html>
