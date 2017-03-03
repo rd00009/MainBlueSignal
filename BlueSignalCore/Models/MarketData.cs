@@ -47,25 +47,20 @@ namespace BlueSignalCore.Models
         public string user_email { get; set; }
         public string user_registered { get; set; }
         public string display_name { get; set; }
+        public string display_AdminKey { get; set; }
 
         //public List<WP_UserBundle> user_bundle { get; set; }
 
         public List<bundles> bundles { get; set; }
-        /*
+
         public bool IsBluFactrol { get { return (this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUFA || x.id == (int)WP_UserBundle.BLUFM || IsAdminUser == true))); } }
         public bool IsBluNeutral { get { return (this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUNA || x.id == (int)WP_UserBundle.BLUNM || IsAdminUser == true))); } }
         public bool IsBluQuant { get { return (this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUQA || x.id == (int)WP_UserBundle.BLUQM || IsAdminUser == true))); } }
         public bool IsBluCombo { get { return (IsBluNeutral && IsBluFactrol); } }
+        public bool IsAdminUser { get { return display_AdminKey.Contains("administrator"); } } //We will change logic once we get
 
-        public bool IsAdminUser { get { return false; } } //We will change logic once we get
-        */
 
-        public bool IsBluFactrol { get { return true; } }//  { get { return (this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUFA || x.id == (int)WP_UserBundle.BLUFM || IsAdminUser == true))); } }
-        public bool IsBluNeutral { get { return true; } }// { get { return (this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUNA || x.id == (int)WP_UserBundle.BLUNM || IsAdminUser == true))); } }
-        public bool IsBluQuant { get { return true; } }// { get { return (this.bundles.Any(x => (x.id == (int)WP_UserBundle.BLUQA || x.id == (int)WP_UserBundle.BLUQM || IsAdminUser == true))); } }
-        public bool IsBluCombo { get { return true; } }// { get { return (IsBluNeutral && IsBluFactrol); } }
 
-        public bool IsAdminUser { get { return true; } } //We will change logic once we get
 
     }
 
